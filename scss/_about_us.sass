@@ -1,0 +1,57 @@
+#cont_formulaire
+    padding: $box-pad*3 $box-pad/2
+    background-color: $turquoise
+    h3
+        color: $white
+    .formulaire
+        width: 100%
+        input
+            //height: $box-pad*1.5
+            padding: $box-pad/1.5 $box-pad/2
+            border: 0px
+            font-size: $box-pad/1.5
+            &:hover
+                background: rgba($white, 0.7)
+        .nom_email
+            width: 100%
+            display: flex
+        #nom, #email
+            width: 49%
+        #nom
+            margin-right: 10px
+        #email
+            margin-left: 10px
+        #sujet, #message
+            width: 100%
+        #message
+            height: 200px
+        .btn_mid
+            width: 100%
+            .btn_w
+                border: solid 1px $white
+                background-color: transparent
+                &:hover
+                    background-color: $white
+                    border: solid 1px $white
+                    color: $turquoise
+                    transform: scale(1.1)
+                    -webkit-transform: scale(1.1)
+                    //a
+                        color: $white
+        // #dates, #km
+        //     float: left
+        //     width: 32.7%
+        //     @media screen and (max-width: $break-md)
+        //         margin-bottom: $box-pad/2
+        // #dates
+        //     @media screen and (max-width: $break-md)
+        //         width: 50%
+        // #km
+        //     margin-left: $box-pad/2
+        //     @media screen and (max-width: $break-md)
+        //         margin: 0
+        //         width: 100%
+
+
+#services
+    height: 600px

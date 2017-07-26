@@ -1,0 +1,224 @@
+#main
+    position: absolute
+    //top: 60px
+    z-index: 1
+    width: 100%
+    display: flex
+    flex-direction: column
+    top: 0
+
+
+    .section_gray_light
+        background-color: $gray-light
+
+
+
+    .section_grey
+        background-color: $gray_header
+        //padding: 50px 0 70px 0
+        color: $white
+        @media screen and (max-width: $break-md)
+            padding: 0
+            padding-bottom: 30px
+            height: auto
+
+
+
+    .section_dark_grey
+        //background-color: $dark_grey !important
+
+
+
+    .section_white
+        padding: $box-pad*3 $box-pad/2
+        background-color: $white
+
+
+
+    .scroll
+        margin-top: -27px
+        z-index: 5
+        height: 50px
+
+
+
+    .scroll2
+        z-index: 5
+        height: 50px
+        position: absolute
+        bottom: 0
+        right: 0
+        margin: 30px
+
+
+
+    .wrapper
+        max-width: 1100px
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        padding-right: 0px
+        padding-left: 0px
+        -webkit-align-items: center
+        align-items: center
+
+
+
+
+
+    .section_3, .section_4
+        padding: $box-pad*2.5 0
+        text-align: center
+        @media screen and (max-width: $break-md)
+            padding: 25px
+        h2
+            font-size: 38px
+            @media screen and (max-width: $break-md)
+                font-size: 28px
+        h3
+            font-size: 25px
+        .description
+            font-size: 20px
+            line-height: 1.5
+            @media screen and (max-width: $break-md)
+                font-size: 15px
+        @media screen and (min-width: $break-md) and (max-width: $break-lg)
+            .text, figure
+                padding: 0
+                width: 90%
+        .btn_mid
+            .btn_s
+                margin: 10px auto 50px auto
+                @media screen and (max-width: $break-md)
+                    margin: 0 auto 20px auto
+
+
+
+.btn_mid
+    width: 100%
+    @media screen and (max-width: $break-md)
+        //padding-bottom: 40px
+    .btn_w
+        @include button-ingrid-white
+        @include transition(0.6s)
+        padding: 10px 15px
+        width: 25%
+        @media screen and (max-width: $break-md)
+            width: 75%
+            margin: 30px auto 40px auto
+            height: 45px
+            font-size: 1.1em
+    //.btn_page-scroll
+        @include button-ingrid
+        background-color: $white
+        border: solid 1px $white
+        @include transition(0.6s)
+        @include shadow-ingrid-2
+        padding: 15px
+        width: 50px
+        height: 50px
+        transition-property: transform
+        -webkit-transition-property: transform
+        transition-duration: .5s
+        transition-timing-function: ease-out
+        &:hover
+            transform: scale(1.1)
+            -webkit-transform: scale(1.1)
+    //.btn_s
+        @include button-ingrid
+        @include transition(0.6s)
+        padding: 10px 15px
+        width: 30%
+        @media screen and (max-width: $break-md)
+            width: 75%
+        a
+            color: $white
+        &:hover
+            background-color: transparent
+            a
+
+
+
+#footer_index
+    position: relative
+    background-color: $gray_footer
+    padding: $box-pad*1.5 0 $box-pad*2 0
+    color: $white
+    ul
+        li
+            margin-bottom: $box-pad/4
+            cursor: pointer
+    //&:before
+        content: ''
+        display: block
+        background-color: $gray_footer
+        position: absolute
+        height: 70px
+        top: -29px
+        left: 0
+        right: 0
+        bottom: 0
+        @include skew(0, 2)
+    .text-footer
+        font-size: 15px
+        text-align: center
+        line-height: 25px
+        margin-top: $box-pad
+
+    #rubriques
+        text-align: center
+        h3
+            cursor: pointer
+            font-size: 20px
+            color: $turquoise
+    #rubriques, #res_soc , #terms-privacy
+        display: flex
+        flex-direction: row
+        justify-content: center
+    #navigation
+        padding-right: $box-pad*4
+    #share
+        padding: 0 $box-pad*2
+        .footericon:first-child
+            width: 35px
+        .footericon
+            margin: $box-pad/2 $box-pad
+            width: 30px
+        #res_soc
+            padding: 0 0 $box-pad*1.5 0
+    #nouscont_faq_cont
+        padding-left: $box-pad*4
+    #navigation, #share, #nouscont_faq_cont
+        width: 25%
+    #terms-privacy
+        .text-invert
+            padding: 5px
+            &:hover
+                text-decoration: underline
+
+
+    //#share, #terms-privacy
+        display: flex
+        flex-direction: row
+        justify-content: center
+    //#share
+        padding-bottom: $box-pad/1.5
+        h3
+            width: 100%
+        .footericon:first-child
+            width: 35px
+        .footericon
+            margin: $box-pad/2 $box-pad
+            width: 30px
+    //#navigation, #share, #nouscont_faq_cont
+    //#terms-privacy
+        .text-invert
+            padding: 5px
+            &:hover
+                text-decoration: underline
+
+
+
+.js-scrollTo
+    margin-bottom: 100px

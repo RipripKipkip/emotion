@@ -1,0 +1,137 @@
+#header
+    padding: $box-pad*6 $box-pad/2 $box-pad*3 $box-pad/2
+    width: 100%
+    position: relative
+    padding-right: 0
+    padding-left: 0
+    @media screen and (max-width: $break-md)
+        min-height: 80%
+    .text
+        text-align: center
+        h1
+            font-size: 35px
+        h2
+            font-size: 25px
+    .btn_mid
+        width: 100%
+        .btn_w
+            background-color: $turquoise
+            border: solid 1px $turquoise
+            &:hover
+                border: solid 1px $white
+                background-color: transparent
+                color: $white
+                a
+                    color: $white
+
+
+#formulaire
+    .formulaire
+        width: 90%
+        padding: $box-pad/2
+        background-color: $turquoise
+        input
+            padding: $box-pad/1.5 $box-pad/2
+            border: 0px
+            width: 96%
+            font-size: $box-pad/1.5
+            &:hover
+                background: rgba($white, 0.7)
+        #dates, #km
+            float: left
+            width: 30%
+            @media screen and (max-width: $break-md)
+                margin-bottom: $box-pad/2
+        #dates
+            @media screen and (max-width: $break-md)
+                width: 50%
+        #km
+            margin-left: $box-pad/2
+            @media screen and (max-width: $break-md)
+                margin: 0
+                width: 100%
+    .voit_scoot
+        width: 90%
+        h3
+            margin-top: $box-pad !important
+            margin: 0
+        #voitures, #scooters
+            width: 48%
+            float: left
+            margin: $box-pad 0
+            img
+                width: 100%
+            @media screen and (max-width: $break-md)
+                width: 45%
+        #voitures, #scooters
+            position: relative
+            .image
+                display: block
+                width: 100%
+                height: auto
+            .overlay
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                width: 100%
+                opacity: 0
+                transition: .5s ease
+                background: rgba($white, 0.5)
+                .text
+                    color: white
+                    font-size: $box-pad
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    -ms-transform: translate(-50%, -50%)
+                &:hover
+                    cursor: pointer
+                    opacity: 1
+                    .text
+                        color: $black !important
+                        font-size: $box-pad
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        -ms-transform: translate(-50%, -50%)
+        #voitures
+            margin-right: $box-pad/2
+        #scooters
+            margin-left: $box-pad/2
+
+
+
+#rubriques_services
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding-top: 0
+    .wrapper
+        align-items: flex-start
+        @media screen and (max-width: $break-md)
+            padding: 25px 25px 25px 25px
+    h2
+        width: 100%
+        margin-bottom: 40px
+    .footer_description
+        width: 25%
+        float: left
+        margin: 15px 30px
+        .img_section_7
+            width: 200px
+            height: 200px
+            margin: 0 auto 25px auto
+            img
+                width: 200px
+                height: 200px
+        .description
+            font-size: 15px
+    @media screen and (max-width: $break-md)
+        .footer_description
+            width: 100%
+        .btn_s
+            margin: 10px auto 0px auto

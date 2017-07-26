@@ -1,0 +1,60 @@
+=keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
+// use of keyframes mixin
++keyframes(bgcolor)
+    0%
+        background-color: #ffccf2
+    50%
+        background-color: #ccffcc
+    100%
+        background-color: #ccfff
+
+.animated
+    animation-duration: 1s
+    animation-fill-mode: both
+    -webkit-animation-duration: 1s
+    -webkit-animation-fill-mode: both
+
++keyframes(fadeInUp)
+    0%
+        opacity: 0
+        transform: translate3d(0,40px,0)
+    100%
+        opacity: 1
+        transform: translate3d(0,0,0)
+
+.animatedFadeInUp
+    opacity: 0
+
+.fadeInUp
+    opacity: 0
+    animation-name: fadeInUp
+    -webkit-animation-name: fadeInUp
+
+.scrolling_animate
+    opacity: 0
+
++keyframes(opacityy)
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.animatedopacityy
+    opacity: 0
+
+.opacityy
+    opacity: 0
+    animation-name: opacityy
+    -webkit-animation-name: opacityy
+
+.opacityy_animate
+    opacity: 0

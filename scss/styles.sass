@@ -1,0 +1,42 @@
+@import "reset"
+
+@import "variables"
+@import "mixins_ingrid"
+@import "util"
+@import "animated"
+
+@import "nav"
+@import "sections"
+@import "footer"
+
+@import "landings"
+@import "about_us"
+
+
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto)
+
+*
+    outline: 0
+
+body
+    //letter-spacing: 0.05em
+    font-family: "Roboto" ,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif
+    letter-spacing: initial
+
+video
+    max-width: 100%
+
+a
+    text-decoration: none
+    color: inherit !important
+
+h1, h2, h3, h4, p
+    margin-bottom: 20px
+    @media screen and (max-width: $break-md)
+        margin-bottom: 15px
+
+h3
+    width: 100%
+    font-size: 25px
