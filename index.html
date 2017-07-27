@@ -25,6 +25,8 @@
 
 		<script src="js/modernizr.custom.js"></script> -->
 
+		<script src="js/accordion.js"></script>
+
 
 	</head>
 
@@ -83,25 +85,73 @@
 			</section> -->
 
 
-			<section id="formulaire" class="section_white section_3">
+			<section id="formulaire" class="section_3">
 				<div class="wrapper">
 					<h3>Votre trajet :</h3>
 
 					<div class="formulaire">
 						<p class="name">
 					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Ville de départ" id="name" />
-					      </p>
-					      <p class="start">
+					    </p>
+					    <p class="start">
 					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="Start Date" />
-					      </p>
-						  <p class="end">
+					    </p>
+						<p class="end">
 					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="End Date" />
-					      </p>
-						  <p class="km">
+					    </p>
+						<p class="km">
 					        <input name="km" type="text" class="validate[required,custom[email]] feedback-input" id="km" placeholder="Km" />
-					      </p>
-					 </div>
+					    </p>
+					</div>
+
+					<!-- <ul>
+						<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">News</a>
+							<div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							</div>
+						</li>
+						<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+							<div class="dropdown-content">
+								<a href="#">Link 4</a>
+								<a href="#">Link 5</a>
+								<a href="#">Link 6</a>
+							</div>
+						</li>
+					</ul> -->
+
 					<div class="voit_scoot">
+						<h3>Le véhicule que vous souhaitez :</h3>
+						<ul>
+							<li class="dropdown" id="voitures">
+							<a href="javascript:void(0)" class="dropbtn"><img src="images/voiture-societe.png" alt="BLIBLABLU" class="images">
+							<div class="overlay">
+								<div class="text">Voitures</div>
+							</div></a>
+								<div class="dropdown-content">
+									<a href="#">Link 1</a>
+									<a href="#">Link 2</a>
+									<a href="#">Link 3</a>
+								</div>
+							</li>
+							<li class="dropdown" id="scooters">
+							<a href="javascript:void(0)" class="dropbtn"><img src="images/yamaha_scooter.jpg" alt="BLIBLABLU" class="image">
+							<div class="overlay">
+								<div class="text">Scooters</div>
+							</div></a>
+								<div class="dropdown-content">
+									<a href="#">Link 4</a>
+									<a href="#">Link 5</a>
+									<a href="#">Link 6</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- <div class="voit_scoot">
 						<h3>Le véhicule que vous souhaitez :</h3>
 						<div id="voitures">
 							<img src="images/voiture-societe.png" alt="BLIBLABLU" class="images">
@@ -109,18 +159,19 @@
 								<div class="text">Voitures</div>
 							</div>
 						</div>
+
 						<a id="scooters">
 							<img src="images/yamaha_scooter.jpg" alt="BLIBLABLU" class="image">
 							<div class="overlay">
 								<div class="text">Scooters</div>
 							</div>
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</section>
 
 
-			<section id="rubriques_services" class="section_white section_4">
+			<section id="rubriques_services" class="section_4">
 				<div class="wrapper">
 					<!-- <h2 class="scrolling_animate animated">More reasons to love Soundcharts</h2> -->
 					<div class="footer_description ">

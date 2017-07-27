@@ -479,8 +479,9 @@ table {
     padding-left: 0px;
     -webkit-align-items: center;
     align-items: center; }
+  #main .section_3 {
+    padding: 75px 0 45px 0; }
   #main .section_3, #main .section_4 {
-    padding: 75px 0;
     text-align: center; }
     @media screen and (max-width: 850px) {
       #main .section_3, #main .section_4 {
@@ -615,16 +616,17 @@ table {
   #formulaire .formulaire input {
     padding: 20px 15px;
     border: 0px;
-    width: 96%;
     font-size: 20px; }
     #formulaire .formulaire input:hover {
       background: rgba(255, 255, 255, 0.7); }
   #formulaire .formulaire #dates, #formulaire .formulaire #km {
     float: left;
-    width: 30%; }
+    width: 29.7%; }
     @media screen and (max-width: 850px) {
       #formulaire .formulaire #dates, #formulaire .formulaire #km {
         margin-bottom: 15px; } }
+  #formulaire .formulaire #name {
+    width: 97%; }
   @media screen and (max-width: 850px) {
     #formulaire .formulaire #dates {
       width: 50%; } }
@@ -641,19 +643,15 @@ table {
     margin-top: 30px !important;
     margin: 0; }
   #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
-    width: 48%;
-    float: left;
+    position: relative;
     margin: 30px 0; }
     #formulaire .voit_scoot #voitures img, #formulaire .voit_scoot #scooters img {
       width: 100%; }
     @media screen and (max-width: 850px) {
       #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
-        width: 45%; } }
-  #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
-    position: relative; }
+        width: 100%; } }
     #formulaire .voit_scoot #voitures .image, #formulaire .voit_scoot #scooters .image {
       display: block;
-      width: 100%;
       height: auto; }
     #formulaire .voit_scoot #voitures .overlay, #formulaire .voit_scoot #scooters .overlay {
       position: absolute;
@@ -664,7 +662,7 @@ table {
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background: rgba(255, 255, 255, 0.5); }
+      background: rgba(255, 255, 255, 0.7); }
       #formulaire .voit_scoot #voitures .overlay .text, #formulaire .voit_scoot #scooters .overlay .text {
         color: white;
         font-size: 30px;
@@ -686,8 +684,47 @@ table {
           -ms-transform: translate(-50%, -50%); }
   #formulaire .voit_scoot #voitures {
     margin-right: 15px; }
+    #formulaire .voit_scoot #voitures .image {
+      width: 100%; }
   #formulaire .voit_scoot #scooters {
     margin-left: 15px; }
+    #formulaire .voit_scoot #scooters .image {
+      width: 110%; }
+
+#formulaire ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+  width: 93%; }
+  #formulaire ul li {
+    float: left;
+    width: 48%; }
+  #formulaire ul li a, #formulaire ul .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  #formulaire ul .dropdown {
+    display: inline-block; }
+  #formulaire ul .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  #formulaire ul .dropdown-content a {
+    width: 25%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; }
+  #formulaire ul .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  #formulaire ul .dropdown:hover .dropdown-content {
+    display: block; }
 
 #rubriques_services {
   display: flex;

@@ -26,6 +26,7 @@
 
 
 #formulaire
+
     .formulaire
         width: 90%
         padding: $box-pad/2
@@ -33,15 +34,17 @@
         input
             padding: $box-pad/1.5 $box-pad/2
             border: 0px
-            width: 96%
+            //width: 96%
             font-size: $box-pad/1.5
             &:hover
                 background: rgba($white, 0.7)
         #dates, #km
             float: left
-            width: 30%
+            width: 29.7%
             @media screen and (max-width: $break-md)
                 margin-bottom: $box-pad/2
+        #name
+            width: 97%
         #dates
             @media screen and (max-width: $break-md)
                 width: 50%
@@ -50,24 +53,23 @@
             @media screen and (max-width: $break-md)
                 margin: 0
                 width: 100%
+
     .voit_scoot
         width: 90%
         h3
             margin-top: $box-pad !important
             margin: 0
         #voitures, #scooters
-            width: 48%
-            float: left
+            position: relative
+            //width: 48%
+            //float: left
             margin: $box-pad 0
             img
                 width: 100%
             @media screen and (max-width: $break-md)
-                width: 45%
-        #voitures, #scooters
-            position: relative
+                width: 100%
             .image
                 display: block
-                width: 100%
                 height: auto
             .overlay
                 position: absolute
@@ -78,7 +80,7 @@
                 width: 100%
                 opacity: 0
                 transition: .5s ease
-                background: rgba($white, 0.5)
+                background: rgba($white, 0.7)
                 .text
                     color: white
                     font-size: $box-pad
@@ -100,8 +102,59 @@
                         -ms-transform: translate(-50%, -50%)
         #voitures
             margin-right: $box-pad/2
+            .image
+                width: 100%
         #scooters
             margin-left: $box-pad/2
+            .image
+                width: 110%
+
+
+    ul
+        list-style-type: none
+        margin: 0 !important
+        padding: 0
+        overflow: hidden
+        width: 93%
+        li
+            float: left
+            width: 48%
+
+        li a, .dropbtn
+            display: inline-block
+            color: white
+            text-align: center
+            padding: 14px 16px
+            text-decoration: none
+
+        //li a:hover, .dropdown:hover .dropbtn
+            background-color: red
+
+        .dropdown
+            display: inline-block
+
+        .dropdown-content
+            display: none
+            position: absolute
+            left: 0
+            background-color: #f9f9f9
+            width: 100%
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+            z-index: 1
+
+        .dropdown-content a
+            width: 25%
+            color: black
+            padding: 12px 16px
+            text-decoration: none
+            //text-align: left
+
+        .dropdown-content a:hover
+            background-color: #f1f1f1
+
+        .dropdown:hover .dropdown-content
+            display: block
+
 
 
 
