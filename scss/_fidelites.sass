@@ -1,0 +1,164 @@
+#fidelites
+    p
+        line-height: 1.7
+        font-size: 18px
+
+#header_fidelite
+    #comp_buttons
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+    .btn_mid
+        margin: 0 $box-pad
+        width: 25%
+        float: left
+        .btn_w
+            background-color: transparent
+            border: solid 1px $turquoise
+            color: $turquoise
+            &:hover
+                border: solid 1px $turquoise
+                background-color: $turquoise
+                color: $white
+                a
+    h3
+        width: 100%
+        //margin: 0 auto $box-pad auto
+        margin: $box-pad*2 0 $box-pad 0
+        //border-bottom: 1px solid $black
+    .border_bottom
+        height: 2px
+        margin: 0 auto $box-pad*2 auto
+        width: 400px
+        background-color: $black
+    .text_entete
+        width: 70%
+        margin: 0 auto
+        line-height:
+
+
+#mes_points, #gagner_points, #avantages_points, #inviter_points
+    h3
+        width: 100%
+        //margin: 0 auto $box-pad auto
+        margin-bottom: $box-pad
+        //border-bottom: 1px solid $black
+    .border_bottom
+        height: 2px
+        margin: 0 auto $box-pad*2 auto
+        width: 400px
+        background-color: $black
+
+#gagner_points, #avantages_points, #inviter_points
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    padding-top: 0
+    .wrapper
+        align-items: flex-start
+        @media screen and (max-width: $break-md)
+            padding: 25px 25px 25px 25px
+    .footer_description
+        width: 25%
+        float: left
+        margin: 15px 30px
+
+#gagner_points
+    .footer_description
+        .img_mes_points
+            width: 200px
+            height: 200px
+            border-radius: 100px
+            background-color: $black
+            margin: 0 auto 25px auto
+            @include shadow-ingrid-4
+            .number_text
+                font-family: 'Old Standard TT', serif
+                color: $white
+                padding: $box-pad*2 $box-pad*1.5
+                h1
+                    font-size: 60px
+                    margin-bottom: 0
+                    font-weight: 700
+                .points
+                    font-style: italic
+                    font-size: 20px
+        .description
+            color: $gray_header
+    @media screen and (max-width: $break-md)
+        .footer_description
+            width: 100%
+        .btn_s
+            margin: 10px auto 0px auto
+
+
+#avantages_points
+    .footer_description
+        .img_mes_points
+            width: 200px
+            height: 200px
+            border: 4px solid $black
+            margin: 0 auto $box-pad auto
+            @include shadow-ingrid-4
+            .number_text
+                color: $black
+                padding: $box-pad $box-pad/2
+                h1
+                    font-family: 'Old Standard TT', serif
+                    font-size: 60px
+                    margin-bottom: 0
+                    font-weight: 700
+                .points
+                    font-family: 'Old Standard TT', serif
+                    font-style: italic
+                    font-size: 20px
+                .border_bottom
+                    height: 2px
+                    margin: $box-pad/2 auto
+                    width: 100%
+                    background-color: $black
+                .description
+                    font-style: normal
+    @media screen and (max-width: $break-md)
+        .footer_description
+            width: 100%
+        .btn_s
+            margin: 10px auto 0px auto
+
+
+#inviter_points
+    .wrapper
+        flex-wrap: nowrap
+        .text, .text2
+            line-height: 1.7
+        .text2
+            font-size: $box-pad/2
+            color: $gray_header
+            margin-top: $box-pad
+    .footer_description
+        margin-top: $box-pad*2
+        width: 40% !important
+        .img_mes_points
+            width: 120px
+            height: 120px
+            border-radius: 100px
+            background-color: $black
+            margin: 0 auto 25px auto
+            @include shadow-ingrid-4
+            .number_text
+                padding: $box-pad*2 $box-pad*1.5
+        h1
+            font-size: 20px
+            margin-bottom: 0
+            font-weight: 600
+            line-height: 1.2
+            text-transform: uppercase
+            margin-bottom: $box-pad/2
+        .description
+            color: $black
+    @media screen and (max-width: $break-md)
+        .footer_description
+            width: 100%
+        .btn_s
+            margin: 10px auto 0px auto
