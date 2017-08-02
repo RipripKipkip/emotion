@@ -1,6 +1,8 @@
 #cont_formulaire
     padding: $box-pad*3 $box-pad/2
     background-color: $turquoise
+    @media screen and (max-width: $break-sm)
+        width: 100%
     h3
         color: $white
     .formulaire
@@ -36,22 +38,6 @@
                     color: $turquoise
                     transform: scale(1.1)
                     -webkit-transform: scale(1.1)
-                    //a
-                        color: $white
-        // #dates, #km
-        //     float: left
-        //     width: 32.7%
-        //     @media screen and (max-width: $break-md)
-        //         margin-bottom: $box-pad/2
-        // #dates
-        //     @media screen and (max-width: $break-md)
-        //         width: 50%
-        // #km
-        //     margin-left: $box-pad/2
-        //     @media screen and (max-width: $break-md)
-        //         margin: 0
-        //         width: 100%
-
 
 #services
     height: 600px

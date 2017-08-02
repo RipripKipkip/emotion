@@ -49,7 +49,7 @@ table {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 567px) {
     .flex-center {
       flex-direction: column; } }
 
@@ -211,7 +211,7 @@ table {
       background-image: url(/images/logo_w.svg);
       background-size: 180px 30px;
       margin: 24px; }
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 567px) {
         #nav .header .logo {
           margin: 25px 21px; } }
     #nav .header .top-nav {
@@ -219,7 +219,7 @@ table {
       right: 15px;
       display: inline-block;
       vertical-align: middle; }
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 567px) {
         #nav .header .top-nav {
           display: none; } }
       #nav .header .top-nav li {
@@ -276,7 +276,7 @@ table {
             border: solid 1px #FFF;
             color: #36b1ac !important; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 567px) {
   #nav.opaque {
     background-color: rgba(255, 255, 255, 0.9) !important; }
   #container-menu {
@@ -453,11 +453,6 @@ table {
   #main .section_grey {
     background-color: #808080;
     color: #FFF; }
-    @media screen and (max-width: 850px) {
-      #main .section_grey {
-        padding: 0;
-        padding-bottom: 30px;
-        height: auto; } }
   #main .section_white {
     padding: 90px 15px;
     background-color: #FFF; }
@@ -473,7 +468,6 @@ table {
     right: 0;
     margin: 30px; }
   #main .wrapper {
-    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -484,12 +478,9 @@ table {
     align-items: center; }
   #main .section_3 {
     padding: 75px 0 45px 0; }
-  @media screen and (max-width: 850px) {
-    #main {
-      padding: 25px; } }
   #main h2 {
     font-size: 38px; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #main h2 {
         font-size: 28px; } }
   #main h3 {
@@ -497,16 +488,16 @@ table {
   #main #landigns .description {
     font-size: 20px;
     line-height: 1.5; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #main #landigns .description {
         font-size: 15px; } }
-  @media screen and (min-width: 850px) and (max-width: 1300px) {
+  @media screen and (min-width: 567px) and (max-width: 1300px) {
     #main .text, #main figure {
       padding: 0;
       width: 90%; } }
   #main .btn_mid .btn_s {
     margin: 10px auto 50px auto; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #main .btn_mid .btn_s {
         margin: 0 auto 20px auto; } }
 
@@ -529,12 +520,15 @@ table {
     -webkit-transition: 0.6s;
     transition: 0.6s;
     padding: 10px 15px; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       .btn_mid .btn_w {
         width: 75%;
         margin: 30px auto 40px auto;
         height: 45px;
         font-size: 1.1em; } }
+
+.js-scrollTo {
+  margin-bottom: 100px; }
 
 #footer_index {
   position: relative;
@@ -555,10 +549,16 @@ table {
       cursor: pointer;
       font-size: 20px;
       color: #36b1ac; }
+      @media screen and (max-width: 567px) {
+        #footer_index #rubriques h3 {
+          padding-top: 30px; } }
   #footer_index #rubriques, #footer_index #res_soc, #footer_index #terms-privacy {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  @media screen and (max-width: 567px) {
+    #footer_index #rubriques, #footer_index #terms-privacy {
+      flex-direction: column; } }
   #footer_index #navigation {
     padding-right: 120px; }
   #footer_index #share {
@@ -570,17 +570,21 @@ table {
       width: 30px; }
     #footer_index #share #res_soc {
       padding: 0 0 45px 0; }
+      @media screen and (max-width: 567px) {
+        #footer_index #share #res_soc {
+          padding: 0; } }
   #footer_index #nouscont_faq_cont {
     padding-left: 120px; }
   #footer_index #navigation, #footer_index #share, #footer_index #nouscont_faq_cont {
     width: 25%; }
+    @media screen and (max-width: 567px) {
+      #footer_index #navigation, #footer_index #share, #footer_index #nouscont_faq_cont {
+        width: 100%;
+        padding: 0; } }
   #footer_index #terms-privacy .text-invert {
     padding: 5px; }
     #footer_index #terms-privacy .text-invert:hover {
       text-decoration: underline; }
-
-.js-scrollTo {
-  margin-bottom: 100px; }
 
 #header {
   padding: 90px 15px;
@@ -588,11 +592,15 @@ table {
   position: relative;
   padding-right: 0;
   padding-left: 0; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 567px) {
     #header {
-      min-height: 80%; } }
+      min-height: 80%;
+      padding: 45px 0; } }
   #header .text {
     text-align: center; }
+    @media screen and (max-width: 567px) {
+      #header .text {
+        padding: 0 30px; } }
     #header .text h1 {
       font-size: 35px; }
     #header .text h2 {
@@ -614,6 +622,9 @@ table {
   width: 90%;
   padding: 15px;
   background-color: #36b1ac; }
+  @media screen and (max-width: 567px) {
+    #formulaire .formulaire {
+      width: 100%; } }
   #formulaire .formulaire input {
     padding: 20px 15px;
     border: 0px;
@@ -623,20 +634,23 @@ table {
   #formulaire .formulaire #dates, #formulaire .formulaire #km {
     float: left;
     width: 29.7%; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #formulaire .formulaire #dates, #formulaire .formulaire #km {
         margin-bottom: 15px; } }
   #formulaire .formulaire #name {
     width: 97%; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 567px) {
     #formulaire .formulaire #dates {
       width: 50%; } }
   #formulaire .formulaire #km {
     margin-left: 15px; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #formulaire .formulaire #km {
         margin: 0;
         width: 100%; } }
+  @media screen and (max-width: 567px) {
+    #formulaire .formulaire #name, #formulaire .formulaire #dates, #formulaire .formulaire #km {
+      width: 90%; } }
 
 #formulaire .voit_scoot {
   width: 90%; }
@@ -648,7 +662,7 @@ table {
     margin: 30px 0; }
     #formulaire .voit_scoot #voitures img, #formulaire .voit_scoot #scooters img {
       width: 100%; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
         width: 100%; } }
     #formulaire .voit_scoot #voitures .image, #formulaire .voit_scoot #scooters .image {
@@ -734,7 +748,7 @@ table {
   padding-top: 0; }
   #rubriques_services .wrapper {
     align-items: flex-start; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #rubriques_services .wrapper {
         padding: 25px 25px 25px 25px; } }
   #rubriques_services h2 {
@@ -753,7 +767,7 @@ table {
         height: 200px; }
     #rubriques_services .footer_description .description {
       font-size: 15px; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 567px) {
     #rubriques_services .footer_description {
       width: 100%; }
     #rubriques_services .btn_s {
@@ -762,6 +776,9 @@ table {
 #cont_formulaire {
   padding: 90px 15px;
   background-color: #36b1ac; }
+  @media screen and (max-width: 567px) {
+    #cont_formulaire {
+      width: 100%; } }
   #cont_formulaire h3 {
     color: #FFF; }
   #cont_formulaire .formulaire {
@@ -854,7 +871,7 @@ table {
   padding-top: 0; }
   #gagner_points .wrapper, #avantages_points .wrapper, #inviter_points .wrapper {
     align-items: flex-start; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 567px) {
       #gagner_points .wrapper, #avantages_points .wrapper, #inviter_points .wrapper {
         padding: 25px 25px 25px 25px; } }
   #gagner_points .footer_description, #avantages_points .footer_description, #inviter_points .footer_description {
@@ -887,7 +904,7 @@ table {
 #gagner_points .footer_description .description {
   color: #808080; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 567px) {
   #gagner_points .footer_description {
     width: 100%; }
   #gagner_points .btn_s {
@@ -922,7 +939,7 @@ table {
     #avantages_points .footer_description .img_mes_points .number_text .description {
       font-style: normal; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 567px) {
   #avantages_points .footer_description {
     width: 100%; }
   #avantages_points .btn_s {
@@ -962,7 +979,7 @@ table {
   #inviter_points .footer_description .description {
     color: #000; }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 567px) {
   #inviter_points .footer_description {
     width: 100%; }
   #inviter_points .btn_s {
@@ -973,7 +990,8 @@ table {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: initial; }
+  letter-spacing: initial;
+  width: 100%; }
 
 video {
   max-width: 100%; }
@@ -984,7 +1002,7 @@ a {
 
 h1, h2, h3, h4, p {
   margin-bottom: 20px; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 567px) {
     h1, h2, h3, h4, p {
       margin-bottom: 15px; } }
 

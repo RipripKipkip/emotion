@@ -4,10 +4,13 @@
     position: relative
     padding-right: 0
     padding-left: 0
-    @media screen and (max-width: $break-md)
+    @media screen and (max-width: $break-sm)
         min-height: 80%
+        padding: $box-pad*1.5 0
     .text
         text-align: center
+        @media screen and (max-width: $break-sm)
+            padding: 0 30px
         h1
             font-size: 35px
         h2
@@ -27,11 +30,12 @@
 
 
 #formulaire
-
     .formulaire
         width: 90%
         padding: $box-pad/2
         background-color: $turquoise
+        @media screen and (max-width: $break-sm)
+            width: 100%
         input
             padding: $box-pad/1.5 $box-pad/2
             border: 0px
@@ -42,18 +46,21 @@
         #dates, #km
             float: left
             width: 29.7%
-            @media screen and (max-width: $break-md)
+            @media screen and (max-width: $break-sm)
                 margin-bottom: $box-pad/2
         #name
             width: 97%
         #dates
-            @media screen and (max-width: $break-md)
+            @media screen and (max-width: $break-sm)
                 width: 50%
         #km
             margin-left: $box-pad/2
-            @media screen and (max-width: $break-md)
+            @media screen and (max-width: $break-sm)
                 margin: 0
                 width: 100%
+        @media screen and (max-width: $break-sm)
+            #name, #dates, #km
+                width: 90%
 
     .voit_scoot
         width: 90%
@@ -67,7 +74,7 @@
             margin: $box-pad 0
             img
                 width: 100%
-            @media screen and (max-width: $break-md)
+            @media screen and (max-width: $break-sm)
                 width: 100%
             .image
                 display: block
@@ -166,7 +173,7 @@
     padding-top: 0
     .wrapper
         align-items: flex-start
-        @media screen and (max-width: $break-md)
+        @media screen and (max-width: $break-sm)
             padding: 25px 25px 25px 25px
     h2
         width: 100%
@@ -184,7 +191,7 @@
                 height: 200px
         .description
             font-size: 15px
-    @media screen and (max-width: $break-md)
+    @media screen and (max-width: $break-sm)
         .footer_description
             width: 100%
         .btn_s

@@ -1,0 +1,164 @@
+#footer_index
+    position: relative
+    background-color: $gray_footer
+    padding: $box-pad*1.5 0 $box-pad*2 0
+    color: $white
+    ul
+        li
+            margin-bottom: $box-pad/4
+            cursor: pointer
+    //&:before
+        content: ''
+        display: block
+        background-color: $gray_footer
+        position: absolute
+        height: 70px
+        top: -29px
+        left: 0
+        right: 0
+        bottom: 0
+        @include skew(0, 2)
+    .text-footer
+        font-size: 15px
+        text-align: center
+        line-height: 25px
+        margin-top: $box-pad
+
+    #rubriques
+        text-align: center
+        h3
+            cursor: pointer
+            font-size: 20px
+            color: $turquoise
+            @media screen and (max-width: $break-sm)
+                padding-top: 30px
+    #rubriques, #res_soc , #terms-privacy
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+    #rubriques, #terms-privacy
+        @media screen and (max-width: $break-sm)
+            flex-direction: column
+    #navigation
+        padding-right: $box-pad*4
+
+    #share
+        padding: 0 $box-pad*2
+        .footericon:first-child
+            width: 35px
+        .footericon
+            margin: $box-pad/2 $box-pad
+            width: 30px
+        #res_soc
+            padding: 0 0 $box-pad*1.5 0
+            @media screen and (max-width: $break-sm)
+                padding: 0
+    #nouscont_faq_cont
+        padding-left: $box-pad*4
+    #navigation, #share, #nouscont_faq_cont
+        width: 25%
+        @media screen and (max-width: $break-sm)
+            width: 100%
+            padding: 0
+    #terms-privacy
+        .text-invert
+            padding: 5px
+            &:hover
+                text-decoration: underline
+
+
+
+
+
+// #footer_index
+//     position: relative
+//     background-color: $gray_footer
+//     padding: $box-pad*1.5 0 $box-pad*2 0
+//     color: $white
+//     ul
+//         li
+//             margin-bottom: $box-pad/4
+//             cursor: pointer
+//     //&:before
+//         content: ''
+//         display: block
+//         background-color: $gray_footer
+//         position: absolute
+//         height: 70px
+//         top: -29px
+//         left: 0
+//         right: 0
+//         bottom: 0
+//         @include skew(0, 2)
+//     .text-footer
+//         font-size: 15px
+//         text-align: center
+//         line-height: 25px
+//         margin-top: $box-pad
+//
+//     #rubriques
+//         display: flex
+//         flex-direction: row
+//         justify-content: center
+//         text-align: center
+//         @media screen and (max-width: $break-sm)
+//             display: flex
+//             flex-direction: column
+//         h3
+//             cursor: pointer
+//             width: 100%
+//             font-size: 20px
+//             color: $turquoise
+//     // #rubriques, #res_soc , #terms-privacy
+//     //     display: flex
+//     //     flex-direction: row
+//     //     justify-content: center
+//     #navigation
+//         padding-right: $box-pad*4
+//     #share
+//         display: flex
+//         flex-direction: row
+//         justify-content: center
+//         padding: 0 $box-pad*2
+//         .footericon:first-child
+//             width: 35px
+//         .footericon
+//             margin: $box-pad/2 $box-pad
+//             width: 30px
+//         #res_soc
+//             padding: 0 0 $box-pad*1.5 0
+//             flex-direction: column
+//     #nouscont_faq_cont
+//         padding-left: $box-pad*4
+//     #navigation, #share, #nouscont_faq_cont
+//         width: 25%
+//         @media screen and (max-width: $break-sm)
+//             width: 100%
+//             padding: 0
+//     #terms-privacy
+//         .text-invert
+//             padding: 5px
+//             &:hover
+//                 text-decoration: underline
+//
+//
+//     //#share, #terms-privacy
+//         display: flex
+//         flex-direction: row
+//         justify-content: center
+//     //#share
+//         padding-bottom: $box-pad/1.5
+//         h3
+//             width: 100%
+//         .footericon:first-child
+//             width: 35px
+//         .footericon
+//             margin: $box-pad/2 $box-pad
+//             width: 30px
+//     //#navigation, #share, #nouscont_faq_cont
+//     //#terms-privacy
+//         .text-invert
+//             padding: 5px
+//             &:hover
+//                 text-decoration: underline
