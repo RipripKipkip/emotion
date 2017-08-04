@@ -6,7 +6,6 @@
     ul
         li
             margin-bottom: $box-pad/4
-            cursor: pointer
     //&:before
         content: ''
         display: block
@@ -42,6 +41,11 @@
             flex-direction: column
     #navigation
         padding-right: $box-pad*4
+        ul
+            li
+                cursor: pointer
+                &:hover
+                    text-decoration: underline
 
     #share
         padding: 0 $box-pad*2
@@ -56,6 +60,12 @@
                 padding: 0
     #nouscont_faq_cont
         padding-left: $box-pad*4
+        ul
+            li
+                cursor: pointer
+                &:first-child
+                    &:hover
+                        text-decoration: underline
     #navigation, #share, #nouscont_faq_cont
         width: 25%
         @media screen and (max-width: $break-sm)

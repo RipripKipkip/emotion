@@ -542,8 +542,7 @@ table {
   padding: 45px 0 60px 0;
   color: #FFF; }
   #footer_index ul li {
-    margin-bottom: 7.5px;
-    cursor: pointer; }
+    margin-bottom: 7.5px; }
   #footer_index .text-footer {
     font-size: 15px;
     text-align: center;
@@ -567,6 +566,10 @@ table {
       flex-direction: column; } }
   #footer_index #navigation {
     padding-right: 120px; }
+    #footer_index #navigation ul li {
+      cursor: pointer; }
+      #footer_index #navigation ul li:hover {
+        text-decoration: underline; }
   #footer_index #share {
     padding: 0 60px; }
     #footer_index #share .footericon:first-child {
@@ -581,6 +584,10 @@ table {
           padding: 0; } }
   #footer_index #nouscont_faq_cont {
     padding-left: 120px; }
+    #footer_index #nouscont_faq_cont ul li {
+      cursor: pointer; }
+      #footer_index #nouscont_faq_cont ul li:first-child:hover {
+        text-decoration: underline; }
   #footer_index #navigation, #footer_index #share, #footer_index #nouscont_faq_cont {
     width: 25%; }
     @media screen and (max-width: 567px) {
