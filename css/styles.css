@@ -965,8 +965,7 @@ table {
 #fidelites #gagner_points, #fidelites #avantages_points, #fidelites #inviter_points {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 0; }
+  flex-wrap: wrap; }
   #fidelites #gagner_points .wrapper, #fidelites #avantages_points .wrapper, #fidelites #inviter_points .wrapper {
     align-items: flex-start; }
     @media screen and (max-width: 567px) {
