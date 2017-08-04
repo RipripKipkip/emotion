@@ -52,7 +52,7 @@
 				</header>
 		</div>
 
-		<div id="container-menu">
+		<!-- <div id="container-menu">
 				<div id="toto" class="navToggle" onClick="appendClass()">
 					<div class="icon"></div>
 				</div>
@@ -60,24 +60,16 @@
 					<div id="menu">
 						<ul>
 							<li><a href="#formulaire" class=" js-scrollTo">Présentation</a></li>
-							<!-- <li>Blog</li> -->
 							<li class="btn-log">Connexion</li>
 							</ul>
 					</div>
 				</div>
-		</div>
+		</div> -->
 
 
 		<a name="top"></a>
 
 		<div id="main">
-
-
-			<!-- <section class="scroll">
-				<div class="btn_mid">
-					<button class="btn_page-scroll"><a class="js-scrollTo" href="#trusted"><img src="images/arrow.svg" alt=""></a></button>
-				</div>
-			</section> -->
 
             <section id="services">
 
@@ -88,9 +80,38 @@
 				<div class="wrapper">
 					<h3>NOUS CONTACTER</h3>
 
-					<div class="formulaire">
-						<p class="nom_email">
+					<div class="container">
+						<form>
+						    <ul class="flex-outer">
+						    	<li>
+						        	<!-- <label for="first-name">First Name</label> -->
+						        	<input type="text" id="first-name" placeholder="Nom">
+						      	</li>
+							    <li>
+							        <!-- <label for="email">Email</label> -->
+							        <input type="email" id="email" placeholder="Email">
+							    </li>
+								<li>
+							        <!-- <label for="">Sujet</label> -->
+							        <input type="text" id="last-name" placeholder="Sujet">
+						      	</li>
+							    <li>
+							        <!-- <label for="message">Message</label> -->
+							        <textarea rows="6" id="message" placeholder="Message"></textarea>
+							    </li>
+						      	<li>
+									<div class="btn_mid"><button class="btn_w"> <a href="">Envoyer</a> </button></div>
+						        	<!-- <button type="submit">Submit</button> -->
+						      	</li>
+						    </ul>
+						</form>
+					</div>
+
+					<!-- <div class="formulaire">
+						<p class="nom">
 					        <input name="name" type="text" placeholder="Nom" id="nom" />
+						</p>
+						<p class="email">
 					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" id="email" />
 					    </p>
                         <p class="sujet">
@@ -100,16 +121,10 @@
 					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Message" id="message" />
 					    </p>
                         <div class="btn_mid"><button class="btn_w"> <a href="">Envoyer</a> </button></div>
-					      <!-- <p class="start">
-					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="Start Date" />
-					      </p>
-						  <p class="end">
-					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="End Date" />
-					      </p>
-						  <p class="km">
-					        <input name="km" type="text" class="validate[required,custom[email]] feedback-input" id="km" placeholder="Km" />
-					      </p> -->
-					 </div>
+					</div> -->
+
+
+
 				</div>
 			</section>
 

@@ -778,41 +778,71 @@ table {
   background-color: #36b1ac; }
   @media screen and (max-width: 567px) {
     #cont_formulaire {
-      width: 100%; } }
+      width: 100%;
+      padding: 45px 0; } }
   #cont_formulaire h3 {
     color: #FFF; }
-  #cont_formulaire .formulaire {
+  #cont_formulaire .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  #cont_formulaire .container * {
+    box-sizing: border-box; }
+  #cont_formulaire .flex-outer,
+  #cont_formulaire .flex-inner {
+    list-style-type: none;
+    padding: 0; }
+  #cont_formulaire .flex-outer {
+    max-width: 800px;
+    margin: 0 auto; }
+  #cont_formulaire .flex-outer li,
+  #cont_formulaire .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  #cont_formulaire .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between; }
+  #cont_formulaire .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px; }
+  #cont_formulaire .flex-outer li label,
+  #cont_formulaire .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    color: #FFF; }
+  #cont_formulaire .flex-outer > li > label,
+  #cont_formulaire .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px; }
+  #cont_formulaire .flex-outer > li > label + *,
+  #cont_formulaire .flex-inner {
+    flex: 1 0 70%;
+    /*220px*/ }
+  #cont_formulaire .flex-outer li p {
+    margin: 0; }
+  #cont_formulaire .flex-outer li input:not([type='checkbox']),
+  #cont_formulaire .flex-outer li textarea {
+    padding: 20px 15px;
+    border: none;
+    font-size: 20px;
     width: 100%; }
-    #cont_formulaire .formulaire input {
-      padding: 20px 15px;
-      border: 0px;
-      font-size: 20px; }
-      #cont_formulaire .formulaire input:hover {
-        background: rgba(255, 255, 255, 0.7); }
-    #cont_formulaire .formulaire .nom_email {
-      width: 100%;
-      display: flex; }
-    #cont_formulaire .formulaire #nom, #cont_formulaire .formulaire #email {
-      width: 49%; }
-    #cont_formulaire .formulaire #nom {
-      margin-right: 10px; }
-    #cont_formulaire .formulaire #email {
-      margin-left: 10px; }
-    #cont_formulaire .formulaire #sujet, #cont_formulaire .formulaire #message {
-      width: 100%; }
-    #cont_formulaire .formulaire #message {
-      height: 200px; }
-    #cont_formulaire .formulaire .btn_mid {
-      width: 100%; }
-      #cont_formulaire .formulaire .btn_mid .btn_w {
+  #cont_formulaire .flex-inner li {
+    width: 100px; }
+  #cont_formulaire .btn_mid {
+    width: 100%; }
+    #cont_formulaire .btn_mid .btn_w {
+      border: solid 1px #FFF;
+      background-color: transparent; }
+      @media screen and (max-width: 567px) {
+        #cont_formulaire .btn_mid .btn_w {
+          margin: 0 auto; } }
+      #cont_formulaire .btn_mid .btn_w:hover {
+        background-color: #FFF;
         border: solid 1px #FFF;
-        background-color: transparent; }
-        #cont_formulaire .formulaire .btn_mid .btn_w:hover {
-          background-color: #FFF;
-          border: solid 1px #FFF;
-          color: #36b1ac;
-          transform: scale(1.1);
-          -webkit-transform: scale(1.1); }
+        color: #36b1ac;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1); }
 
 #services {
   height: 600px; }

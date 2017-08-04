@@ -3,41 +3,147 @@
     background-color: $turquoise
     @media screen and (max-width: $break-sm)
         width: 100%
+        padding: $box-pad*1.5 0
     h3
         color: $white
-    .formulaire
+
+
+    .container
+        width: 80%
+        max-width: 1200px
+        margin: 0 auto
+
+
+    .container *
+      box-sizing: border-box
+
+
+    .flex-outer,
+    .flex-inner
+      list-style-type: none
+      padding: 0
+
+
+    .flex-outer
+      max-width: 800px
+      margin: 0 auto
+
+
+    .flex-outer li,
+    .flex-inner
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+
+
+    .flex-inner
+      padding: 0 8px
+      justify-content: space-between
+
+
+    .flex-outer > li:not(:last-child)
+      margin-bottom: 20px
+
+
+    .flex-outer li label,
+    .flex-outer li p
+      padding: 8px
+      font-weight: 300
+      letter-spacing: .09em
+      color: $white
+      //text-transform: uppercase
+
+
+    .flex-outer > li > label,
+    .flex-outer li p
+      flex: 1 0 120px
+      max-width: 220px
+
+
+    .flex-outer > li > label + *,
+    .flex-inner
+      flex: 1 0 70%
+      /*220px*/
+
+
+    .flex-outer li p
+      margin: 0
+
+
+    .flex-outer li input:not([type='checkbox']),
+    .flex-outer li textarea
+      padding: $box-pad/1.5 $box-pad/2
+      border: none
+      font-size: $box-pad/1.5
+      width: 100%
+
+
+    // .flex-outer li button
+    //   margin-left: auto
+    //   padding: 8px 16px
+    //   border: none
+    //   background: #333
+    //   color: #f2f2f2
+    //   text-transform: uppercase
+    //   letter-spacing: .09em
+    //   border-radius: 2px
+
+
+    .flex-inner li
+      width: 100px
+
+
+    .btn_mid
         width: 100%
-        input
-            //height: $box-pad*1.5
-            padding: $box-pad/1.5 $box-pad/2
-            border: 0px
-            font-size: $box-pad/1.5
+        .btn_w
+            border: solid 1px $white
+            background-color: transparent
+            @media screen and (max-width: $break-sm)
+                margin: 0 auto
             &:hover
-                background: rgba($white, 0.7)
-        .nom_email
-            width: 100%
-            display: flex
-        #nom, #email
-            width: 49%
-        #nom
-            margin-right: 10px
-        #email
-            margin-left: 10px
-        #sujet, #message
-            width: 100%
-        #message
-            height: 200px
-        .btn_mid
-            width: 100%
-            .btn_w
+                background-color: $white
                 border: solid 1px $white
-                background-color: transparent
-                &:hover
-                    background-color: $white
-                    border: solid 1px $white
-                    color: $turquoise
-                    transform: scale(1.1)
-                    -webkit-transform: scale(1.1)
+                color: $turquoise
+                transform: scale(1.1)
+                -webkit-transform: scale(1.1)
+
+    // .formulaire
+    //     width: 100%
+    //     @media screen and (max-width: $break-sm)
+    //         display: flex
+    //         flex-direction: column
+    //     input
+    //         //height: $box-pad*1.5
+    //         padding: $box-pad/1.5 $box-pad/2
+    //         border: 0px
+    //         font-size: $box-pad/1.5
+    //         &:hover
+    //             background: rgba($white, 0.7)
+    //         @media screen and (max-width: $break-sm)
+    //             width: 100%
+    //     #nom, #email
+    //         width: 49%
+    //         @media screen and (max-width: $break-sm)
+    //             margin: 0
+    //     #nom
+    //         margin-right: 10px
+    //     #email
+    //         margin-left: 10px
+    //     #sujet, #message
+    //         width: 100%
+    //     #message
+    //         height: 200px
+    //     .btn_mid
+    //         width: 100%
+    //         .btn_w
+    //             border: solid 1px $white
+    //             background-color: transparent
+    //             &:hover
+    //                 background-color: $white
+    //                 border: solid 1px $white
+    //                 color: $turquoise
+    //                 transform: scale(1.1)
+    //                 -webkit-transform: scale(1.1)
 
 #services
     height: 600px
