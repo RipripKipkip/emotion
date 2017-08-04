@@ -625,32 +625,50 @@ table {
   @media screen and (max-width: 567px) {
     #formulaire .formulaire {
       width: 100%; } }
-  #formulaire .formulaire input {
-    padding: 20px 15px;
-    border: 0px;
-    font-size: 20px; }
-    #formulaire .formulaire input:hover {
-      background: rgba(255, 255, 255, 0.7); }
-  #formulaire .formulaire #dates, #formulaire .formulaire #km {
-    float: left;
-    width: 29.7%; }
-    @media screen and (max-width: 567px) {
-      #formulaire .formulaire #dates, #formulaire .formulaire #km {
-        margin-bottom: 15px; } }
-  #formulaire .formulaire #name {
-    width: 97%; }
+  #formulaire .formulaire .main-content {
+    padding: 20px;
+    /* form specific formatting */ }
+    #formulaire .formulaire .main-content .form-group {
+      display: flex;
+      flex-direction: row; }
+      #formulaire .formulaire .main-content .form-group:last-child .input-control {
+        margin-bottom: 0; }
+      #formulaire .formulaire .main-content .form-group label {
+        flex: none;
+        display: block;
+        width: 125px;
+        font-weight: bold;
+        font-size: 1em; }
+      #formulaire .formulaire .main-content .form-group label.right-inline {
+        text-align: right;
+        padding-right: 8px;
+        padding-left: 10px;
+        width: auto; }
+      #formulaire .formulaire .main-content .form-group .input-control {
+        flex: 1 1 auto;
+        display: block;
+        margin-bottom: 20px;
+        padding: 20px 15px;
+        border: none;
+        font-size: 20px; }
+        #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
+          margin-right: 20px; }
   @media screen and (max-width: 567px) {
-    #formulaire .formulaire #dates {
-      width: 50%; } }
-  #formulaire .formulaire #km {
-    margin-left: 15px; }
-    @media screen and (max-width: 567px) {
-      #formulaire .formulaire #km {
-        margin: 0;
-        width: 100%; } }
-  @media screen and (max-width: 567px) {
-    #formulaire .formulaire #name, #formulaire .formulaire #dates, #formulaire .formulaire #km {
-      width: 90%; } }
+    #formulaire .formulaire .main-content {
+      padding: 20px 8px; }
+      #formulaire .formulaire .main-content .form-group {
+        flex-direction: column; }
+        #formulaire .formulaire .main-content .form-group .input-control {
+          margin-bottom: 20px !important;
+          margin-right: 0; }
+          #formulaire .formulaire .main-content .form-group .input-control:nth-child(3) {
+            margin-bottom: 0 !important; }
+          #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
+            margin-right: 0; }
+        #formulaire .formulaire .main-content .form-group label.right-inline {
+          text-align: left;
+          padding-right: 0;
+          padding-left: 0; } }
 
 #formulaire .voit_scoot {
   width: 90%; }
@@ -805,12 +823,6 @@ table {
     justify-content: space-between; }
   #cont_formulaire .flex-outer > li:not(:last-child) {
     margin-bottom: 20px; }
-  #cont_formulaire .flex-outer li label,
-  #cont_formulaire .flex-outer li p {
-    padding: 8px;
-    font-weight: 300;
-    letter-spacing: .09em;
-    color: #FFF; }
   #cont_formulaire .flex-outer > li > label,
   #cont_formulaire .flex-outer li p {
     flex: 1 0 120px;
