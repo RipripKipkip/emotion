@@ -653,6 +653,8 @@ table {
         font-size: 20px; }
         #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
           margin-right: 20px; }
+        #formulaire .formulaire .main-content .form-group .input-control:hover {
+          background: rgba(255, 255, 255, 0.7); }
   @media screen and (max-width: 567px) {
     #formulaire .formulaire .main-content {
       padding: 20px 8px; }
@@ -839,6 +841,9 @@ table {
     border: none;
     font-size: 20px;
     width: 100%; }
+    #cont_formulaire .flex-outer li input:not([type='checkbox']):hover,
+    #cont_formulaire .flex-outer li textarea:hover {
+      background: rgba(255, 255, 255, 0.7); }
   #cont_formulaire .flex-inner li {
     width: 100px; }
   #cont_formulaire .btn_mid {

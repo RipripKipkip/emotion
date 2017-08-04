@@ -6,44 +6,35 @@
         padding: $box-pad*1.5 0
     h3
         color: $white
-
-
     .container
         width: 80%
         max-width: 1200px
         margin: 0 auto
 
-
     .container *
-      box-sizing: border-box
-
+        box-sizing: border-box
 
     .flex-outer,
     .flex-inner
-      list-style-type: none
-      padding: 0
-
+        list-style-type: none
+        padding: 0
 
     .flex-outer
-      max-width: 800px
-      margin: 0 auto
-
+        max-width: 800px
+        margin: 0 auto
 
     .flex-outer li,
     .flex-inner
-      display: flex
-      flex-wrap: wrap
-      align-items: center
-
+        display: flex
+        flex-wrap: wrap
+        align-items: center
 
     .flex-inner
-      padding: 0 8px
-      justify-content: space-between
-
+        padding: 0 8px
+        justify-content: space-between
 
     .flex-outer > li:not(:last-child)
-      margin-bottom: $box-pad/1.5
-
+        margin-bottom: $box-pad/1.5
 
     // .flex-outer li label,
     // .flex-outer li p
@@ -53,30 +44,27 @@
     //   color: $white
       //text-transform: uppercase
 
-
     .flex-outer > li > label,
     .flex-outer li p
-      flex: 1 0 120px
-      max-width: 220px
-
+        flex: 1 0 120px
+        max-width: 220px
 
     .flex-outer > li > label + *,
     .flex-inner
-      flex: 1 0 70%
-      /*220px*/
-
+        flex: 1 0 70%
+        /*220px*/
 
     .flex-outer li p
-      margin: 0
-
+        margin: 0
 
     .flex-outer li input:not([type='checkbox']),
     .flex-outer li textarea
-      padding: $box-pad/1.5 $box-pad/2
-      border: none
-      font-size: $box-pad/1.5
-      width: 100%
-
+        padding: $box-pad/1.5 $box-pad/2
+        border: none
+        font-size: $box-pad/1.5
+        width: 100%
+        &:hover
+            background: rgba($white, 0.7)
 
     // .flex-outer li button
     //   margin-left: auto
@@ -88,10 +76,8 @@
     //   letter-spacing: .09em
     //   border-radius: 2px
 
-
     .flex-inner li
       width: 100px
-
 
     .btn_mid
         width: 100%
