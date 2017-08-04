@@ -27,14 +27,16 @@
                     // box-shadow: inset 0 -4px 2px -3px rgba(0,0,0,.1), inset 0 3px 2px -3px rgba(0,0,0,.1)
                     .trip-expand
                         padding: 28px
-                        .flexbox, .inline-group
-                            display: table
+                        .flexbox
+                            display: flex
                             width: 100%
-                            .flexbox__item, .inline-group__item
-                                display: table-cell
-                                vertical-align: middle
+                            flex-direction: row
+                            justify-content: center
+                            .flexbox__item
+                                align-items: center !important
                     .one-third
                         width: 33.333%
+                        align-items: center !important
                         &:nth-child(2)
                             border-right: 1px solid $gray-light-2
                             border-left: 1px solid $gray-light-2
@@ -73,3 +75,47 @@
                                             background-color: $turquoise
                                             color: $white
                                             a
+                        .container_n_s_v
+                            // border-left: 800px solid transparent
+                            // /* border-right: 0px solid transparent; */
+                            // border-bottom: 40px solid $turquoise
+                            z-index: 3
+                            h1
+                            .stars
+                        .container_d_d
+                            position: relative
+                            top: -$box-pad*3
+                            z-index: 1
+                            .diagonale
+                                background: linear-gradient(to right bottom, transparent 50%, $turquoise 50%)
+                                height: $box-pad*2
+                            .container_details
+                                background-color: $turquoise
+                                .details
+                                    border-bottom: 1px solid rgba($white, 0.5)
+                                    padding: $box-pad/1.5 $box-pad
+                                    display: flex
+                                    flex-direction: row
+                                    > div
+                                        margin: 0 auto
+                                    .ico
+                                        width: 40%
+                                        height: $box-pad/1.5
+                                        width: $box-pad/1.5
+                                        background-color: $white
+
+                                    .boite_vitess
+
+                                    .calendar
+
+                                    .border_line
+                                        width: 20%
+                                        height: 1px
+                                        background: $white
+                                        margin-top: $box-pad/4
+                                    .d_text
+                                        width: 40%
+                                        color: $white
+                                        text-transform: uppercase
+                                        line-height: 1.3
+                                        text-align: left
