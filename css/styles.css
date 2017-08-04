@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Montserrat:400,900");
 html, body, div, span, applet, object, iframe,
@@ -1161,116 +1162,200 @@ table {
   #fidelites #inviter_points .btn_s {
     margin: 10px auto 0px auto; } }
 
-#locations #table_loc table {
-  width: 100%; }
-  #locations #table_loc table thead {
-    font-weight: 600; }
-    #locations #table_loc table thead tr {
+#locations {
+  line-height: 0; }
+  #locations #table_loc table {
+    width: 100%; }
+    #locations #table_loc table thead {
+      font-weight: 600; }
+      #locations #table_loc table thead tr {
+        border-bottom: 1px solid #efefef; }
+        #locations #table_loc table thead tr .arrow {
+          width: 15px; }
+      #locations #table_loc table thead th {
+        padding: 20px 12px; }
+        @media screen and (max-width: 567px) {
+          #locations #table_loc table thead th:last-child {
+            display: none; } }
+      @media screen and (max-width: 567px) {
+        #locations #table_loc table thead {
+          display: none; } }
+    #locations #table_loc table tbody tr {
       border-bottom: 1px solid #efefef; }
-      #locations #table_loc table thead tr .arrow {
+      #locations #table_loc table tbody tr .arrow {
         width: 15px; }
-    #locations #table_loc table thead th {
+        @media screen and (max-width: 567px) {
+          #locations #table_loc table tbody tr .arrow {
+            display: none; } }
+      @media screen and (max-width: 567px) {
+        #locations #table_loc table tbody tr .pipe {
+          display: none; } }
+    #locations #table_loc table tbody .trip-expand__origin {
+      cursor: pointer; }
+    #locations #table_loc table tbody td {
       padding: 20px 12px; }
-  #locations #table_loc table tbody tr {
-    border-bottom: 1px solid #efefef; }
-    #locations #table_loc table tbody tr .arrow {
-      width: 15px; }
-  #locations #table_loc table tbody .trip-expand__origin {
-    cursor: pointer; }
-  #locations #table_loc table tbody td {
-    padding: 20px 12px; }
-  #locations #table_loc table tbody .hard {
-    border-bottom: none;
-    background: #fafafa; }
-    #locations #table_loc table tbody .hard td {
-      padding: 0; }
-    #locations #table_loc table tbody .hard .trip-expand {
-      padding: 28px; }
-      #locations #table_loc table tbody .hard .trip-expand .flexbox {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center; }
-        #locations #table_loc table tbody .hard .trip-expand .flexbox .flexbox__item {
-          align-items: center !important; }
-    #locations #table_loc table tbody .hard .one-third {
-      width: 33.333%;
-      align-items: center !important; }
-      #locations #table_loc table tbody .hard .one-third:nth-child(2) {
-        border-right: 1px solid #efefef;
-        border-left: 1px solid #efefef; }
-      #locations #table_loc table tbody .hard .one-third .border_bottom {
-        width: 90%;
-        height: 1px;
-        background-color: #efefef;
-        margin: 30px auto 36px auto; }
-      #locations #table_loc table tbody .hard .one-third .container_d_h_a {
-        flex-direction: column; }
-        #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress {
-          line-height: 1.5;
-          margin-bottom: 15px; }
-          #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress h7 {
-            color: #808080;
-            text-transform: uppercase;
-            margin-bottom: 10px; }
-          #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid {
-            margin: 15px auto 30px auto;
-            width: 100%; }
-            #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
-              height: 35px;
-              font-size: 15px;
-              padding: 0px 15px;
-              background-color: transparent;
-              border: solid 1px #36b1ac;
-              color: #36b1ac; }
-              @media screen and (max-width: 567px) {
-                #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
-                  margin-bottom: 15px; } }
-              #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w:hover {
-                border: solid 1px #36b1ac;
-                background-color: #36b1ac;
-                color: #FFF; }
-      #locations #table_loc table tbody .hard .one-third .container_n_s_v {
-        z-index: 3; }
-        #locations #table_loc table tbody .hard .one-third .container_n_s_v h1 {
-          margin-top: 20px;
-          font-size: 20px; }
-        #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars {
-          margin-bottom: 20px; }
-          #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .stars {
-            height: 40px; }
-      #locations #table_loc table tbody .hard .one-third .container_d_d {
-        position: relative;
-        top: -90px;
-        z-index: 1; }
-        #locations #table_loc table tbody .hard .one-third .container_d_d .diagonale {
-          background: linear-gradient(to right bottom, transparent 50%, #36b1ac 50%);
-          height: 60px; }
-        #locations #table_loc table tbody .hard .one-third .container_d_d .container_details {
-          background-color: #36b1ac; }
-          #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            padding: 20px 30px;
-            display: flex;
-            flex-direction: row; }
-            #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details > div {
-              margin: 0 auto; }
-            #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .ico {
-              width: 40%;
-              height: 20px;
-              width: 20px;
-              background-color: #FFF; }
-            #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .border_line {
-              width: 20%;
-              height: 1px;
-              background: #FFF;
-              margin-top: 7.5px; }
-            #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
-              width: 40%;
-              color: #FFF;
+    @media screen and (max-width: 567px) {
+      #locations #table_loc table tbody .no_visible {
+        display: none; } }
+    #locations #table_loc table tbody .hard {
+      border-bottom: none;
+      background: #fafafa; }
+      #locations #table_loc table tbody .hard td {
+        padding: 0; }
+      #locations #table_loc table tbody .hard .trip-expand {
+        padding: 28px; }
+        @media screen and (max-width: 567px) {
+          #locations #table_loc table tbody .hard .trip-expand {
+            padding: 0; } }
+        #locations #table_loc table tbody .hard .trip-expand .flexbox {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          @media screen and (max-width: 567px) {
+            #locations #table_loc table tbody .hard .trip-expand .flexbox {
+              flex-direction: column; } }
+      #locations #table_loc table tbody .hard .one-third {
+        width: 33.333%; }
+        @media screen and (max-width: 567px) {
+          #locations #table_loc table tbody .hard .one-third {
+            width: 100%;
+            padding: 15px 0; } }
+        #locations #table_loc table tbody .hard .one-third:nth-child(2) {
+          border-right: 1px solid #efefef;
+          border-left: 1px solid #efefef; }
+          @media screen and (max-width: 567px) {
+            #locations #table_loc table tbody .hard .one-third:nth-child(2) {
+              border: 0; } }
+        #locations #table_loc table tbody .hard .one-third .border_bottom {
+          width: 90%;
+          height: 1px;
+          background-color: #efefef;
+          margin: 36px auto; }
+        #locations #table_loc table tbody .hard .one-third .container_d_h_a {
+          flex-direction: column; }
+          #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress {
+            line-height: 1.5;
+            margin-bottom: 15px; }
+            #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress h7 {
+              color: #808080;
               text-transform: uppercase;
-              line-height: 1.3;
-              text-align: left; }
+              margin-bottom: 10px; }
+            #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid {
+              margin: 15px auto 30px auto;
+              width: 100%; }
+              #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
+                height: 35px;
+                font-size: 15px;
+                padding: 0px 15px;
+                background-color: transparent;
+                border: solid 1px #36b1ac;
+                color: #36b1ac; }
+                @media screen and (max-width: 567px) {
+                  #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
+                    margin-bottom: 15px; } }
+                #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w:hover {
+                  border: solid 1px #36b1ac;
+                  background-color: #36b1ac;
+                  color: #FFF; }
+          #locations #table_loc table tbody .hard .one-third .container_d_h_a .container_details {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; }
+            #locations #table_loc table tbody .hard .one-third .container_d_h_a .container_details .details {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 50%;
+              padding: 0 30px; }
+              #locations #table_loc table tbody .hard .one-third .container_d_h_a .container_details .details > div {
+                margin: 0 auto; }
+              #locations #table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .ico {
+                margin: 0 15px;
+                height: 20px;
+                width: 20px;
+                background-color: #000; }
+              #locations #table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .d_text {
+                text-transform: uppercase;
+                line-height: 1.3;
+                text-align: left; }
+        #locations #table_loc table tbody .hard .one-third .container_n_s_v {
+          z-index: 3; }
+          #locations #table_loc table tbody .hard .one-third .container_n_s_v h1 {
+            margin-top: 20px;
+            font-size: 20px; }
+            @media screen and (max-width: 567px) {
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v h1 {
+                font-size: 16px; } }
+          #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars {
+            margin: 45px auto 20px auto;
+            /****** Style Star Rating Widget *****/
+            /***** CSS Magic to Highlight Stars on Hover *****/ }
+            @media screen and (max-width: 567px) {
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars {
+                margin: 30px auto 20px auto; } }
+            #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating {
+              border: none;
+              width: 50%;
+              width: 150px;
+              margin: 0 auto; }
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating input {
+                display: none; }
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating label:before {
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005"; }
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating .half:before {
+                content: "\f089";
+                position: absolute; }
+              #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating label {
+                color: #ddd;
+                float: right; }
+            #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating > input:checked ~ label, #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating:not(:checked) > label:hover, #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating:not(:checked) > label:hover ~ label {
+              color: #FFD700; }
+            #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating > input:checked + label:hover, #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating > input:checked ~ label:hover, #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating > label:hover ~ input:checked ~ label, #locations #table_loc table tbody .hard .one-third .container_n_s_v .container_stars .rating > input:checked ~ label:hover ~ label {
+              color: #FFED85; }
+          @media screen and (max-width: 567px) {
+            #locations #table_loc table tbody .hard .one-third .container_n_s_v .images {
+              width: 100%; } }
+        #locations #table_loc table tbody .hard .one-third .container_d_d {
+          position: relative;
+          z-index: 1; }
+          #locations #table_loc table tbody .hard .one-third .container_d_d .diagonale {
+            background: linear-gradient(to right bottom, transparent 50%, #36b1ac 50%);
+            height: 60px; }
+          #locations #table_loc table tbody .hard .one-third .container_d_d .container_details {
+            background-color: #36b1ac; }
+            #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details {
+              border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+              padding: 20px 30px;
+              display: flex;
+              flex-direction: row; }
+              #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details > div {
+                margin: 0 auto; }
+              #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .ico, #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .border_line, #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
+                align-items: center; }
+              #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .ico {
+                width: 40%;
+                height: 20px;
+                width: 20px;
+                background-color: #FFF; }
+              #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .border_line {
+                width: 20%;
+                height: 1px;
+                background: #FFF;
+                margin-top: 7.5px; }
+              #locations #table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
+                width: 40%;
+                color: #FFF;
+                text-transform: uppercase;
+                line-height: 1.3;
+                text-align: left; }
+        #locations #table_loc table tbody .hard .one-third iframe {
+          width: 100%; }
 
 * {
   outline: 0; }
