@@ -55,22 +55,6 @@ gulp.task('sass', function (done) {
 		.on('end', done);
 });
 
-// gulp.task('sass', function (done) {
-// 	gulp.src(['./scss/styles.sass')
-// 		.pipe(plumber())
-// 		.pipe(sass())
-// 		.on('error', sass.logError)
-// 		.pipe(gulp.dest('./css/'))
-// 		.pipe(minifyCss({
-// 			keepSpecialComments: 0
-// 		}))
-// 		.pipe(rename({
-// 			extname: '.min.css'
-// 		}))
-// 		.pipe(gulp.dest('./css/'))
-// 		.on('end', done);
-// });
-
 // Tâche "watch" = je surveille *less
 gulp.task('watch', ['sass', 'browser-sync'], function () {
   gulp.watch('/css/*.css', ['sass']);
@@ -83,10 +67,6 @@ gulp.task('browser-sync', function() {
         }
     });
 });
-
-// gulp.task('default', ['sass', 'browser-sync'], function () {
-//     gulp.watch("scss/*.scss", ['sass']);
-// });
 
 ```
 ## GIT
