@@ -1161,6 +1161,36 @@ table {
   #fidelites #inviter_points .btn_s {
     margin: 10px auto 0px auto; } }
 
+#locations #table_loc table {
+  width: 100%; }
+  #locations #table_loc table thead {
+    font-weight: bold; }
+    #locations #table_loc table thead tr {
+      border-bottom: 1px solid #efefef; }
+    #locations #table_loc table thead th {
+      padding: 20px 12px; }
+  #locations #table_loc table tbody tr {
+    border-bottom: 1px solid #efefef; }
+  #locations #table_loc table tbody .trip-expand__origin {
+    cursor: pointer; }
+  #locations #table_loc table tbody td {
+    padding: 20px 12px; }
+  #locations #table_loc table tbody .hard {
+    border-bottom: none;
+    background: #fafafa; }
+    #locations #table_loc table tbody .hard td {
+      padding: 0; }
+    #locations #table_loc table tbody .hard .trip-expand {
+      padding: 28px; }
+      #locations #table_loc table tbody .hard .trip-expand .flexbox, #locations #table_loc table tbody .hard .trip-expand .inline-group {
+        display: table;
+        width: 100%; }
+        #locations #table_loc table tbody .hard .trip-expand .flexbox .flexbox__item, #locations #table_loc table tbody .hard .trip-expand .flexbox .inline-group__item, #locations #table_loc table tbody .hard .trip-expand .inline-group .flexbox__item, #locations #table_loc table tbody .hard .trip-expand .inline-group .inline-group__item {
+          display: table-cell;
+          vertical-align: middle; }
+        #locations #table_loc table tbody .hard .trip-expand .flexbox .one-third, #locations #table_loc table tbody .hard .trip-expand .inline-group .one-third {
+          width: 33.333%; }
+
 * {
   outline: 0; }
 
