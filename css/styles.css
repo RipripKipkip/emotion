@@ -610,7 +610,7 @@ table {
     #header .btn_mid .btn_w {
       background-color: #36b1ac;
       border: solid 1px #36b1ac;
-      width: 150px; }
+      width: 210px; }
       #header .btn_mid .btn_w:hover {
         border: solid 1px #FFF;
         background-color: transparent;
@@ -725,6 +725,21 @@ table {
     margin-left: 15px; }
     #formulaire .voit_scoot #scooters .image {
       width: 110%; }
+
+#formulaire .btn_mid {
+  width: 100%; }
+  #formulaire .btn_mid .btn_w {
+    border: solid 1px #36b1ac;
+    background-color: transparent;
+    color: #36b1ac;
+    width: 210px; }
+    @media screen and (max-width: 567px) {
+      #formulaire .btn_mid .btn_w {
+        margin: 0 auto; } }
+    #formulaire .btn_mid .btn_w:hover {
+      background-color: #36b1ac;
+      border: solid 1px #36b1ac;
+      color: #FFF; }
 
 #formulaire ul {
   list-style-type: none;
@@ -850,16 +865,15 @@ table {
     width: 100%; }
     #cont_formulaire .btn_mid .btn_w {
       border: solid 1px #FFF;
-      background-color: transparent; }
+      background-color: transparent;
+      width: 210px; }
       @media screen and (max-width: 567px) {
         #cont_formulaire .btn_mid .btn_w {
           margin: 0 auto; } }
       #cont_formulaire .btn_mid .btn_w:hover {
         background-color: #FFF;
         border: solid 1px #FFF;
-        color: #36b1ac;
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1); }
+        color: #36b1ac; }
 
 #services {
   height: 600px; }
@@ -1059,3 +1073,7 @@ h3 {
 
 section {
   padding: 60px 0; }
+
+.btn_mid .btn_w:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); }

@@ -20,7 +20,7 @@
         .btn_w
             background-color: $turquoise
             border: solid 1px $turquoise
-            width: 150px
+            width: $box-pad*7
             &:hover
                 border: solid 1px $white
                 background-color: transparent
@@ -176,6 +176,20 @@
             margin-left: $box-pad/2
             .image
                 width: 110%
+
+    .btn_mid
+        width: 100%
+        .btn_w
+            border: solid 1px $turquoise
+            background-color: transparent
+            color: $turquoise
+            width: $box-pad*7
+            @media screen and (max-width: $break-sm)
+                margin: 0 auto
+            &:hover
+                background-color: $turquoise
+                border: solid 1px $turquoise
+                color: $white
 
 
     ul
