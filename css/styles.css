@@ -909,6 +909,14 @@ table {
       width: 50%;
       margin: 0 auto 30px; } }
 
+#fidelites .footer_description:hover {
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); }
+
 #header_fidelite #comp_buttons {
   display: flex;
   flex-direction: row;
