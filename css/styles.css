@@ -917,66 +917,66 @@ table {
   transform: scale(1.1);
   -webkit-transform: scale(1.1); }
 
-#header_fidelite #comp_buttons {
+#fidelites #header_fidelite #comp_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
   @media screen and (max-width: 567px) {
-    #header_fidelite #comp_buttons {
+    #fidelites #header_fidelite #comp_buttons {
       flex-direction: column;
       margin-top: 15px; } }
 
-#header_fidelite .btn_mid {
+#fidelites #header_fidelite .btn_mid {
   margin: 0 30px;
   width: 25%;
   float: left; }
   @media screen and (max-width: 567px) {
-    #header_fidelite .btn_mid {
+    #fidelites #header_fidelite .btn_mid {
       width: 100%;
       margin: 0; } }
-  #header_fidelite .btn_mid .btn_w {
+  #fidelites #header_fidelite .btn_mid .btn_w {
     background-color: transparent;
     border: solid 1px #36b1ac;
     color: #36b1ac; }
     @media screen and (max-width: 567px) {
-      #header_fidelite .btn_mid .btn_w {
+      #fidelites #header_fidelite .btn_mid .btn_w {
         margin-bottom: 15px; } }
-    #header_fidelite .btn_mid .btn_w:hover {
+    #fidelites #header_fidelite .btn_mid .btn_w:hover {
       border: solid 1px #36b1ac;
       background-color: #36b1ac;
       color: #FFF; }
 
-#header_fidelite h3 {
+#fidelites #header_fidelite h3 {
   margin: 60px 0 30px 0; }
 
-#header_fidelite .text_entete {
+#fidelites #header_fidelite .text_entete {
   width: 70%;
   margin: 0 auto; }
   @media screen and (max-width: 567px) {
-    #header_fidelite .text_entete {
+    #fidelites #header_fidelite .text_entete {
       width: 100%;
       margin: 0; } }
 
-#mes_points h3, #gagner_points h3, #avantages_points h3, #inviter_points h3 {
+#fidelites #mes_points h3, #fidelites #gagner_points h3, #fidelites #avantages_points h3, #fidelites #inviter_points h3 {
   margin-bottom: 30px; }
 
-#gagner_points, #avantages_points, #inviter_points {
+#fidelites #gagner_points, #fidelites #avantages_points, #fidelites #inviter_points {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 0; }
-  #gagner_points .wrapper, #avantages_points .wrapper, #inviter_points .wrapper {
+  #fidelites #gagner_points .wrapper, #fidelites #avantages_points .wrapper, #fidelites #inviter_points .wrapper {
     align-items: flex-start; }
     @media screen and (max-width: 567px) {
-      #gagner_points .wrapper, #avantages_points .wrapper, #inviter_points .wrapper {
+      #fidelites #gagner_points .wrapper, #fidelites #avantages_points .wrapper, #fidelites #inviter_points .wrapper {
         padding: 25px 25px 25px 25px; } }
-  #gagner_points .footer_description, #avantages_points .footer_description, #inviter_points .footer_description {
+  #fidelites #gagner_points .footer_description, #fidelites #avantages_points .footer_description, #fidelites #inviter_points .footer_description {
     width: 25%;
     float: left;
     margin: 15px 30px; }
 
-#gagner_points .footer_description .img_mes_points {
+#fidelites #gagner_points .footer_description .img_mes_points {
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -986,28 +986,28 @@ table {
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
-  #gagner_points .footer_description .img_mes_points .number_text {
+  #fidelites #gagner_points .footer_description .img_mes_points .number_text {
     font-family: 'Old Standard TT', serif;
     color: #FFF;
     padding: 60px 45px; }
-    #gagner_points .footer_description .img_mes_points .number_text h1 {
+    #fidelites #gagner_points .footer_description .img_mes_points .number_text h1 {
       font-size: 60px;
       margin-bottom: 0;
       font-weight: 700; }
-    #gagner_points .footer_description .img_mes_points .number_text .points {
+    #fidelites #gagner_points .footer_description .img_mes_points .number_text .points {
       font-style: italic;
       font-size: 20px; }
 
-#gagner_points .footer_description .description {
+#fidelites #gagner_points .footer_description .description {
   color: #808080; }
 
 @media screen and (max-width: 567px) {
-  #gagner_points .wrapper {
+  #fidelites #gagner_points .wrapper {
     padding: 0; }
-  #gagner_points .footer_description {
+  #fidelites #gagner_points .footer_description {
     width: 50%;
     margin: 15px 0; }
-    #gagner_points .footer_description .img_mes_points {
+    #fidelites #gagner_points .footer_description .img_mes_points {
       width: 100px;
       height: 100px;
       margin: 0 auto 15px auto;
@@ -1015,20 +1015,20 @@ table {
       -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
       -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
       box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
-      #gagner_points .footer_description .img_mes_points .number_text {
+      #fidelites #gagner_points .footer_description .img_mes_points .number_text {
         color: #FFF;
         padding: 30px 7.5px; }
-        #gagner_points .footer_description .img_mes_points .number_text h1 {
+        #fidelites #gagner_points .footer_description .img_mes_points .number_text h1 {
           font-family: 'Old Standard TT', serif;
           font-size: 15px;
           margin-bottom: 0;
           font-weight: 700; }
-        #gagner_points .footer_description .img_mes_points .number_text .points {
+        #fidelites #gagner_points .footer_description .img_mes_points .number_text .points {
           font-family: 'Old Standard TT', serif;
           font-style: italic;
           font-size: 15px;
           margin-bottom: 0; }
-    #gagner_points .footer_description .description {
+    #fidelites #gagner_points .footer_description .description {
       font-style: normal;
       font-size: 12px;
       margin-bottom: 0;
@@ -1036,10 +1036,10 @@ table {
       line-height: 1.3;
       width: 100px;
       margin: 0 auto; }
-  #gagner_points .btn_s {
+  #fidelites #gagner_points .btn_s {
     margin: 10px auto 0px auto; } }
 
-#avantages_points .footer_description .img_mes_points {
+#fidelites #avantages_points .footer_description .img_mes_points {
   width: 200px;
   height: 200px;
   border: 4px solid #000;
@@ -1048,33 +1048,33 @@ table {
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
-  #avantages_points .footer_description .img_mes_points .number_text {
+  #fidelites #avantages_points .footer_description .img_mes_points .number_text {
     color: #000;
     padding: 30px 15px; }
-    #avantages_points .footer_description .img_mes_points .number_text h1 {
+    #fidelites #avantages_points .footer_description .img_mes_points .number_text h1 {
       font-family: 'Old Standard TT', serif;
       font-size: 60px;
       margin-bottom: 0;
       font-weight: 700; }
-    #avantages_points .footer_description .img_mes_points .number_text .points {
+    #fidelites #avantages_points .footer_description .img_mes_points .number_text .points {
       font-family: 'Old Standard TT', serif;
       font-style: italic;
       font-size: 20px; }
-    #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+    #fidelites #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
       height: 2px;
       margin: 15px auto;
       width: 100%;
       background-color: #000; }
-    #avantages_points .footer_description .img_mes_points .number_text .description {
+    #fidelites #avantages_points .footer_description .img_mes_points .number_text .description {
       font-style: normal; }
 
 @media screen and (max-width: 567px) {
-  #avantages_points .wrapper {
+  #fidelites #avantages_points .wrapper {
     padding: 0; }
-  #avantages_points .footer_description {
+  #fidelites #avantages_points .footer_description {
     width: 50%;
     margin: 15px 0; }
-    #avantages_points .footer_description .img_mes_points {
+    #fidelites #avantages_points .footer_description .img_mes_points {
       width: 100px;
       height: 90px;
       border: 2px solid #000;
@@ -1083,42 +1083,42 @@ table {
       -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
       -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
       box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
-      #avantages_points .footer_description .img_mes_points .number_text {
+      #fidelites #avantages_points .footer_description .img_mes_points .number_text {
         color: #000;
         padding: 15px 7.5px; }
-        #avantages_points .footer_description .img_mes_points .number_text h1 {
+        #fidelites #avantages_points .footer_description .img_mes_points .number_text h1 {
           font-family: 'Old Standard TT', serif;
           font-size: 15px;
           margin-bottom: 0;
           font-weight: 700; }
-        #avantages_points .footer_description .img_mes_points .number_text .points {
+        #fidelites #avantages_points .footer_description .img_mes_points .number_text .points {
           font-family: 'Old Standard TT', serif;
           font-style: italic;
           font-size: 15px;
           margin-bottom: 0; }
-        #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+        #fidelites #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
           height: 2px;
           margin: 7.5px auto;
           width: 100%;
           background-color: #000; }
-        #avantages_points .footer_description .img_mes_points .number_text .description {
+        #fidelites #avantages_points .footer_description .img_mes_points .number_text .description {
           font-style: normal;
           font-size: 7.5px;
           margin-bottom: 0; }
-  #avantages_points .btn_s {
+  #fidelites #avantages_points .btn_s {
     margin: 10px auto 0px auto; } }
 
-#inviter_points .wrapper {
+#fidelites #inviter_points .wrapper {
   flex-wrap: nowrap; }
-  #inviter_points .wrapper .text2 {
+  #fidelites #inviter_points .wrapper .text2 {
     font-size: 15px;
     color: #808080;
     margin-top: 30px; }
 
-#inviter_points .footer_description {
+#fidelites #inviter_points .footer_description {
   margin-top: 60px;
   width: 40% !important; }
-  #inviter_points .footer_description .img_mes_points {
+  #fidelites #inviter_points .footer_description .img_mes_points {
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -1128,37 +1128,315 @@ table {
     -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
     -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
-    #inviter_points .footer_description .img_mes_points .number_text {
+    #fidelites #inviter_points .footer_description .img_mes_points .number_text {
       padding: 60px 45px; }
-  #inviter_points .footer_description h1 {
+  #fidelites #inviter_points .footer_description h1 {
     font-size: 20px;
     margin-bottom: 0;
     font-weight: 600;
     line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 15px; }
-  #inviter_points .footer_description .description {
+  #fidelites #inviter_points .footer_description .description {
     color: #000; }
 
 @media screen and (max-width: 567px) {
-  #inviter_points .wrapper {
+  #fidelites #inviter_points .wrapper {
     padding: 0; }
-  #inviter_points .footer_description {
+  #fidelites #inviter_points .footer_description {
     width: 100% !important;
     margin: 0 3px !important; }
-    #inviter_points .footer_description .img_mes_points {
+    #fidelites #inviter_points .footer_description .img_mes_points {
       width: 100px;
       height: 100px; }
-      #inviter_points .footer_description .img_mes_points .number_text {
+      #fidelites #inviter_points .footer_description .img_mes_points .number_text {
         padding: 30px 20px; }
-    #inviter_points .footer_description h1 {
+    #fidelites #inviter_points .footer_description h1 {
       font-size: 15px;
       margin-bottom: 0;
       font-weight: 600;
       line-height: 1.2;
       text-transform: uppercase;
       margin-bottom: 15px; }
-  #inviter_points .btn_s {
+  #fidelites #inviter_points .btn_s {
+    margin: 10px auto 0px auto; } }
+
+#locations p {
+  line-height: 1.7;
+  font-size: 18px; }
+  @media screen and (max-width: 567px) {
+    #locations p {
+      width: 100%;
+      line-height: 1.4;
+      font-size: 15px; } }
+
+#locations h3 {
+  width: 100%;
+  line-height: 33px; }
+  @media screen and (max-width: 567px) {
+    #locations h3 {
+      margin: 15px 0 !important; } }
+
+#locations .border_bottom {
+  height: 2px;
+  margin: 0 auto 60px auto;
+  width: 30%;
+  background-color: #000; }
+  @media screen and (max-width: 567px) {
+    #locations .border_bottom {
+      width: 50%;
+      margin: 0 auto 30px; } }
+
+#locations .footer_description:hover {
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); }
+
+#locations #header_fidelite #comp_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media screen and (max-width: 567px) {
+    #locations #header_fidelite #comp_buttons {
+      flex-direction: column;
+      margin-top: 15px; } }
+
+#locations #header_fidelite .btn_mid {
+  margin: 0 30px;
+  width: 25%;
+  float: left; }
+  @media screen and (max-width: 567px) {
+    #locations #header_fidelite .btn_mid {
+      width: 100%;
+      margin: 0; } }
+  #locations #header_fidelite .btn_mid .btn_w {
+    background-color: transparent;
+    border: solid 1px #36b1ac;
+    color: #36b1ac; }
+    @media screen and (max-width: 567px) {
+      #locations #header_fidelite .btn_mid .btn_w {
+        margin-bottom: 15px; } }
+    #locations #header_fidelite .btn_mid .btn_w:hover {
+      border: solid 1px #36b1ac;
+      background-color: #36b1ac;
+      color: #FFF; }
+
+#locations #header_fidelite h3 {
+  margin: 60px 0 30px 0; }
+
+#locations #header_fidelite .text_entete {
+  width: 70%;
+  margin: 0 auto; }
+  @media screen and (max-width: 567px) {
+    #locations #header_fidelite .text_entete {
+      width: 100%;
+      margin: 0; } }
+
+#locations #mes_points h3, #locations #gagner_points h3, #locations #avantages_points h3, #locations #inviter_points h3 {
+  margin-bottom: 30px; }
+
+#locations #gagner_points, #locations #avantages_points, #locations #inviter_points {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 0; }
+  #locations #gagner_points .wrapper, #locations #avantages_points .wrapper, #locations #inviter_points .wrapper {
+    align-items: flex-start; }
+    @media screen and (max-width: 567px) {
+      #locations #gagner_points .wrapper, #locations #avantages_points .wrapper, #locations #inviter_points .wrapper {
+        padding: 25px 25px 25px 25px; } }
+  #locations #gagner_points .footer_description, #locations #avantages_points .footer_description, #locations #inviter_points .footer_description {
+    width: 25%;
+    float: left;
+    margin: 15px 30px; }
+
+#locations #gagner_points .footer_description .img_mes_points {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #000;
+  margin: 0 auto 25px auto;
+  -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+  #locations #gagner_points .footer_description .img_mes_points .number_text {
+    font-family: 'Old Standard TT', serif;
+    color: #FFF;
+    padding: 60px 45px; }
+    #locations #gagner_points .footer_description .img_mes_points .number_text h1 {
+      font-size: 60px;
+      margin-bottom: 0;
+      font-weight: 700; }
+    #locations #gagner_points .footer_description .img_mes_points .number_text .points {
+      font-style: italic;
+      font-size: 20px; }
+
+#locations #gagner_points .footer_description .description {
+  color: #808080; }
+
+@media screen and (max-width: 567px) {
+  #locations #gagner_points .wrapper {
+    padding: 0; }
+  #locations #gagner_points .footer_description {
+    width: 50%;
+    margin: 15px 0; }
+    #locations #gagner_points .footer_description .img_mes_points {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px auto;
+      -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+      #locations #gagner_points .footer_description .img_mes_points .number_text {
+        color: #FFF;
+        padding: 30px 7.5px; }
+        #locations #gagner_points .footer_description .img_mes_points .number_text h1 {
+          font-family: 'Old Standard TT', serif;
+          font-size: 15px;
+          margin-bottom: 0;
+          font-weight: 700; }
+        #locations #gagner_points .footer_description .img_mes_points .number_text .points {
+          font-family: 'Old Standard TT', serif;
+          font-style: italic;
+          font-size: 15px;
+          margin-bottom: 0; }
+    #locations #gagner_points .footer_description .description {
+      font-style: normal;
+      font-size: 12px;
+      margin-bottom: 0;
+      padding: 0 6px;
+      line-height: 1.3;
+      width: 100px;
+      margin: 0 auto; }
+  #locations #gagner_points .btn_s {
+    margin: 10px auto 0px auto; } }
+
+#locations #avantages_points .footer_description .img_mes_points {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #000;
+  margin: 0 auto 30px auto;
+  -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+  #locations #avantages_points .footer_description .img_mes_points .number_text {
+    color: #000;
+    padding: 30px 15px; }
+    #locations #avantages_points .footer_description .img_mes_points .number_text h1 {
+      font-family: 'Old Standard TT', serif;
+      font-size: 60px;
+      margin-bottom: 0;
+      font-weight: 700; }
+    #locations #avantages_points .footer_description .img_mes_points .number_text .points {
+      font-family: 'Old Standard TT', serif;
+      font-style: italic;
+      font-size: 20px; }
+    #locations #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+      height: 2px;
+      margin: 15px auto;
+      width: 100%;
+      background-color: #000; }
+    #locations #avantages_points .footer_description .img_mes_points .number_text .description {
+      font-style: normal; }
+
+@media screen and (max-width: 567px) {
+  #locations #avantages_points .wrapper {
+    padding: 0; }
+  #locations #avantages_points .footer_description {
+    width: 50%;
+    margin: 15px 0; }
+    #locations #avantages_points .footer_description .img_mes_points {
+      width: 100px;
+      height: 90px;
+      border: 2px solid #000;
+      margin: 0 auto 0 auto;
+      -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+      #locations #avantages_points .footer_description .img_mes_points .number_text {
+        color: #000;
+        padding: 15px 7.5px; }
+        #locations #avantages_points .footer_description .img_mes_points .number_text h1 {
+          font-family: 'Old Standard TT', serif;
+          font-size: 15px;
+          margin-bottom: 0;
+          font-weight: 700; }
+        #locations #avantages_points .footer_description .img_mes_points .number_text .points {
+          font-family: 'Old Standard TT', serif;
+          font-style: italic;
+          font-size: 15px;
+          margin-bottom: 0; }
+        #locations #avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+          height: 2px;
+          margin: 7.5px auto;
+          width: 100%;
+          background-color: #000; }
+        #locations #avantages_points .footer_description .img_mes_points .number_text .description {
+          font-style: normal;
+          font-size: 7.5px;
+          margin-bottom: 0; }
+  #locations #avantages_points .btn_s {
+    margin: 10px auto 0px auto; } }
+
+#locations #inviter_points .wrapper {
+  flex-wrap: nowrap; }
+  #locations #inviter_points .wrapper .text2 {
+    font-size: 15px;
+    color: #808080;
+    margin-top: 30px; }
+
+#locations #inviter_points .footer_description {
+  margin-top: 60px;
+  width: 40% !important; }
+  #locations #inviter_points .footer_description .img_mes_points {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: #000;
+    margin: 0 auto 25px auto;
+    -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+    #locations #inviter_points .footer_description .img_mes_points .number_text {
+      padding: 60px 45px; }
+  #locations #inviter_points .footer_description h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  #locations #inviter_points .footer_description .description {
+    color: #000; }
+
+@media screen and (max-width: 567px) {
+  #locations #inviter_points .wrapper {
+    padding: 0; }
+  #locations #inviter_points .footer_description {
+    width: 100% !important;
+    margin: 0 3px !important; }
+    #locations #inviter_points .footer_description .img_mes_points {
+      width: 100px;
+      height: 100px; }
+      #locations #inviter_points .footer_description .img_mes_points .number_text {
+        padding: 30px 20px; }
+    #locations #inviter_points .footer_description h1 {
+      font-size: 15px;
+      margin-bottom: 0;
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+  #locations #inviter_points .btn_s {
     margin: 10px auto 0px auto; } }
 
 * {
