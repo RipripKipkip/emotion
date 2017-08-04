@@ -11,6 +11,8 @@
     .section_gray_light
         padding: $box-pad*3 $box-pad/2
         background-color: $gray-light
+        @media screen and (max-width: $break-sm)
+            padding: $box-pad/2
 
 
 
@@ -29,6 +31,8 @@
     .section_white
         padding: $box-pad*3 $box-pad/2
         background-color: $white
+        @media screen and (max-width: $break-sm)
+            padding: $box-pad/2
 
 
 
@@ -102,7 +106,7 @@
         //width: 25%
         @media screen and (max-width: $break-sm)
             width: 75%
-            margin: 30px auto 40px auto
+            //margin: 30px auto 40px auto
             height: 45px
             font-size: 1.1em
     //.btn_page-scroll
