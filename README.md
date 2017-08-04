@@ -1,4 +1,4 @@
-Landing Soundcharts with Html (Flexbox), SASS and JS
+Landing eMotion with Html (Flexbox), SASS and JS
 =============================
 
 BluBlaBli.
