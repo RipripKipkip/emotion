@@ -1164,7 +1164,7 @@ table {
 #locations #table_loc table {
   width: 100%; }
   #locations #table_loc table thead {
-    font-weight: bold; }
+    font-weight: 600; }
     #locations #table_loc table thead tr {
       border-bottom: 1px solid #efefef; }
     #locations #table_loc table thead th {
@@ -1188,8 +1188,42 @@ table {
         #locations #table_loc table tbody .hard .trip-expand .flexbox .flexbox__item, #locations #table_loc table tbody .hard .trip-expand .flexbox .inline-group__item, #locations #table_loc table tbody .hard .trip-expand .inline-group .flexbox__item, #locations #table_loc table tbody .hard .trip-expand .inline-group .inline-group__item {
           display: table-cell;
           vertical-align: middle; }
-        #locations #table_loc table tbody .hard .trip-expand .flexbox .one-third, #locations #table_loc table tbody .hard .trip-expand .inline-group .one-third {
-          width: 33.333%; }
+    #locations #table_loc table tbody .hard .one-third {
+      width: 33.333%; }
+      #locations #table_loc table tbody .hard .one-third:nth-child(2) {
+        border-right: 1px solid #efefef;
+        border-left: 1px solid #efefef; }
+      #locations #table_loc table tbody .hard .one-third .border_bottom {
+        width: 90%;
+        height: 1px;
+        background-color: #efefef;
+        margin: 30px auto 36px auto; }
+      #locations #table_loc table tbody .hard .one-third .container_d_h_a {
+        flex-direction: column; }
+        #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress {
+          line-height: 1.5;
+          margin-bottom: 15px; }
+          #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress h7 {
+            color: #808080;
+            text-transform: uppercase;
+            margin-bottom: 10px; }
+          #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid {
+            margin: 15px auto 30px auto;
+            width: 100%; }
+            #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
+              height: 35px;
+              font-size: 15px;
+              padding: 0px 15px;
+              background-color: transparent;
+              border: solid 1px #36b1ac;
+              color: #36b1ac; }
+              @media screen and (max-width: 567px) {
+                #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w {
+                  margin-bottom: 15px; } }
+              #locations #table_loc table tbody .hard .one-third .container_d_h_a .date_heure_adress .btn_mid .btn_w:hover {
+                border: solid 1px #36b1ac;
+                background-color: #36b1ac;
+                color: #FFF; }
 
 * {
   outline: 0; }

@@ -29,5 +29,43 @@
                             .flexbox__item, .inline-group__item
                                 display: table-cell
                                 vertical-align: middle
-                            .one-third
-                                width: 33.333%
+                    .one-third
+                        width: 33.333%
+                        &:nth-child(2)
+                            border-right: 1px solid $gray-light-2
+                            border-left: 1px solid $gray-light-2
+                        .border_bottom
+                            width: 90%
+                            height: 1px
+                            background-color: $gray-light-2
+                            margin: $box-pad auto $box-pad*1.2 auto
+                        .container_d_h_a
+                            flex-direction: column
+                            .date_heure_adress
+                                line-height: 1.5
+                                margin-bottom: $box-pad/2
+                                h7
+                                    color: $gray_header
+                                    text-transform: uppercase
+                                    margin-bottom: 10px
+                                h5
+                                h6
+                                .btn_mid
+                                    margin: $box-pad/2 auto $box-pad auto
+                                    width: 100%
+                                    // &:last-child
+                                    //     margin-bottom: 0
+                                    .btn_w
+                                        height: $box-pad+5px
+                                        font-size: $box-pad/2
+                                        padding: 0px $box-pad/2
+                                        background-color: transparent
+                                        border: solid 1px $turquoise
+                                        color: $turquoise
+                                        @media screen and (max-width: $break-sm)
+                                            margin-bottom: $box-pad/2
+                                        &:hover
+                                            border: solid 1px $turquoise
+                                            background-color: $turquoise
+                                            color: $white
+                                            a
