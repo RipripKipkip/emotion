@@ -53,7 +53,7 @@
 				</header>
 		</div>
 
-		<div id="container-menu">
+		<!-- <div id="container-menu">
 				<div id="toto" class="navToggle" onClick="appendClass()">
 					<div class="icon"></div>
 				</div>
@@ -61,12 +61,11 @@
 					<div id="menu">
 						<ul>
 							<li><a href="#formulaire" class=" js-scrollTo">Présentation</a></li>
-							<!-- <li>Blog</li> -->
 							<li class="btn-log">Connexion</li>
 							</ul>
 					</div>
 				</div>
-		</div>
+		</div> -->
 
 
 		<a name="top"></a>
@@ -80,39 +79,161 @@
 				</div>
 			</section> -->
 
-            <section id="services">
 
-            </section>
+			<div id="settings">
+				<section class="section_white" id="header_my_account">
+					<div id="comp_buttons">
+						<div class="btn_mid"><button class="btn_w"> <a href="fidelites.html">Points fidélités</a> </button></div>
+						<div class="btn_mid"><button class="btn_w"> <a href="mes_locations.html">Mes locations</a> </button></div>
+						<div class="btn_mid"><button class="btn_w"> <a href="settings.html">Parametres</a> </button></div>
+					</div>
+					<!-- <p class="text_entete">
+						Maintenant, chaque fois que vous achetez, vous pouvez gagner des points de fidélités pouvant être échangés contre d'éventuels rabais et économies. Nos avantages spéciaux incluent des points de fidélités pour s'inscrire, gagner des points fidélités pour chaque euro dépensé, des points pour le parainage d'un ami, des jours avec récompense de points de fidélités et encore plus de surprises en cours de route.
+					</p> -->
+				</section>
 
 
-			<section id="cont_formulaire">
-				<div class="wrapper">
-					<h3>NOUS CONTACTER</h3>
+				<section id="formulaire" class="section_3">
+					<div class="wrapper">
+						<h3>Compte</h3>
+						<div class="border_bottom"></div>
 
-					<div class="formulaire">
-						<p class="nom_email">
-					        <input name="name" type="text" placeholder="Nom" id="nom" />
-					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" id="email" />
-					    </p>
-                        <p class="sujet">
-					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Sujet" id="sujet" />
-					    </p>
-                        <p class="message">
-					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Message" id="message" />
-					    </p>
-                        <div class="btn_mid"><button class="btn_w"> <a href="">Envoyer</a> </button></div>
-					      <!-- <p class="start">
-					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="Start Date" />
-					      </p>
-						  <p class="end">
-					        <input name="date" type="text" class="validate[required,custom[email]] feedback-input" id="dates" placeholder="End Date" />
-					      </p>
-						  <p class="km">
-					        <input name="km" type="text" class="validate[required,custom[email]] feedback-input" id="km" placeholder="Km" />
-					      </p> -->
-					 </div>
-				</div>
-			</section>
+						<div class="formulaire">
+							<article class="main-content">
+								<div class="form-group avatar">
+									<!-- <label>Select your avatar : </label>
+									<input type="file" name="avatar" accept="image/*" required/> -->
+
+									<div class="container">
+									    <div class="containers">
+									      <div class="imageWrapper">
+									        <img class="image_choose" src="http://digital-art-gallery.com/oid/0/1300x648_403_Knight_by_the_lake_2d_fantasy_knight_lake_warrior_picture_image_digital_art.jpg">
+									      </div>
+									    </div>
+									    <button class="file-upload">
+									      <input type="file" class="file-input">Choose File
+									    </button>
+									</div>
+								</div>
+								<div class="form_email_mdp">
+									<div class="form-group form-group2">
+										<h4>Mon adresse email</h4>
+										<label>Adresse email* :</label>
+										<input type="email" class="input-control" />
+										<label>Nouveau email* :</label>
+										<input type="email" class="input-control" />
+										<label>Confirmer* :</label>
+										<input type="email" class="input-control" />
+										<label>Mot de passe* :</label>
+										<input type="email" class="input-control" />
+										<div class="btn_mid"><button class="btn_w"> <a href="">Modifier</a> </button></div>
+									</div>
+									<div class="form-group form-group2">
+										<h4>Mon mot de passe</h4>
+										<label>Ancien mot de passe* :</label>
+										<input type="password" class="input-control" />
+										<label>Nouveau mot de passe* :</label>
+										<input type="password" class="input-control" />
+										<label>Confirmer* :</label>
+										<input type="password" class="input-control" />
+										<div class="btn_mid"><button class="btn_w"> <a href="">Modifier</a> </button></div>
+									</div>
+								</div>
+								<div class="form-group form_coord">
+									<h4>Mes coordonnées</h4>
+									<label>Civilité* :</label>
+									<div id="civi">
+										<!-- <input value="mme" type="radio" class="input-control" />
+										<label>Mme</label>
+										<input value="mme" type="radio" class="input-control" />
+										<label>Mlle</label>
+										<input value="mme" type="radio" class="input-control" />
+										<label>Mr</label> -->
+										<label class="radio">
+											<input id="radio1" type="radio" name="radios" checked>
+											<span class="outer">
+												<span class="inner"></span>
+											</span>Mme
+										</label>
+										<label class="radio">
+											<input id="radio2" type="radio" name="radios">
+											<span class="outer">
+												<span class="inner"></span>
+											</span>Mlle
+										</label>
+										<label class="radio">
+											<input id="radio3" type="radio" name="radios">
+											<span class="outer">
+												<span class="inner"></span>
+											</span>Mr
+										</label>
+									</div>
+									<div class="group_label_input">
+										<div class="">
+											<label>Nom :</label>
+											<input type="text" class="input-control-2" />
+										</div>
+										<div class="">
+											<label>Prénom :</label>
+											<input type="text" class="input-control-2" />
+										</div>
+									</div>
+
+									<div class="group_label_input">
+									</div>
+
+									<label>Adresse* :</label>
+									<input type="text" class="input-control-2" />
+									<label>E-mail :</label>
+									<input type="email" class="input-control-2" />
+									<div class="group_label_input">
+										<div class="">
+											<label>Code postal :</label>
+											<input type="number" class="input-control-2" />
+										</div>
+										<div class="">
+											<label>Ville :</label>
+											<input type="text" class="input-control-2" />
+										</div>
+									</div>
+									<label>Pays :</label>
+									<select>
+										<option value="volvo">Volvo</option>
+										<option value="saab">Saab</option>
+										<option value="opel">Opel</option>
+										<option value="audi">Audi</option>
+									</select>
+									<label>Numero de téléphone* :</label>
+									<input type="number" class="input-control-2" />
+									<label>Date de naissance :</label>
+									<select>
+										<option value="volvo">1</option>
+										<option value="saab">2</option>
+										<option value="opel">3</option>
+										<option value="audi">4</option>
+									</select>
+									<select>
+										<option value="volvo">Janvier</option>
+										<option value="saab">Février</option>
+										<option value="opel">Mars</option>
+										<option value="audi">Avril</option>
+									</select>
+									<select>
+										<option value="volvo">Volvo</option>
+										<option value="saab">Saab</option>
+										<option value="opel">Opel</option>
+										<option value="audi">Audi</option>
+									</select>
+								</div>
+
+							</article>
+						</div>
+						<!-- <button type="submit">Submit</button> -->
+					</div>
+				</section>
+
+
+			</div>
 
 
 			<section class="scroll2">

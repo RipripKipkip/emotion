@@ -1,6 +1,7 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Montserrat:400,900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -450,7 +451,7 @@ table {
   text-align: center; }
   #main .section_gray_light {
     padding: 90px 15px;
-    background-color: #e0e0e0; }
+    background-color: rgba(224, 224, 224, 0.3); }
     @media screen and (max-width: 567px) {
       #main .section_gray_light {
         padding: 15px; } }
@@ -526,7 +527,8 @@ table {
     -o-transition: 0.6s;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    font-family: 'Quicksand', sans-serif !important; }
     @media screen and (max-width: 567px) {
       .btn_mid .btn_w {
         width: 75%;
@@ -650,7 +652,6 @@ table {
         flex: none;
         display: block;
         width: 125px;
-        font-weight: bold;
         font-size: 1em; }
       #formulaire .formulaire .main-content .form-group label.right-inline {
         text-align: right;
@@ -891,33 +892,33 @@ table {
 #services {
   height: 600px; }
 
-#fidelites p, #locations p {
+#fidelites p, #locations p, #settings p {
   line-height: 1.7;
   font-size: 18px; }
   @media screen and (max-width: 567px) {
-    #fidelites p, #locations p {
+    #fidelites p, #locations p, #settings p {
       width: 100%;
       line-height: 1.4;
       font-size: 15px; } }
 
-#fidelites h3, #locations h3 {
+#fidelites h3, #locations h3, #settings h3 {
   width: 100%;
   line-height: 33px; }
   @media screen and (max-width: 567px) {
-    #fidelites h3, #locations h3 {
+    #fidelites h3, #locations h3, #settings h3 {
       margin: 15px 0 !important; } }
 
-#fidelites .border_bottom, #locations .border_bottom {
-  height: 2px;
+#fidelites .border_bottom, #locations .border_bottom, #settings .border_bottom {
+  height: 1px;
   margin: 0 auto 60px auto;
   width: 30%;
   background-color: #000; }
   @media screen and (max-width: 567px) {
-    #fidelites .border_bottom, #locations .border_bottom {
+    #fidelites .border_bottom, #locations .border_bottom, #settings .border_bottom {
       width: 50%;
       margin: 0 auto 30px; } }
 
-#fidelites .footer_description:hover, #locations .footer_description:hover {
+#fidelites .footer_description:hover, #locations .footer_description:hover, #settings .footer_description:hover {
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   -webkit-transition: 0.6s;
@@ -925,49 +926,50 @@ table {
   transform: scale(1.1);
   -webkit-transform: scale(1.1); }
 
-#fidelites #header_my_account #comp_buttons, #locations #header_my_account #comp_buttons {
+#fidelites #header_my_account #comp_buttons, #locations #header_my_account #comp_buttons, #settings #header_my_account #comp_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
   @media screen and (max-width: 567px) {
-    #fidelites #header_my_account #comp_buttons, #locations #header_my_account #comp_buttons {
+    #fidelites #header_my_account #comp_buttons, #locations #header_my_account #comp_buttons, #settings #header_my_account #comp_buttons {
       flex-direction: column;
       margin-top: 15px; } }
 
-#fidelites #header_my_account .btn_mid, #locations #header_my_account .btn_mid {
+#fidelites #header_my_account .btn_mid, #locations #header_my_account .btn_mid, #settings #header_my_account .btn_mid {
   margin: 0 30px;
   width: 25%;
   float: left; }
   @media screen and (max-width: 567px) {
-    #fidelites #header_my_account .btn_mid, #locations #header_my_account .btn_mid {
+    #fidelites #header_my_account .btn_mid, #locations #header_my_account .btn_mid, #settings #header_my_account .btn_mid {
       width: 100%;
       margin: 0; } }
-  #fidelites #header_my_account .btn_mid .btn_w, #locations #header_my_account .btn_mid .btn_w {
+  #fidelites #header_my_account .btn_mid .btn_w, #locations #header_my_account .btn_mid .btn_w, #settings #header_my_account .btn_mid .btn_w {
     background-color: transparent;
     border: solid 1px #36b1ac;
     color: #36b1ac; }
     @media screen and (max-width: 567px) {
-      #fidelites #header_my_account .btn_mid .btn_w, #locations #header_my_account .btn_mid .btn_w {
+      #fidelites #header_my_account .btn_mid .btn_w, #locations #header_my_account .btn_mid .btn_w, #settings #header_my_account .btn_mid .btn_w {
         margin-bottom: 15px; } }
-    #fidelites #header_my_account .btn_mid .btn_w:hover, #locations #header_my_account .btn_mid .btn_w:hover {
+    #fidelites #header_my_account .btn_mid .btn_w:hover, #locations #header_my_account .btn_mid .btn_w:hover, #settings #header_my_account .btn_mid .btn_w:hover {
       border: solid 1px #36b1ac;
       background-color: #36b1ac;
       color: #FFF; }
 
-#fidelites #header_my_account h3, #locations #header_my_account h3 {
+#fidelites #header_my_account h3, #locations #header_my_account h3, #settings #header_my_account h3 {
   margin: 60px 0 30px 0; }
 
-#fidelites #header_my_account .text_entete, #locations #header_my_account .text_entete {
+#fidelites #header_my_account .text_entete, #locations #header_my_account .text_entete, #settings #header_my_account .text_entete {
   width: 70%;
   margin: 0 auto; }
   @media screen and (max-width: 567px) {
-    #fidelites #header_my_account .text_entete, #locations #header_my_account .text_entete {
+    #fidelites #header_my_account .text_entete, #locations #header_my_account .text_entete, #settings #header_my_account .text_entete {
       width: 100%;
       margin: 0; } }
 
 #fidelites #mes_points h3, #fidelites #gagner_points h3, #fidelites #avantages_points h3, #fidelites #inviter_points h3 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif !important; }
 
 #fidelites #gagner_points, #fidelites #avantages_points, #fidelites #inviter_points {
   display: flex;
@@ -988,11 +990,7 @@ table {
   height: 200px;
   border-radius: 100px;
   background-color: #000;
-  margin: 0 auto 25px auto;
-  -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+  margin: 0 auto 25px auto; }
   #fidelites #gagner_points .footer_description .img_mes_points .number_text {
     font-family: 'Old Standard TT', serif;
     color: #FFF;
@@ -1017,11 +1015,7 @@ table {
     #fidelites #gagner_points .footer_description .img_mes_points {
       width: 100px;
       height: 100px;
-      margin: 0 auto 15px auto;
-      -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+      margin: 0 auto 15px auto; }
       #fidelites #gagner_points .footer_description .img_mes_points .number_text {
         color: #FFF;
         padding: 30px 7.5px; }
@@ -1050,11 +1044,7 @@ table {
   width: 200px;
   height: 200px;
   border: 4px solid #000;
-  margin: 0 auto 30px auto;
-  -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+  margin: 0 auto 30px auto; }
   #fidelites #avantages_points .footer_description .img_mes_points .number_text {
     color: #000;
     padding: 30px 15px; }
@@ -1085,11 +1075,7 @@ table {
       width: 100px;
       height: 90px;
       border: 2px solid #000;
-      margin: 0 auto 0 auto;
-      -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+      margin: 0 auto 0 auto; }
       #fidelites #avantages_points .footer_description .img_mes_points .number_text {
         color: #000;
         padding: 15px 7.5px; }
@@ -1130,11 +1116,7 @@ table {
     height: 120px;
     border-radius: 100px;
     background-color: #000;
-    margin: 0 auto 25px auto;
-    -moz-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-    -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-    -o-box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.05); }
+    margin: 0 auto 25px auto; }
     #fidelites #inviter_points .footer_description .img_mes_points .number_text {
       padding: 60px 45px; }
   #fidelites #inviter_points .footer_description h1 {
@@ -1363,11 +1345,432 @@ table {
         #locations #table_loc table tbody .hard .one-third iframe {
           width: 100%; }
 
+#settings #formulaire {
+  padding: 90px 15px; }
+  @media screen and (max-width: 567px) {
+    #settings #formulaire {
+      width: 100%;
+      padding: 45px 0; } }
+  #settings #formulaire .formulaire {
+    width: 90%;
+    padding: 0 15px 15px 15px;
+    background-color: #FFF; }
+    @media screen and (max-width: 567px) {
+      #settings #formulaire .formulaire {
+        width: 100%; } }
+    #settings #formulaire .formulaire .main-content {
+      padding: 0 20px 20px 20px;
+      /* form specific formatting */ }
+      #settings #formulaire .formulaire .main-content .avatar {
+        background-color: #FFF !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        #settings #formulaire .formulaire .main-content .avatar .container {
+          width: 70%;
+          margin: 0 auto 20px auto; }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content .avatar .container {
+              width: 100%; } }
+        #settings #formulaire .formulaire .main-content .avatar .containers {
+          height: 200px;
+          position: relative;
+          max-width: 250px;
+          margin: auto; }
+          #settings #formulaire .formulaire .main-content .avatar .containers .imageWrapper {
+            border: 1px solid #36b1ac;
+            width: 70%;
+            padding-bottom: 70%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+            #settings #formulaire .formulaire .main-content .avatar .containers .imageWrapper img {
+              height: 105%;
+              width: initial;
+              max-height: 100%;
+              max-width: initial;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+        #settings #formulaire .formulaire .main-content .avatar .file-upload {
+          position: relative;
+          overflow: hidden;
+          margin: 10px;
+          width: 50%;
+          text-align: center;
+          background: transparent;
+          border-radius: 50px;
+          border: 1px solid #36b1ac;
+          height: 35px;
+          font-size: 15px;
+          padding: 0px 15px;
+          width: 210px;
+          -moz-transition: 0.6s;
+          -o-transition: 0.6s;
+          -webkit-transition: 0.6s;
+          transition: 0.6s; }
+          #settings #formulaire .formulaire .main-content .avatar .file-upload:hover {
+            background: #FFF;
+            color: #36b1ac;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1); }
+          #settings #formulaire .formulaire .main-content .avatar .file-upload input.file-input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            height: 100%; }
+      #settings #formulaire .formulaire .main-content .form_email_mdp {
+        display: flex;
+        flex-direction: row; }
+        @media screen and (max-width: 567px) {
+          #settings #formulaire .formulaire .main-content .form_email_mdp {
+            flex-direction: column; } }
+      #settings #formulaire .formulaire .main-content .form_coord {
+        display: flex;
+        flex-direction: column; }
+        #settings #formulaire .formulaire .main-content .form_coord #civi {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          /* -----------------------Variables----------------------- */
+          /* ---------Animation from Animate.css------------ */
+          /* -------------------Individual Controls------------------- */ }
+
+@-webkit-keyframes cardEnter {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -moz-transform: scale3d(0.9, 0.9, 0.9);
+    -o-transform: scale3d(0.9, 0.9, 0.9);
+    -ms-transform: scale3d(0.9, 0.9, 0.9);
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -moz-transform: scale3d(1.03, 1.03, 1.03);
+    -o-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -moz-transform: scale3d(0.97, 0.97, 0.97);
+    -o-transform: scale3d(0.97, 0.97, 0.97);
+    -ms-transform: scale3d(0.97, 0.97, 0.97);
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+      -webkit-transform-transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes cardEnter {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -moz-transform: scale3d(0.9, 0.9, 0.9);
+    -o-transform: scale3d(0.9, 0.9, 0.9);
+    -ms-transform: scale3d(0.9, 0.9, 0.9);
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -moz-transform: scale3d(1.03, 1.03, 1.03);
+    -o-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -moz-transform: scale3d(0.97, 0.97, 0.97);
+    -o-transform: scale3d(0.97, 0.97, 0.97);
+    -ms-transform: scale3d(0.97, 0.97, 0.97);
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+      -webkit-transform-transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes cardEnter {
+  #settings #formulaire .formulaire .main-content .form_coord #civi 0%, #settings #formulaire .formulaire .main-content .form_coord #civi 20%, #settings #formulaire .formulaire .main-content .form_coord #civi 40%, #settings #formulaire .formulaire .main-content .form_coord #civi 60%, #settings #formulaire .formulaire .main-content .form_coord #civi 80%, #settings #formulaire .formulaire .main-content .form_coord #civi 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 20% {
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 40% {
+    -moz-transform: scale3d(0.9, 0.9, 0.9);
+    -o-transform: scale3d(0.9, 0.9, 0.9);
+    -ms-transform: scale3d(0.9, 0.9, 0.9);
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 60% {
+    opacity: 1;
+    -moz-transform: scale3d(1.03, 1.03, 1.03);
+    -o-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 80% {
+    -moz-transform: scale3d(0.97, 0.97, 0.97);
+    -o-transform: scale3d(0.97, 0.97, 0.97);
+    -ms-transform: scale3d(0.97, 0.97, 0.97);
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
+  #settings #formulaire .formulaire .main-content .form_coord #civi 100% {
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+      -webkit-transform-transform: scale3d(1, 1, 1); } }
+
+@keyframes cardEnter {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -moz-transform: scale3d(1.1, 1.1, 1.1);
+    -o-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -moz-transform: scale3d(0.9, 0.9, 0.9);
+    -o-transform: scale3d(0.9, 0.9, 0.9);
+    -ms-transform: scale3d(0.9, 0.9, 0.9);
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -moz-transform: scale3d(1.03, 1.03, 1.03);
+    -o-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -moz-transform: scale3d(0.97, 0.97, 0.97);
+    -o-transform: scale3d(0.97, 0.97, 0.97);
+    -ms-transform: scale3d(0.97, 0.97, 0.97);
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -moz-transform: scale3d(1, 1, 1);
+    -o-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+      -webkit-transform-transform: scale3d(1, 1, 1); } }
+          #settings #formulaire .formulaire .main-content .form_coord #civi .radio {
+            display: inline-block;
+            padding-right: 20px;
+            font-size: 18px;
+            line-height: 49px;
+            cursor: pointer; }
+            #settings #formulaire .formulaire .main-content .form_coord #civi .radio:hover .inner {
+              -moz-transform: scale(0.5);
+              -o-transform: scale(0.5);
+              -ms-transform: scale(0.5);
+              -webkit-transform: scale(0.5);
+                -webkit-transform-transform: scale(0.5);
+              opacity: .5; }
+            #settings #formulaire .formulaire .main-content .form_coord #civi .radio input {
+              height: 1px;
+              width: 1px;
+              opacity: 0; }
+              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:checked + .outer .inner {
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                  -webkit-transform-transform: scale(1);
+                opacity: 1; }
+              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:checked + .outer {
+                border: 3px solid #36b1ac; }
+              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:focus + .outer .inner {
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                  -webkit-transform-transform: scale(1);
+                opacity: 1;
+                background-color: #2a8a86; }
+            #settings #formulaire .formulaire .main-content .form_coord #civi .radio .outer {
+              height: 20px;
+              width: 20px;
+              display: block;
+              float: left;
+              margin: 10px 9px 10px 10px;
+              border: 3px solid #e0e0e0;
+              border-radius: 50%;
+              background-color: transparent; }
+            #settings #formulaire .formulaire .main-content .form_coord #civi .radio .inner {
+              -moz-transition: all 0.25s ease-in-out;
+              -o-transition: all 0.25s ease-in-out;
+              -webkit-transition: all 0.25s ease-in-out;
+              transition: all 0.25s ease-in-out;
+              height: 16px;
+              width: 16px;
+              -moz-transform: scale(0);
+              -o-transform: scale(0);
+              -ms-transform: scale(0);
+              -webkit-transform: scale(0);
+                -webkit-transform-transform: scale(0);
+              display: block;
+              margin: 2px;
+              border-radius: 50%;
+              background-color: #36b1ac;
+              opacity: 0; }
+        #settings #formulaire .formulaire .main-content .form_coord .group_label_input {
+          display: flex;
+          flex-direction: row; }
+          #settings #formulaire .formulaire .main-content .form_coord .group_label_input > div {
+            width: 50%; }
+            #settings #formulaire .formulaire .main-content .form_coord .group_label_input > div input {
+              width: 92%; }
+      #settings #formulaire .formulaire .main-content .form-group2 {
+        width: 45%;
+        flex-direction: column !important;
+        align-items: inherit !important; }
+        #settings #formulaire .formulaire .main-content .form-group2:nth-child(2) {
+          margin-left: 30px; }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content .form-group2:nth-child(2) {
+              margin-left: 0; } }
+        #settings #formulaire .formulaire .main-content .form-group2 label {
+          width: 100% !important; }
+        @media screen and (max-width: 567px) {
+          #settings #formulaire .formulaire .main-content .form-group2 {
+            width: 100%; } }
+      #settings #formulaire .formulaire .main-content .form-group {
+        padding: 30px;
+        background-color: rgba(224, 224, 224, 0.3);
+        margin-bottom: 30px; }
+        #settings #formulaire .formulaire .main-content .form-group:last-child .input-control {
+          margin-bottom: 0; }
+        #settings #formulaire .formulaire .main-content .form-group h4 {
+          margin-bottom: 30px;
+          color: #36b1ac;
+          width: 100%;
+          font-size: 20px;
+          text-align: left; }
+        #settings #formulaire .formulaire .main-content .form-group label {
+          text-align: left;
+          flex: none;
+          display: block;
+          width: 200px;
+          line-height: 20px;
+          color: #000;
+          font-size: 1em;
+          margin: 0 20px 20px 0; }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content .form-group label {
+              width: 100%; } }
+        #settings #formulaire .formulaire .main-content .form-group .input-control-2 {
+          flex: 0 !important;
+          display: inline-flex !important;
+          margin-bottom: 20px;
+          padding: 20px 15px;
+          border: none;
+          font-size: 20px; }
+          #settings #formulaire .formulaire .main-content .form-group .input-control-2:hover {
+            background: rgba(255, 255, 255, 0.7); }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content .form-group .input-control-2 {
+              width: 100%; } }
+      #settings #formulaire .formulaire .main-content .btn_mid {
+        margin: 15px auto 30px auto;
+        width: 100%; }
+        #settings #formulaire .formulaire .main-content .btn_mid .btn_w {
+          height: 35px;
+          font-size: 15px;
+          padding: 0px 15px;
+          border: solid 1px #36b1ac;
+          color: #36b1ac; }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content .btn_mid .btn_w {
+              margin-bottom: 15px; } }
+          #settings #formulaire .formulaire .main-content .btn_mid .btn_w:hover {
+            background-color: #36b1ac;
+            color: #FFF; }
+    @media screen and (max-width: 567px) {
+      #settings #formulaire .formulaire .main-content {
+        padding: 20px 8px; }
+        #settings #formulaire .formulaire .main-content .form-group {
+          flex-direction: column; }
+          #settings #formulaire .formulaire .main-content .form-group .input-control {
+            margin-bottom: 20px !important;
+            margin-right: 0; }
+            #settings #formulaire .formulaire .main-content .form-group .input-control:nth-child(3) {
+              margin-bottom: 0 !important; }
+            #settings #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
+              margin-right: 0; }
+          #settings #formulaire .formulaire .main-content .form-group label.right-inline {
+            text-align: left;
+            padding-right: 0;
+            padding-left: 0; } }
+
 * {
   outline: 0; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: initial;
   width: 100%; }
 
