@@ -601,108 +601,213 @@ table {
     #footer_index #terms-privacy .text-invert:hover {
       text-decoration: underline; }
 
-#header {
+#log, #sig {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #log .main-content, #sig .main-content {
+    width: 40%;
+    margin: 0 auto;
+    padding: 45px 30px;
+    background-color: rgba(224, 224, 224, 0.3);
+    margin-top: 50vh;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 567px) {
+      #log .main-content, #sig .main-content {
+        padding: 0px;
+        width: 100%; } }
+    #log .main-content h4, #sig .main-content h4 {
+      font-size: 20px;
+      color: #36b1ac;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 567px) {
+        #log .main-content h4, #sig .main-content h4 {
+          padding-top: 30px; } }
+    #log .main-content .form-group, #sig .main-content .form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      @media screen and (max-width: 567px) {
+        #log .main-content .form-group, #sig .main-content .form-group {
+          flex-direction: column; } }
+      #log .main-content .form-group .btn_l_s, #sig .main-content .form-group .btn_l_s {
+        margin-bottom: 30px;
+        height: 45px;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: solid 1px #36b1ac;
+        background: transparent;
+        color: #36b1ac; }
+        #log .main-content .form-group .btn_l_s:first-child, #sig .main-content .form-group .btn_l_s:first-child {
+          border-radius: 50px 0 0 50px;
+          margin-right: -3px; }
+        #log .main-content .form-group .btn_l_s:last-child, #sig .main-content .form-group .btn_l_s:last-child {
+          border-radius: 0 50px 50px 0;
+          margin-left: -3px; }
+        @media screen and (max-width: 567px) {
+          #log .main-content .form-group .btn_l_s, #sig .main-content .form-group .btn_l_s {
+            margin-bottom: 15px; } }
+        #log .main-content .form-group .btn_l_s:hover, #sig .main-content .form-group .btn_l_s:hover {
+          background-color: #36b1ac;
+          color: #FFF; }
+      #log .main-content .form-group label, #sig .main-content .form-group label {
+        display: block;
+        width: 130px;
+        font-weight: bold;
+        font-size: 1em;
+        margin-bottom: 23px;
+        padding-right: 20px;
+        text-align: right; }
+        @media screen and (max-width: 567px) {
+          #log .main-content .form-group label, #sig .main-content .form-group label {
+            padding: 0;
+            width: auto; } }
+      #log .main-content .form-group .right-inline, #sig .main-content .form-group .right-inline {
+        text-align: right;
+        width: auto; }
+        @media screen and (max-width: 567px) {
+          #log .main-content .form-group .right-inline, #sig .main-content .form-group .right-inline {
+            text-align: left;
+            padding-right: 0;
+            padding-left: 0; } }
+      #log .main-content .form-group .input-control, #log .main-content .form-group .select-control, #sig .main-content .form-group .input-control, #sig .main-content .form-group .select-control {
+        background-color: #FFF;
+        flex: 4 auto;
+        display: block;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        border: none;
+        font-size: 20px; }
+        #log .main-content .form-group .input-control:hover, #log .main-content .form-group .select-control:hover, #sig .main-content .form-group .input-control:hover, #sig .main-content .form-group .select-control:hover {
+          background: rgba(0, 0, 0, 0.05); }
+        @media screen and (max-width: 567px) {
+          #log .main-content .form-group .input-control, #log .main-content .form-group .select-control, #sig .main-content .form-group .input-control, #sig .main-content .form-group .select-control {
+            margin-top: 2px;
+            margin-right: 0;
+            width: 75%; } }
+      #log .main-content .form-group .select-control, #sig .main-content .form-group .select-control {
+        padding: 20px;
+        height: 63px; }
+      #log .main-content .form-group .btn_mid, #sig .main-content .form-group .btn_mid {
+        width: 100%; }
+        #log .main-content .form-group .btn_mid .btn_w, #sig .main-content .form-group .btn_mid .btn_w {
+          height: 35px;
+          font-size: 15px;
+          padding: 0px 15px;
+          border: solid 1px #36b1ac;
+          background: transparent;
+          color: #36b1ac; }
+          @media screen and (max-width: 567px) {
+            #log .main-content .form-group .btn_mid .btn_w, #sig .main-content .form-group .btn_mid .btn_w {
+              margin-bottom: 15px; } }
+          #log .main-content .form-group .btn_mid .btn_w:hover, #sig .main-content .form-group .btn_mid .btn_w:hover {
+            background-color: #36b1ac;
+            color: #FFF; }
+
+#landings #header {
   padding: 90px 15px;
   width: 100%;
   position: relative;
   padding-right: 0;
   padding-left: 0; }
   @media screen and (max-width: 567px) {
-    #header {
+    #landings #header {
       min-height: 80%;
       padding: 45px 0; } }
-  #header .text {
+  #landings #header .text {
     text-align: center; }
     @media screen and (max-width: 567px) {
-      #header .text {
+      #landings #header .text {
         padding: 0 30px; } }
-    #header .text h1 {
+    #landings #header .text h1 {
       font-size: 35px; }
-    #header .text h2 {
+    #landings #header .text h2 {
       font-size: 25px; }
-  #header .btn_mid {
+  #landings #header .btn_mid {
     width: 100%; }
-    #header .btn_mid .btn_w {
+    #landings #header .btn_mid .btn_w {
       background-color: #36b1ac;
       border: solid 1px #36b1ac;
+      color: #FFF;
       width: 210px; }
-      #header .btn_mid .btn_w:hover {
+      #landings #header .btn_mid .btn_w:hover {
         border: solid 1px #FFF;
         background-color: transparent;
         color: #FFF; }
-        #header .btn_mid .btn_w:hover a {
+        #landings #header .btn_mid .btn_w:hover a {
           color: #FFF; }
 
-#formulaire .formulaire {
+#landings #formulaire .formulaire {
   width: 90%;
   padding: 15px;
   background-color: #36b1ac; }
   @media screen and (max-width: 567px) {
-    #formulaire .formulaire {
+    #landings #formulaire .formulaire {
       width: 100%; } }
-  #formulaire .formulaire .main-content {
+  #landings #formulaire .formulaire .main-content {
     padding: 20px;
     /* form specific formatting */ }
-    #formulaire .formulaire .main-content .form-group {
+    #landings #formulaire .formulaire .main-content .form-group {
       display: flex;
       flex-direction: row; }
-      #formulaire .formulaire .main-content .form-group:last-child .input-control {
+      #landings #formulaire .formulaire .main-content .form-group:last-child .input-control {
         margin-bottom: 0; }
-      #formulaire .formulaire .main-content .form-group label {
+      #landings #formulaire .formulaire .main-content .form-group label {
         flex: none;
         display: block;
         width: 125px;
         font-size: 1em; }
-      #formulaire .formulaire .main-content .form-group label.right-inline {
+      #landings #formulaire .formulaire .main-content .form-group label.right-inline {
         text-align: right;
         padding-right: 8px;
         padding-left: 10px;
         width: auto; }
-      #formulaire .formulaire .main-content .form-group .input-control {
+      #landings #formulaire .formulaire .main-content .form-group .input-control {
         flex: 1 1 auto;
         display: block;
         margin-bottom: 20px;
         padding: 20px 15px;
         border: none;
         font-size: 20px; }
-        #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
+        #landings #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
           margin-right: 20px; }
-        #formulaire .formulaire .main-content .form-group .input-control:hover {
+        #landings #formulaire .formulaire .main-content .form-group .input-control:hover {
           background: rgba(255, 255, 255, 0.7); }
   @media screen and (max-width: 567px) {
-    #formulaire .formulaire .main-content {
+    #landings #formulaire .formulaire .main-content {
       padding: 20px 8px; }
-      #formulaire .formulaire .main-content .form-group {
+      #landings #formulaire .formulaire .main-content .form-group {
         flex-direction: column; }
-        #formulaire .formulaire .main-content .form-group .input-control {
+        #landings #formulaire .formulaire .main-content .form-group .input-control {
           margin-bottom: 20px !important;
           margin-right: 0; }
-          #formulaire .formulaire .main-content .form-group .input-control:nth-child(3) {
+          #landings #formulaire .formulaire .main-content .form-group .input-control:nth-child(3) {
             margin-bottom: 0 !important; }
-          #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
+          #landings #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
             margin-right: 0; }
-        #formulaire .formulaire .main-content .form-group label.right-inline {
+        #landings #formulaire .formulaire .main-content .form-group label.right-inline {
           text-align: left;
           padding-right: 0;
           padding-left: 0; } }
 
-#formulaire .voit_scoot {
+#landings .voit_scoot {
   width: 90%; }
-  #formulaire .voit_scoot h3 {
+  #landings .voit_scoot h3 {
     margin-top: 30px !important;
     margin: 0; }
-  #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
+  #landings .voit_scoot #voitures, #landings .voit_scoot #scooters {
     position: relative;
     margin: 30px 0; }
-    #formulaire .voit_scoot #voitures img, #formulaire .voit_scoot #scooters img {
+    #landings .voit_scoot #voitures img, #landings .voit_scoot #scooters img {
       width: 100%; }
     @media screen and (max-width: 567px) {
-      #formulaire .voit_scoot #voitures, #formulaire .voit_scoot #scooters {
+      #landings .voit_scoot #voitures, #landings .voit_scoot #scooters {
         width: 100%; } }
-    #formulaire .voit_scoot #voitures .image, #formulaire .voit_scoot #scooters .image {
+    #landings .voit_scoot #voitures .image, #landings .voit_scoot #scooters .image {
       display: block;
       height: auto; }
-    #formulaire .voit_scoot #voitures .overlay, #formulaire .voit_scoot #scooters .overlay {
+    #landings .voit_scoot #voitures .overlay, #landings .voit_scoot #scooters .overlay {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -712,7 +817,7 @@ table {
       opacity: 0;
       transition: .5s ease;
       background: rgba(255, 255, 255, 0.7); }
-      #formulaire .voit_scoot #voitures .overlay .text, #formulaire .voit_scoot #scooters .overlay .text {
+      #landings .voit_scoot #voitures .overlay .text, #landings .voit_scoot #scooters .overlay .text {
         color: white;
         font-size: 30px;
         position: absolute;
@@ -720,10 +825,10 @@ table {
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%); }
-      #formulaire .voit_scoot #voitures .overlay:hover, #formulaire .voit_scoot #scooters .overlay:hover {
+      #landings .voit_scoot #voitures .overlay:hover, #landings .voit_scoot #scooters .overlay:hover {
         cursor: pointer;
         opacity: 1; }
-        #formulaire .voit_scoot #voitures .overlay:hover .text, #formulaire .voit_scoot #scooters .overlay:hover .text {
+        #landings .voit_scoot #voitures .overlay:hover .text, #landings .voit_scoot #scooters .overlay:hover .text {
           color: #000 !important;
           font-size: 30px;
           position: absolute;
@@ -731,48 +836,48 @@ table {
           left: 50%;
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%); }
-  #formulaire .voit_scoot #voitures {
+  #landings .voit_scoot #voitures {
     margin-right: 15px; }
-    #formulaire .voit_scoot #voitures .image {
+    #landings .voit_scoot #voitures .image {
       width: 100%; }
-  #formulaire .voit_scoot #scooters {
+  #landings .voit_scoot #scooters {
     margin-left: 15px; }
-    #formulaire .voit_scoot #scooters .image {
+    #landings .voit_scoot #scooters .image {
       width: 110%; }
 
-#formulaire .btn_mid {
+#landings .btn_mid {
   width: 100%; }
-  #formulaire .btn_mid .btn_w {
+  #landings .btn_mid .btn_w {
     border: solid 1px #36b1ac;
     background-color: transparent;
     color: #36b1ac;
     width: 210px; }
     @media screen and (max-width: 567px) {
-      #formulaire .btn_mid .btn_w {
+      #landings .btn_mid .btn_w {
         margin: 0 auto; } }
-    #formulaire .btn_mid .btn_w:hover {
+    #landings .btn_mid .btn_w:hover {
       background-color: #36b1ac;
       border: solid 1px #36b1ac;
       color: #FFF; }
 
-#formulaire ul {
+#landings ul {
   list-style-type: none;
   margin: 0 !important;
   padding: 0;
   overflow: hidden;
   width: 93%; }
-  #formulaire ul li {
+  #landings ul li {
     float: left;
     width: 48%; }
-  #formulaire ul li a, #formulaire ul .dropbtn {
+  #landings ul li a, #landings ul .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; }
-  #formulaire ul .dropdown {
+  #landings ul .dropdown {
     display: inline-block; }
-  #formulaire ul .dropdown-content {
+  #landings ul .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
@@ -780,14 +885,14 @@ table {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1; }
-  #formulaire ul .dropdown-content a {
+  #landings ul .dropdown-content a {
     width: 25%;
     color: black;
     padding: 12px 16px;
     text-decoration: none; }
-  #formulaire ul .dropdown-content a:hover {
+  #landings ul .dropdown-content a:hover {
     background-color: #f1f1f1; }
-  #formulaire ul .dropdown:hover .dropdown-content {
+  #landings ul .dropdown:hover .dropdown-content {
     display: block; }
 
 #rubriques_services {
@@ -1345,8 +1450,11 @@ table {
         #locations #table_loc table tbody .hard .one-third iframe {
           width: 100%; }
 
+#settings section {
+  padding: 0; }
+
 #settings #formulaire {
-  padding: 90px 15px; }
+  padding: 0 15px 90px 15px; }
   @media screen and (max-width: 567px) {
     #settings #formulaire {
       width: 100%;
@@ -1358,26 +1466,26 @@ table {
     @media screen and (max-width: 567px) {
       #settings #formulaire .formulaire {
         width: 100%; } }
-    #settings #formulaire .formulaire .main-content {
+    #settings #formulaire .formulaire .main-content-1 {
       padding: 0 20px 20px 20px;
       /* form specific formatting */ }
-      #settings #formulaire .formulaire .main-content .avatar {
+      #settings #formulaire .formulaire .main-content-1 .avatar {
         background-color: #FFF !important;
         display: flex;
         flex-direction: row;
         align-items: center; }
-        #settings #formulaire .formulaire .main-content .avatar .container {
+        #settings #formulaire .formulaire .main-content-1 .avatar .container {
           width: 70%;
           margin: 0 auto 20px auto; }
           @media screen and (max-width: 567px) {
-            #settings #formulaire .formulaire .main-content .avatar .container {
+            #settings #formulaire .formulaire .main-content-1 .avatar .container {
               width: 100%; } }
-        #settings #formulaire .formulaire .main-content .avatar .containers {
+        #settings #formulaire .formulaire .main-content-1 .avatar .containers {
           height: 200px;
           position: relative;
           max-width: 250px;
           margin: auto; }
-          #settings #formulaire .formulaire .main-content .avatar .containers .imageWrapper {
+          #settings #formulaire .formulaire .main-content-1 .avatar .containers .imageWrapper {
             border: 1px solid #36b1ac;
             width: 70%;
             padding-bottom: 70%;
@@ -1387,7 +1495,7 @@ table {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); }
-            #settings #formulaire .formulaire .main-content .avatar .containers .imageWrapper img {
+            #settings #formulaire .formulaire .main-content-1 .avatar .containers .imageWrapper img {
               height: 105%;
               width: initial;
               max-height: 100%;
@@ -1396,29 +1504,30 @@ table {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
-        #settings #formulaire .formulaire .main-content .avatar .file-upload {
+        #settings #formulaire .formulaire .main-content-1 .avatar .file-upload {
           position: relative;
           overflow: hidden;
           margin: 10px;
-          width: 50%;
+          width: auto;
           text-align: center;
+          color: #36b1ac;
           background: transparent;
           border-radius: 50px;
           border: 1px solid #36b1ac;
+          background-color: transparent;
           height: 35px;
           font-size: 15px;
           padding: 0px 15px;
-          width: 210px;
           -moz-transition: 0.6s;
           -o-transition: 0.6s;
           -webkit-transition: 0.6s;
           transition: 0.6s; }
-          #settings #formulaire .formulaire .main-content .avatar .file-upload:hover {
-            background: #FFF;
-            color: #36b1ac;
+          #settings #formulaire .formulaire .main-content-1 .avatar .file-upload:hover {
+            background: #36b1ac;
+            color: #FFF;
             transform: scale(1.1);
             -webkit-transform: scale(1.1); }
-          #settings #formulaire .formulaire .main-content .avatar .file-upload input.file-input {
+          #settings #formulaire .formulaire .main-content-1 .avatar .file-upload input.file-input {
             position: absolute;
             top: 0;
             right: 0;
@@ -1429,16 +1538,83 @@ table {
             opacity: 0;
             filter: alpha(opacity=0);
             height: 100%; }
-      #settings #formulaire .formulaire .main-content .form_email_mdp {
+      #settings #formulaire .formulaire .main-content-1 .main-content {
+        flex: 1 auto;
+        padding: 45px 30px;
+        background-color: rgba(224, 224, 224, 0.3);
+        margin: 20px; }
+        @media screen and (max-width: 567px) {
+          #settings #formulaire .formulaire .main-content-1 .main-content {
+            padding: 20px 8px; } }
+        #settings #formulaire .formulaire .main-content-1 .main-content h4 {
+          font-size: 20px;
+          color: #36b1ac;
+          margin-bottom: 30px; }
+        #settings #formulaire .formulaire .main-content-1 .main-content .form-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          @media screen and (max-width: 567px) {
+            #settings #formulaire .formulaire .main-content-1 .main-content .form-group {
+              flex-direction: column; } }
+          #settings #formulaire .formulaire .main-content-1 .main-content .form-group label {
+            display: block;
+            width: 130px;
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 23px;
+            padding-right: 20px;
+            text-align: right; }
+          #settings #formulaire .formulaire .main-content-1 .main-content .form-group .right-inline {
+            text-align: right;
+            width: auto; }
+            @media screen and (max-width: 567px) {
+              #settings #formulaire .formulaire .main-content-1 .main-content .form-group .right-inline {
+                text-align: left;
+                padding-right: 0;
+                padding-left: 0; } }
+          #settings #formulaire .formulaire .main-content-1 .main-content .form-group .input-control, #settings #formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+            background-color: #FFF;
+            flex: 4 auto;
+            display: block;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            border: none;
+            font-size: 20px; }
+            #settings #formulaire .formulaire .main-content-1 .main-content .form-group .input-control:hover, #settings #formulaire .formulaire .main-content-1 .main-content .form-group .select-control:hover {
+              background: rgba(0, 0, 0, 0.05); }
+            @media screen and (max-width: 567px) {
+              #settings #formulaire .formulaire .main-content-1 .main-content .form-group .input-control, #settings #formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+                margin-top: 2px; } }
+          #settings #formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+            padding: 20px;
+            height: 63px; }
+          #settings #formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid {
+            width: 100%; }
+            #settings #formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+              height: 35px;
+              font-size: 15px;
+              padding: 0px 15px;
+              border: solid 1px #36b1ac;
+              background: transparent;
+              color: #36b1ac; }
+              @media screen and (max-width: 567px) {
+                #settings #formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+                  margin-bottom: 15px; } }
+              #settings #formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w:hover {
+                background-color: #36b1ac;
+                color: #FFF; }
+      #settings #formulaire .formulaire .main-content-1 .form_email_mdp {
         display: flex;
         flex-direction: row; }
         @media screen and (max-width: 567px) {
-          #settings #formulaire .formulaire .main-content .form_email_mdp {
+          #settings #formulaire .formulaire .main-content-1 .form_email_mdp {
             flex-direction: column; } }
-      #settings #formulaire .formulaire .main-content .form_coord {
+      #settings #formulaire .formulaire .main-content-1 .form_coord {
         display: flex;
         flex-direction: column; }
-        #settings #formulaire .formulaire .main-content .form_coord #civi {
+        #settings #formulaire .formulaire .main-content-1 .form_coord #civi {
           width: 50%;
           display: flex;
           flex-direction: row;
@@ -1533,41 +1709,41 @@ table {
       -webkit-transform-transform: scale3d(1, 1, 1); } }
 
 @-ms-keyframes cardEnter {
-  #settings #formulaire .formulaire .main-content .form_coord #civi 0%, #settings #formulaire .formulaire .main-content .form_coord #civi 20%, #settings #formulaire .formulaire .main-content .form_coord #civi 40%, #settings #formulaire .formulaire .main-content .form_coord #civi 60%, #settings #formulaire .formulaire .main-content .form_coord #civi 80%, #settings #formulaire .formulaire .main-content .form_coord #civi 100% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 0%, #settings #formulaire .formulaire .main-content-1 .form_coord #civi 20%, #settings #formulaire .formulaire .main-content-1 .form_coord #civi 40%, #settings #formulaire .formulaire .main-content-1 .form_coord #civi 60%, #settings #formulaire .formulaire .main-content-1 .form_coord #civi 80%, #settings #formulaire .formulaire .main-content-1 .form_coord #civi 100% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 0% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 0% {
     opacity: 0;
     -moz-transform: scale3d(0.3, 0.3, 0.3);
     -o-transform: scale3d(0.3, 0.3, 0.3);
     -ms-transform: scale3d(0.3, 0.3, 0.3);
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
       -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 20% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 20% {
     -moz-transform: scale3d(1.1, 1.1, 1.1);
     -o-transform: scale3d(1.1, 1.1, 1.1);
     -ms-transform: scale3d(1.1, 1.1, 1.1);
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
       -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 40% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 40% {
     -moz-transform: scale3d(0.9, 0.9, 0.9);
     -o-transform: scale3d(0.9, 0.9, 0.9);
     -ms-transform: scale3d(0.9, 0.9, 0.9);
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
       -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 60% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 60% {
     opacity: 1;
     -moz-transform: scale3d(1.03, 1.03, 1.03);
     -o-transform: scale3d(1.03, 1.03, 1.03);
     -ms-transform: scale3d(1.03, 1.03, 1.03);
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
       -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 80% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 80% {
     -moz-transform: scale3d(0.97, 0.97, 0.97);
     -o-transform: scale3d(0.97, 0.97, 0.97);
     -ms-transform: scale3d(0.97, 0.97, 0.97);
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
       -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
-  #settings #formulaire .formulaire .main-content .form_coord #civi 100% {
+  #settings #formulaire .formulaire .main-content-1 .form_coord #civi 100% {
     opacity: 1;
     -moz-transform: scale3d(1, 1, 1);
     -o-transform: scale3d(1, 1, 1);
@@ -1617,33 +1793,34 @@ table {
     -ms-transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1);
       -webkit-transform-transform: scale3d(1, 1, 1); } }
-          #settings #formulaire .formulaire .main-content .form_coord #civi .radio {
+          #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio {
             display: inline-block;
             padding-right: 20px;
             font-size: 18px;
             line-height: 49px;
-            cursor: pointer; }
-            #settings #formulaire .formulaire .main-content .form_coord #civi .radio:hover .inner {
+            cursor: pointer;
+            text-align: left; }
+            #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio:hover .inner {
               -moz-transform: scale(0.5);
               -o-transform: scale(0.5);
               -ms-transform: scale(0.5);
               -webkit-transform: scale(0.5);
                 -webkit-transform-transform: scale(0.5);
               opacity: .5; }
-            #settings #formulaire .formulaire .main-content .form_coord #civi .radio input {
+            #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio input {
               height: 1px;
               width: 1px;
               opacity: 0; }
-              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:checked + .outer .inner {
+              #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio input:checked + .outer .inner {
                 -moz-transform: scale(1);
                 -o-transform: scale(1);
                 -ms-transform: scale(1);
                 -webkit-transform: scale(1);
                   -webkit-transform-transform: scale(1);
                 opacity: 1; }
-              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:checked + .outer {
+              #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio input:checked + .outer {
                 border: 3px solid #36b1ac; }
-              #settings #formulaire .formulaire .main-content .form_coord #civi .radio input:focus + .outer .inner {
+              #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio input:focus + .outer .inner {
                 -moz-transform: scale(1);
                 -o-transform: scale(1);
                 -ms-transform: scale(1);
@@ -1651,7 +1828,7 @@ table {
                   -webkit-transform-transform: scale(1);
                 opacity: 1;
                 background-color: #2a8a86; }
-            #settings #formulaire .formulaire .main-content .form_coord #civi .radio .outer {
+            #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio .outer {
               height: 20px;
               width: 20px;
               display: block;
@@ -1660,7 +1837,7 @@ table {
               border: 3px solid #e0e0e0;
               border-radius: 50%;
               background-color: transparent; }
-            #settings #formulaire .formulaire .main-content .form_coord #civi .radio .inner {
+            #settings #formulaire .formulaire .main-content-1 .form_coord #civi .radio .inner {
               -moz-transition: all 0.25s ease-in-out;
               -o-transition: all 0.25s ease-in-out;
               -webkit-transition: all 0.25s ease-in-out;
@@ -1677,94 +1854,11 @@ table {
               border-radius: 50%;
               background-color: #36b1ac;
               opacity: 0; }
-        #settings #formulaire .formulaire .main-content .form_coord .group_label_input {
+        #settings #formulaire .formulaire .main-content-1 .form_coord .group_label_input {
           display: flex;
           flex-direction: row; }
-          #settings #formulaire .formulaire .main-content .form_coord .group_label_input > div {
-            width: 50%; }
-            #settings #formulaire .formulaire .main-content .form_coord .group_label_input > div input {
-              width: 92%; }
-      #settings #formulaire .formulaire .main-content .form-group2 {
-        width: 45%;
-        flex-direction: column !important;
-        align-items: inherit !important; }
-        #settings #formulaire .formulaire .main-content .form-group2:nth-child(2) {
-          margin-left: 30px; }
-          @media screen and (max-width: 567px) {
-            #settings #formulaire .formulaire .main-content .form-group2:nth-child(2) {
-              margin-left: 0; } }
-        #settings #formulaire .formulaire .main-content .form-group2 label {
-          width: 100% !important; }
-        @media screen and (max-width: 567px) {
-          #settings #formulaire .formulaire .main-content .form-group2 {
-            width: 100%; } }
-      #settings #formulaire .formulaire .main-content .form-group {
-        padding: 30px;
-        background-color: rgba(224, 224, 224, 0.3);
-        margin-bottom: 30px; }
-        #settings #formulaire .formulaire .main-content .form-group:last-child .input-control {
-          margin-bottom: 0; }
-        #settings #formulaire .formulaire .main-content .form-group h4 {
-          margin-bottom: 30px;
-          color: #36b1ac;
-          width: 100%;
-          font-size: 20px;
-          text-align: left; }
-        #settings #formulaire .formulaire .main-content .form-group label {
-          text-align: left;
-          flex: none;
-          display: block;
-          width: 200px;
-          line-height: 20px;
-          color: #000;
-          font-size: 1em;
-          margin: 0 20px 20px 0; }
-          @media screen and (max-width: 567px) {
-            #settings #formulaire .formulaire .main-content .form-group label {
-              width: 100%; } }
-        #settings #formulaire .formulaire .main-content .form-group .input-control-2 {
-          flex: 0 !important;
-          display: inline-flex !important;
-          margin-bottom: 20px;
-          padding: 20px 15px;
-          border: none;
-          font-size: 20px; }
-          #settings #formulaire .formulaire .main-content .form-group .input-control-2:hover {
-            background: rgba(255, 255, 255, 0.7); }
-          @media screen and (max-width: 567px) {
-            #settings #formulaire .formulaire .main-content .form-group .input-control-2 {
-              width: 100%; } }
-      #settings #formulaire .formulaire .main-content .btn_mid {
-        margin: 15px auto 30px auto;
-        width: 100%; }
-        #settings #formulaire .formulaire .main-content .btn_mid .btn_w {
-          height: 35px;
-          font-size: 15px;
-          padding: 0px 15px;
-          border: solid 1px #36b1ac;
-          color: #36b1ac; }
-          @media screen and (max-width: 567px) {
-            #settings #formulaire .formulaire .main-content .btn_mid .btn_w {
-              margin-bottom: 15px; } }
-          #settings #formulaire .formulaire .main-content .btn_mid .btn_w:hover {
-            background-color: #36b1ac;
-            color: #FFF; }
-    @media screen and (max-width: 567px) {
-      #settings #formulaire .formulaire .main-content {
-        padding: 20px 8px; }
-        #settings #formulaire .formulaire .main-content .form-group {
-          flex-direction: column; }
-          #settings #formulaire .formulaire .main-content .form-group .input-control {
-            margin-bottom: 20px !important;
-            margin-right: 0; }
-            #settings #formulaire .formulaire .main-content .form-group .input-control:nth-child(3) {
-              margin-bottom: 0 !important; }
-            #settings #formulaire .formulaire .main-content .form-group .input-control:nth-child(2) {
-              margin-right: 0; }
-          #settings #formulaire .formulaire .main-content .form-group label.right-inline {
-            text-align: left;
-            padding-right: 0;
-            padding-left: 0; } }
+          #settings #formulaire .formulaire .main-content-1 .form_coord .group_label_input > div {
+            flex: 1 auto; }
 
 * {
   outline: 0; }

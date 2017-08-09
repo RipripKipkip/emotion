@@ -2,17 +2,10 @@
 
 
 #settings
-
-
-    // .btn_mid
-    //     .btn_w
-    //         border: solid 1px $white
-    //         color: $white
-    //         &:hover
-    //             background-color: $white
-    //             color: $turquoise
+    section
+        padding: 0
     #formulaire
-        padding: $box-pad*3 $box-pad/2
+        padding: 0 $box-pad/2 $box-pad*3 $box-pad/2
         //background-color: $turquoise
         @media screen and (max-width: $break-sm)
             width: 100%
@@ -27,9 +20,8 @@
             background-color: $white
             @media screen and (max-width: $break-sm)
                 width: 100%
-            .main-content
+            .main-content-1
                 padding: 0 $box-pad/1.5 $box-pad/1.5 $box-pad/1.5
-
                 .avatar
                     background-color: $white !important
                     display: flex
@@ -49,7 +41,6 @@
                         margin: 0 auto $box-pad/1.5 auto
                         @media screen and (max-width: $break-sm)
                             width: 100%
-
                     .containers
                         height: 200px
                         position: relative
@@ -75,29 +66,27 @@
                                 top: 50%
                                 left: 50%
                                 transform: translate(-50%, -50%)
-
                     .file-upload
                         position: relative
                         overflow: hidden
                         margin: 10px
-                        width: 50%
+                        width: auto
                         text-align: center
-                        //color: $white
+                        color: $turquoise
                         background: transparent
                         border-radius: 50px
                         //border: 1px solid $white
                         border: 1px solid $turquoise
+                        background-color: transparent
                         height: $box-pad+5px
                         font-size: $box-pad/2
                         padding: 0px $box-pad/2
-                        width: 210px
                         @include transition(0.6s)
                         &:hover
-                            background: $white
-                            color: $turquoise
+                            background: $turquoise
+                            color: $white
                             transform: scale(1.1)
                             -webkit-transform: scale(1.1)
-
                         input.file-input
                             position: absolute
                             top: 0
@@ -110,11 +99,86 @@
                             filter: alpha(opacity=0)
                             height: 100%
 
+                .form_email_mdp, .form_coord
+                .main-content
+                    flex: 1 auto
+                    padding: $box-pad*1.5 $box-pad
+                    background-color: rgba($gray-light, 0.3)
+                    margin: $box-pad/1.5
+                    @media screen and (max-width: $break-sm)
+                        padding: 20px 8px
+                        // form specific formatting
+                    h4
+                        font-size: $box-pad/1.5
+                        color: $turquoise
+                        margin-bottom: $box-pad
+
+                    .form-group
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        @media screen and (max-width: $break-sm)
+                            flex-direction: column
+                        label
+                            //flex: 1 auto
+                            display: block
+                            width: 130px
+                            //min-width: 200px
+                            font-weight: bold
+                            font-size: 1em
+                            margin-bottom: $box-pad/1.5+3px
+                            padding-right: $box-pad/1.5
+                            text-align: right
+                        .right-inline
+                            text-align: right
+                            width: auto
+                            @media screen and (max-width: $break-sm)
+                                text-align: left
+                                padding-right: 0
+                                padding-left: 0
+                        .input-control, .select-control
+                            background-color: $white
+                            flex: 4 auto
+                            display: block
+                            margin-bottom: $box-pad/1.5
+                            margin-right: $box-pad/1.5
+                            padding: $box-pad/1.5
+                            border: none
+                            font-size: $box-pad/1.5
+                            &:hover
+                                background: rgba($black, 0.05s)
+                            @media screen and (max-width: $break-sm)
+                                margin-top: 2px
+                        .select-control
+                            padding: $box-pad/1.5
+                            height: 63px
+
+                        .btn_mid
+                            //margin: $box-pad/2 auto $box-pad auto
+                            width: 100%
+                            // &:last-child
+                            //     margin-bottom: 0
+                            .btn_w
+                                height: $box-pad+5px
+                                font-size: $box-pad/2
+                                padding: 0px $box-pad/2
+                                border: solid 1px $turquoise
+                                background: transparent
+                                color: $turquoise
+                                @media screen and (max-width: $break-sm)
+                                    margin-bottom: $box-pad/2
+                                &:hover
+                                    background-color: $turquoise
+                                    color: $white
+
                 .form_email_mdp
                     display: flex
                     flex-direction: row
                     @media screen and (max-width: $break-sm)
                         flex-direction: column
+
+
+
 
                 .form_coord
                     display: flex
@@ -140,30 +204,22 @@
                             opacity: 0
                             @include transform(scale3d(.3, .3, .3))
 
-
                           20%
                             @include transform(scale3d(1.1, 1.1, 1.1))
 
-
                           40%
                             @include transform(scale3d(.9, .9, .9))
-
 
                           60%
                             opacity: 1
                             @include transform(scale3d(1.03, 1.03, 1.03))
 
-
                           80%
                             @include transform(scale3d(.97, .97, .97))
-
 
                           100%
                             opacity: 1
                             @include transform(scale3d(1, 1, 1))
-
-
-
 
                         /* -------------------Individual Controls------------------- */
                         .radio
@@ -172,10 +228,10 @@
                           font-size: 18px
                           line-height: 49px
                           cursor: pointer
+                          text-align: left
                           &:hover .inner
                             @include transform(scale(.5))
                             opacity: .5
-
 
                           // Native input control and checked events
                           input
@@ -228,9 +284,9 @@
                         display: flex
                         flex-direction: row
                         > div
-                            width: 50%
+                            flex: 1 auto
                             input
-                                width: 92%
+                                //width: 100%
                                 // margin-left: 0  !important
                                 // margin-right: 0  !important
                                 // &:nth-child(1)
@@ -238,36 +294,23 @@
                                 // &:nth-child(2)
                                 //     margin-left: $box-pad/2 !important
 
-                .form-group2
+
+
+                //.form-group2
                     //float: left
-                    width: 45%
+                    flex: 1 auto
                     flex-direction: column !important
                     align-items: inherit !important
                     &:nth-child(2)
                         margin-left: $box-pad
                         @media screen and (max-width: $break-sm)
                             margin-left: 0
-                    label
+                    //label
                         width: 100% !important
                     @media screen and (max-width: $break-sm)
                         width: 100%
 
-                .form-group
-                    // display: flex
-                    // flex-direction: row
-                    // align-items: center
-                    padding: $box-pad
-                    background-color: rgba($gray-light, 0.3)
-                    margin-bottom: $box-pad
-                    &:last-child
-                        .input-control
-                            margin-bottom: 0
-                    h4
-                        margin-bottom: $box-pad
-                        color: $turquoise
-                        width: 100%
-                        font-size: 20px
-                        text-align: left
+                //.form-group2, .form-group
                     label
                         //text-transform: uppercase
                         text-align: left
@@ -291,7 +334,7 @@
                     //     width: auto
 
 
-                    .input-control-2
+                    //.input-control-2
                         flex: 0 !important
                         display: inline-flex !important
                         margin-bottom: $box-pad/1.5
@@ -302,7 +345,26 @@
                         &:hover
                             background: rgba($white, 0.7)
                         @media screen and (max-width: $break-sm)
-                            width: 100%
+                            width: 100
+
+                //.form-group
+                    // display: flex
+                    // flex-direction: row
+                    // align-items: center
+                    padding: $box-pad
+                    background-color: rgba($gray-light, 0.3)
+                    margin-bottom: $box-pad
+                    &:last-child
+                        .input-control
+                            margin-bottom: 0
+                        // &:nth-child(2)
+                        //     margin-left: $box-pad
+
+                    // label.right-inline
+                    //     text-align: right
+                    //     padding-right: 8px
+                    //     padding-left: 10px
+                    //     width: auto
 
                     // .input-control
                     //     flex: 1 1 auto
@@ -316,32 +378,32 @@
                     //         background: rgba($white, 0.7)
                     //     @media screen and (max-width: $break-sm)
                     //         width: 100%
-                .btn_mid
-                    margin: $box-pad/2 auto $box-pad auto
-                    width: 100%
-                    // &:last-child
-                    //     margin-bottom: 0
-                    .btn_w
-                        height: $box-pad+5px
-                        font-size: $box-pad/2
-                        padding: 0px $box-pad/2
-                        border: solid 1px $turquoise
-                        color: $turquoise
-                        @media screen and (max-width: $break-sm)
-                            margin-bottom: $box-pad/2
-                        &:hover
-                            background-color: $turquoise
-                            color: $white
+                // .btn_mid
+                //     //margin: $box-pad/2 auto $box-pad auto
+                //     width: 100%
+                //     // &:last-child
+                //     //     margin-bottom: 0
+                //     .btn_w
+                //         height: $box-pad+5px
+                //         font-size: $box-pad/2
+                //         padding: 0px $box-pad/2
+                //         border: solid 1px $turquoise
+                //         background: transparent
+                //         color: $turquoise
+                //         @media screen and (max-width: $break-sm)
+                //             margin-bottom: $box-pad/2
+                //         &:hover
+                //             background-color: $turquoise
+                //             color: $white
                 /* form specific formatting */
 
 
 
-            @media screen and (max-width: $break-sm)
+            //@media screen and (max-width: $break-sm)
                 .main-content
                     padding: 20px 8px
                     .form-group
                         flex-direction: column
-
                         .input-control
                             margin-bottom: $box-pad/1.5 !important
                             margin-right: 0
@@ -349,7 +411,6 @@
                                 margin-bottom: 0 !important
                             &:nth-child(2)
                                 margin-right: 0
-
                         label.right-inline
                             text-align: left
                             padding-right: 0
