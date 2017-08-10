@@ -455,6 +455,12 @@ table {
     @media screen and (max-width: 567px) {
       #main .section_gray_light {
         padding: 15px; } }
+  #main .section_turquoise {
+    padding: 90px 15px;
+    background-color: #36b1ac; }
+    @media screen and (max-width: 567px) {
+      #main .section_turquoise {
+        padding: 15px; } }
   #main .section_grey {
     background-color: #808080;
     color: #FFF; }
@@ -996,6 +1002,11 @@ table {
 
 #services {
   height: 600px; }
+
+#cars .diagonale {
+  background: linear-gradient(to right top, rgba(224, 224, 224, 0.3) 50%, #36b1ac 50%);
+  height: 60px;
+  width: 100%; }
 
 #fidelites p, #locations p, #settings p {
   line-height: 1.7;
