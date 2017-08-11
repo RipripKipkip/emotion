@@ -1,4 +1,5 @@
 #log, #sig
+    background-color: $turquoise
     display: flex
     flex-direction: column
     text-align: center
@@ -6,7 +7,7 @@
         width: 40%
         margin: 0 auto
         padding: $box-pad*1.5 $box-pad
-        background-color: rgba($gray-light, 0.3)
+        background-color: $gray-light-3
         margin-top: 50vh
         transform: translateY(-50%)
         @media screen and (max-width: $break-sm)
@@ -64,6 +65,7 @@
             .right-inline
                 text-align: right
                 width: auto
+                margin-left: $box-pad/1.5
                 @media screen and (max-width: $break-sm)
                     text-align: left
                     padding-right: 0

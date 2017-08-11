@@ -608,6 +608,7 @@ table {
       text-decoration: underline; }
 
 #log, #sig {
+  background-color: #36b1ac;
   display: flex;
   flex-direction: column;
   text-align: center; }
@@ -615,7 +616,7 @@ table {
     width: 40%;
     margin: 0 auto;
     padding: 45px 30px;
-    background-color: rgba(224, 224, 224, 0.3);
+    background-color: #f1f1f1;
     margin-top: 50vh;
     transform: translateY(-50%); }
     @media screen and (max-width: 567px) {
@@ -670,7 +671,8 @@ table {
             width: auto; } }
       #log .main-content .form-group .right-inline, #sig .main-content .form-group .right-inline {
         text-align: right;
-        width: auto; }
+        width: auto;
+        margin-left: 20px; }
         @media screen and (max-width: 567px) {
           #log .main-content .form-group .right-inline, #sig .main-content .form-group .right-inline {
             text-align: left;
@@ -1003,7 +1005,7 @@ table {
 #services {
   height: 600px; }
 
-#cars .diagonale {
+#cars .diagonale, #scooters .diagonale {
   background: linear-gradient(to right top, rgba(224, 224, 224, 0.3) 50%, #36b1ac 50%);
   height: 60px;
   width: 100%; }
