@@ -1,4 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Montserrat:400,900");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
@@ -1005,10 +1006,108 @@ table {
 #services {
   height: 600px; }
 
+#cars .section_turquoise, #cars .section_gray_light, #cars section, #scooters .section_turquoise, #scooters .section_gray_light, #scooters section {
+  padding: 0; }
+
+#cars .section_turquoise, #scooters .section_turquoise {
+  height: 90px; }
+
 #cars .diagonale, #scooters .diagonale {
   background: linear-gradient(to right top, rgba(224, 224, 224, 0.3) 50%, #36b1ac 50%);
   height: 60px;
   width: 100%; }
+
+#cars #header_vehicules #comp_buttons, #scooters #header_vehicules #comp_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0; }
+  @media screen and (max-width: 567px) {
+    #cars #header_vehicules #comp_buttons, #scooters #header_vehicules #comp_buttons {
+      flex-direction: column;
+      margin-top: 15px;
+      padding: 15px 0; } }
+
+#cars #header_vehicules .btn_mid, #scooters #header_vehicules .btn_mid {
+  margin: 0 30px;
+  width: 25%;
+  float: left; }
+  @media screen and (max-width: 567px) {
+    #cars #header_vehicules .btn_mid, #scooters #header_vehicules .btn_mid {
+      width: 100%;
+      margin: 0; } }
+  #cars #header_vehicules .btn_mid .btn_w, #scooters #header_vehicules .btn_mid .btn_w {
+    background-color: transparent;
+    border: solid 1px #FFF;
+    color: #FFF; }
+    @media screen and (max-width: 567px) {
+      #cars #header_vehicules .btn_mid .btn_w, #scooters #header_vehicules .btn_mid .btn_w {
+        margin-bottom: 15px; } }
+    #cars #header_vehicules .btn_mid .btn_w:hover, #scooters #header_vehicules .btn_mid .btn_w:hover {
+      border: solid 1px #FFF;
+      background-color: #FFF;
+      color: #36b1ac; }
+
+#cars .car, #scooters .car {
+  padding: 30px 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0; }
+  #cars .car .car_img, #scooters .car .car_img {
+    flex: 1 auto; }
+    @media screen and (max-width: 567px) {
+      #cars .car .car_img .images, #scooters .car .car_img .images {
+        width: 100%; } }
+  #cars .car .car_text, #scooters .car .car_text {
+    flex: 4 auto; }
+    #cars .car .car_text .container_1 h1, #scooters .car .car_text .container_1 h1 {
+      font-size: 20px; }
+      @media screen and (max-width: 567px) {
+        #cars .car .car_text .container_1 h1, #scooters .car .car_text .container_1 h1 {
+          font-size: 16px; } }
+    #cars .car .car_text .container_1 .container_stars, #scooters .car .car_text .container_1 .container_stars {
+      margin: 20px auto;
+      /****** Style Star Rating Widget *****/
+      /***** CSS Magic to Highlight Stars on Hover *****/ }
+      @media screen and (max-width: 567px) {
+        #cars .car .car_text .container_1 .container_stars, #scooters .car .car_text .container_1 .container_stars {
+          margin: 30px auto 20px auto; } }
+      #cars .car .car_text .container_1 .container_stars .rating, #scooters .car .car_text .container_1 .container_stars .rating {
+        border: none;
+        width: 50%;
+        width: 150px;
+        margin: 0 auto; }
+        #cars .car .car_text .container_1 .container_stars .rating input, #scooters .car .car_text .container_1 .container_stars .rating input {
+          display: none; }
+        #cars .car .car_text .container_1 .container_stars .rating label:before, #scooters .car .car_text .container_1 .container_stars .rating label:before {
+          margin: 5px;
+          font-size: 1.25em;
+          font-family: FontAwesome;
+          display: inline-block;
+          content: "\f005"; }
+        #cars .car .car_text .container_1 .container_stars .rating .half:before, #scooters .car .car_text .container_1 .container_stars .rating .half:before {
+          content: "\f089";
+          position: absolute; }
+        #cars .car .car_text .container_1 .container_stars .rating label, #scooters .car .car_text .container_1 .container_stars .rating label {
+          color: #ddd;
+          float: right; }
+      #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label, #cars .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover, #cars .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label, #scooters .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover, #scooters .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label {
+        color: #FFD700; }
+      #cars .car .car_text .container_1 .container_stars .rating > input:checked + label:hover, #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover, #cars .car .car_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked + label:hover, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover, #scooters .car .car_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label {
+        color: #FFED85; }
+    #cars .car .car_text .container_2, #scooters .car .car_text .container_2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #cars .car .car_text .container_2 .price_time, #scooters .car .car_text .container_2 .price_time {
+        padding: 15px 30px; }
+        #cars .car .car_text .container_2 .price_time:nth-child(2), #scooters .car .car_text .container_2 .price_time:nth-child(2) {
+          border-right: 1px solid #e0e0e0;
+          border-left: 1px solid #e0e0e0; }
 
 #fidelites p, #locations p, #settings p {
   line-height: 1.7;
