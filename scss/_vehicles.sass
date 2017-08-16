@@ -35,7 +35,7 @@
                     border: solid 1px $white
                     background-color: $white
                     color: $turquoise
-    .car
+    .veh
         padding: $box-pad $box-pad/2
         display: flex
         width: 100%
@@ -43,15 +43,19 @@
         justify-content: center
         align-items: center
         border-bottom: 1px solid $gray-light
-        .car_img
-            flex: 1 auto
+        .car_img, .scoot_img
+            flex: 2 auto
+            width: 620px
             .images
+                height: 300px
                 @media screen and (max-width: $break-sm)
                     width: 100%
-        .car_text
-            flex: 4 auto
+
+        .veh_text
+            flex: 3 auto
             .container_1
                 h1
+                    font-family: 'Roboto', sans-serif
                     font-size: $box-pad/1.5
                     @media screen and (max-width: $break-sm)
                         font-size: $box-pad/2+1px

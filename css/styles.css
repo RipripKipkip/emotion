@@ -1,6 +1,6 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Montserrat:400,900");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 html, body, div, span, applet, object, iframe,
@@ -1049,7 +1049,7 @@ table {
       background-color: #FFF;
       color: #36b1ac; }
 
-#cars .car, #scooters .car {
+#cars .veh, #scooters .veh {
   padding: 30px 15px;
   display: flex;
   width: 100%;
@@ -1057,55 +1057,59 @@ table {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e0e0e0; }
-  #cars .car .car_img, #scooters .car .car_img {
-    flex: 1 auto; }
-    @media screen and (max-width: 567px) {
-      #cars .car .car_img .images, #scooters .car .car_img .images {
-        width: 100%; } }
-  #cars .car .car_text, #scooters .car .car_text {
-    flex: 4 auto; }
-    #cars .car .car_text .container_1 h1, #scooters .car .car_text .container_1 h1 {
+  #cars .veh .car_img, #cars .veh .scoot_img, #scooters .veh .car_img, #scooters .veh .scoot_img {
+    flex: 2 auto;
+    width: 620px; }
+    #cars .veh .car_img .images, #cars .veh .scoot_img .images, #scooters .veh .car_img .images, #scooters .veh .scoot_img .images {
+      height: 300px; }
+      @media screen and (max-width: 567px) {
+        #cars .veh .car_img .images, #cars .veh .scoot_img .images, #scooters .veh .car_img .images, #scooters .veh .scoot_img .images {
+          width: 100%; } }
+  #cars .veh .veh_text, #scooters .veh .veh_text {
+    flex: 3 auto; }
+    #cars .veh .veh_text .container_1 h1, #scooters .veh .veh_text .container_1 h1 {
+      font-family: 'Roboto', sans-serif;
       font-size: 20px; }
       @media screen and (max-width: 567px) {
-        #cars .car .car_text .container_1 h1, #scooters .car .car_text .container_1 h1 {
+        #cars .veh .veh_text .container_1 h1, #scooters .veh .veh_text .container_1 h1 {
           font-size: 16px; } }
-    #cars .car .car_text .container_1 .container_stars, #scooters .car .car_text .container_1 .container_stars {
+    #cars .veh .veh_text .container_1 .container_stars, #scooters .veh .veh_text .container_1 .container_stars {
       margin: 20px auto;
       /****** Style Star Rating Widget *****/
       /***** CSS Magic to Highlight Stars on Hover *****/ }
       @media screen and (max-width: 567px) {
-        #cars .car .car_text .container_1 .container_stars, #scooters .car .car_text .container_1 .container_stars {
+        #cars .veh .veh_text .container_1 .container_stars, #scooters .veh .veh_text .container_1 .container_stars {
           margin: 30px auto 20px auto; } }
-      #cars .car .car_text .container_1 .container_stars .rating, #scooters .car .car_text .container_1 .container_stars .rating {
+      #cars .veh .veh_text .container_1 .container_stars .rating, #scooters .veh .veh_text .container_1 .container_stars .rating {
         border: none;
         width: 50%;
         width: 150px;
         margin: 0 auto; }
-        #cars .car .car_text .container_1 .container_stars .rating input, #scooters .car .car_text .container_1 .container_stars .rating input {
+        #cars .veh .veh_text .container_1 .container_stars .rating input, #scooters .veh .veh_text .container_1 .container_stars .rating input {
           display: none; }
-        #cars .car .car_text .container_1 .container_stars .rating label:before, #scooters .car .car_text .container_1 .container_stars .rating label:before {
+        #cars .veh .veh_text .container_1 .container_stars .rating label:before, #scooters .veh .veh_text .container_1 .container_stars .rating label:before {
           margin: 5px;
           font-size: 1.25em;
           font-family: FontAwesome;
           display: inline-block;
           content: "\f005"; }
-        #cars .car .car_text .container_1 .container_stars .rating .half:before, #scooters .car .car_text .container_1 .container_stars .rating .half:before {
+        #cars .veh .veh_text .container_1 .container_stars .rating .half:before, #scooters .veh .veh_text .container_1 .container_stars .rating .half:before {
           content: "\f089";
           position: absolute; }
-        #cars .car .car_text .container_1 .container_stars .rating label, #scooters .car .car_text .container_1 .container_stars .rating label {
+        #cars .veh .veh_text .container_1 .container_stars .rating label, #scooters .veh .veh_text .container_1 .container_stars .rating label {
           color: #ddd;
           float: right; }
-      #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label, #cars .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover, #cars .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label, #scooters .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover, #scooters .car .car_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label {
+      #cars .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label, #cars .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover, #cars .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label, #scooters .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label, #scooters .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover, #scooters .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label {
         color: #FFD700; }
-      #cars .car .car_text .container_1 .container_stars .rating > input:checked + label:hover, #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover, #cars .car .car_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #cars .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked + label:hover, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover, #scooters .car .car_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #scooters .car .car_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label {
+      #cars .veh .veh_text .container_1 .container_stars .rating > input:checked + label:hover, #cars .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover, #cars .veh .veh_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #cars .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label, #scooters .veh .veh_text .container_1 .container_stars .rating > input:checked + label:hover, #scooters .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover, #scooters .veh .veh_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, #scooters .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label {
         color: #FFED85; }
-    #cars .car .car_text .container_2, #scooters .car .car_text .container_2 {
+    #cars .veh .veh_text .container_2, #scooters .veh .veh_text .container_2 {
       display: flex;
       flex-direction: row;
       justify-content: center; }
-      #cars .car .car_text .container_2 .price_time, #scooters .car .car_text .container_2 .price_time {
+      #cars .veh .veh_text .container_2 .price_time, #scooters .veh .veh_text .container_2 .price_time {
         padding: 15px 30px; }
-        #cars .car .car_text .container_2 .price_time:nth-child(2), #scooters .car .car_text .container_2 .price_time:nth-child(2) {
+        #cars .veh .veh_text .container_2 .price_time:nth-child(2), #scooters .veh .veh_text .container_2 .price_time:nth-child(2) {
           border-right: 1px solid #e0e0e0;
           border-left: 1px solid #e0e0e0; }
 
