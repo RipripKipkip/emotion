@@ -183,23 +183,6 @@ table {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
-  #nav.opaque {
-    background-color: rgba(255, 255, 255, 0.7) !important;
-    border-color: rgba(255, 255, 255, 0.7) !important;
-    color: #000 !important;
-    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
-    #nav.opaque .header .logo {
-      background-image: url(/images/logo_b.svg) !important; }
-    #nav.opaque .header .top-nav li .btn-border:before {
-      background: #000 !important; }
-    #nav.opaque .header .top-nav li .btn-log {
-      border: solid 1px #000 !important;
-      background-color: transparent !important; }
-      #nav.opaque .header .top-nav li .btn-log:hover {
-        color: #FFF !important; }
   #nav .header {
     text-align: left;
     height: 80px;
@@ -288,20 +271,6 @@ table {
     position: fixed;
     color: #FFF;
     z-index: 2; }
-    #container-menu.opaque2 .navToggle .icon {
-      background-color: #000; }
-      #container-menu.opaque2 .navToggle .icon:before, #container-menu.opaque2 .navToggle .icon:after {
-        background-color: #000; }
-    #container-menu.opaque2 #back-menu.focus {
-      background-color: rgba(255, 255, 255, 0.9); }
-    #container-menu.opaque2 #menu li {
-      color: #000 !important; }
-      #container-menu.opaque2 #menu li:before {
-        background: #000 !important; }
-    #container-menu.opaque2 #menu .btn-log {
-      border: solid 2px #000; }
-      #container-menu.opaque2 #menu .btn-log:hover {
-        color: #FFF; }
     #container-menu .navToggle {
       z-index: 4;
       position: absolute;
