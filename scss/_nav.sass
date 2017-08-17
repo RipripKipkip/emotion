@@ -3,6 +3,127 @@
 //        Right reserved @KipKip_Designs if not --------> 凸(｀0´)凸
 //        I wrote this code by being like this --------> ＿φ(°-°=)
 
+
+// #nav
+//     background: $turquoise
+//     width: 100%
+//     position: fixed
+//     color: $white
+//     z-index: 2
+//     transition: all ease .5s
+//     @include shadow-ingrid-3
+//     //&.opaque
+//         background-color: rgba($white, 0.7)!important
+//         border-color: rgba($white, 0.7)!important
+//         color: $black !important
+//         @include shadow-ingrid-3
+//         .header
+//             .logo
+//                 background-image: url(/images/logo_b.svg)!important
+//             .top-nav
+//                 li
+//                     a
+//                     .btn-border
+//                         &:before
+//                             background : $black!important
+//                     .btn-log
+//                         border: solid 1px $black!important
+//                         background-color: transparent!important
+//                         &:hover
+//                             //background-color: $saumone_light!important
+//                             //border: solid 1px $saumone_light!important
+//                             color: $white!important
+//     .header
+//         text-align: left
+//         height: 80px
+//         line-height: 80px
+//         display: flex
+//         flex-direction: row
+//         .logo
+//             width: 180px
+//             height: 30px
+//             line-height: 64px
+//             font-weight: 800
+//             background-image: url(/images/logo_w.svg)
+//             background-size: 180px 30px
+//             margin: 24px
+//             @media screen and (max-width: $break-sm)
+//                 margin: 25px 21px
+//
+//             //      #######  ########     ####  ###  ##  #######  #######  #######
+//             //           ##              ###    ### ##     ###          ##       ##
+//             //      ###  ##  #######     ###    #####      ###     ##   ##  ######
+//             //      ###  ##  ###         ###    ### ##     ###     ##   ##  ###
+//             //      ######   #######  #####     ###  ##    ###      #####   ###
+//
+//         .top-nav
+//             position: absolute
+//             right: 15px
+//             @media screen and (max-width: $break-sm)
+//                 //display: none
+//
+//                 flex-direction: column
+//             li
+//                 display: inline-block
+//                 text-decoration: none
+//                 padding-left: 5px
+//                 &:last-child
+//                     padding-left: 20px
+//                 @media screen and (max-width: $break-sm)
+//                     width: 100%
+//                 a
+//                     text-decoration: none
+//                     font-weight: 300
+//                 .btn-border
+//                     text-align: center
+//                     display: inline-block
+//                     //padding: 15px 40px
+//                     cursor: pointer
+//                     letter-spacing: 1px
+//                     position: relative
+//                     font-weight: 500
+//                     //overflow: hidden
+//                     padding: 0 20px
+//                     margin: 10px 0
+//                     line-height: 40px
+//                     font-size: 18px
+//                     &:before
+//                         content: ""
+//                         position: absolute
+//                         width: 0
+//                         background : $white
+//                         left: 45%
+//                         height: 2px
+//                         bottom: 0
+//                         transition: all .3s
+//                         opacity: 0.7
+//                     &:hover:before
+//                         width: 100%
+//                         left: 0
+//
+//                 .btn-log
+//                     display: inline-block
+//                     //padding: 15px 40px
+//                     cursor: pointer
+//                     letter-spacing: 1px
+//                     position: relative
+//                     //overflow: hidden
+//                     line-height: 40px
+//                     border-radius: 37px
+//                     border: solid 1px $white
+//                     background-color: transparent
+//                     @include transition(0.6s)
+//                     padding: 0px 15px
+//                     font-weight: 500
+//                     font-size: 18px
+//                     //@include shadow-ingrid
+//                     &:hover
+//                         background-color: $white
+//                         border: solid 1px $white
+//                         color: $turquoise !important
+//
+//
+
 #nav
     background: $turquoise
     width: 100%
@@ -11,7 +132,7 @@
     z-index: 2
     transition: all ease .5s
     @include shadow-ingrid-3
-    &.opaque
+    //&.opaque
         background-color: rgba($white, 0.7)!important
         border-color: rgba($white, 0.7)!important
         color: $black !important
@@ -134,7 +255,7 @@
         position: fixed
         color: $white
         z-index: 2
-        &.opaque2
+        //&.opaque2
             .navToggle
                 .icon
                     background-color: $black
