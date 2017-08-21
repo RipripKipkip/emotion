@@ -1,5 +1,5 @@
-#landings
-    #header
+.landings
+    .header
         padding: $box-pad*3 $box-pad/2
         width: 100%
         position: relative
@@ -31,8 +31,8 @@
                         color: $white
 
 
-    #formulaire
-        .formulaire
+    .formulaire
+        .formulaires
             width: 90%
             padding: $box-pad/2
             background-color: $turquoise
@@ -40,7 +40,6 @@
                 width: 100%
             .main-content
                 padding: $box-pad/1.5
-
                 /* form specific formatting */
                 .form-group
                     display: flex
@@ -54,13 +53,11 @@
                         width: 125px
                         //font-weight: bold
                         font-size: 1em
-
                     label.right-inline
                         text-align: right
                         padding-right: 8px
                         padding-left: 10px
                         width: auto
-
                     .input-control
                         flex: 1 1 auto
                         display: block
@@ -73,11 +70,6 @@
                             margin-right: $box-pad/1.5
                         &:hover
                             background: rgba($white, 0.7)
-                    // button
-                    //     padding: 5px 15px
-                    //     margin: 5px
-                    //     min-width: 100px
-
             @media screen and (max-width: $break-sm)
                 .main-content
                     padding: 20px 8px
@@ -91,20 +83,17 @@
                                 margin-bottom: 0 !important
                             &:nth-child(2)
                                 margin-right: 0
-
                         label.right-inline
                             text-align: left
                             padding-right: 0
                             padding-left: 0
 
-
-
     .voit_scoot
-        width: 90%
+        width: 100%
         h3
             margin-top: $box-pad !important
             margin: 0
-        #voitures, #scooters
+        .voitures, .scooters
             position: relative
             //width: 48%
             //float: left
@@ -116,7 +105,11 @@
             .image
                 display: block
                 height: auto
-            .overlay
+                width: 100%
+                &:hover
+                    cursor: pointer
+                    background: rgba($white, 0.7)
+            //.overlay
                 position: absolute
                 top: 0
                 bottom: 0
@@ -137,7 +130,7 @@
                 &:hover
                     cursor: pointer
                     opacity: 1
-                    .text
+                    //.text
                         color: $black !important
                         font-size: $box-pad
                         position: absolute
@@ -145,14 +138,10 @@
                         left: 50%
                         transform: translate(-50%, -50%)
                         -ms-transform: translate(-50%, -50%)
-        #voitures
+        .voitures
             margin-right: $box-pad/2
-            .image
-                width: 100%
-        #scooters
+        .scooters
             margin-left: $box-pad/2
-            .image
-                width: 110%
 
     .btn_mid
         width: 100%
@@ -174,24 +163,21 @@
         margin: 0 !important
         padding: 0
         overflow: hidden
-        width: 93%
+        width: 100%
         li
             float: left
             width: 48%
-
         li a, .dropbtn
             display: inline-block
             color: white
             text-align: center
             padding: 14px 16px
             text-decoration: none
-
         //li a:hover, .dropdown:hover .dropbtn
             background-color: red
 
         .dropdown
             display: inline-block
-
         .dropdown-content
             display: none
             position: absolute
@@ -200,50 +186,47 @@
             width: 100%
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
             z-index: 1
-
         .dropdown-content a
             width: 25%
             color: black
             padding: 12px 16px
             text-decoration: none
             //text-align: left
-
         .dropdown-content a:hover
             background-color: #f1f1f1
-
         .dropdown:hover .dropdown-content
             display: block
 
 
 
 
-#rubriques_services
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    padding-top: 0
-    .wrapper
-        align-items: flex-start
-        @media screen and (max-width: $break-sm)
-            padding: 25px 25px 25px 25px
-    h2
-        width: 100%
-        margin-bottom: 40px
-    .footer_description
-        width: 25%
-        float: left
-        margin: 15px 30px
-        .img_section_7
-            width: 200px
-            height: 200px
-            margin: 0 auto 25px auto
-            img
+    .rubriques_services
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        padding-top: 0
+        .wrapper
+            align-items: flex-start
+            @media screen and (max-width: $break-sm)
+                padding: 25px 25px 25px 25px
+        h2
+            width: 100%
+            margin-bottom: 40px
+        .footer_description
+            width: 25%
+            float: left
+            margin: 15px 30px
+            .img_section_7
                 width: 200px
                 height: 200px
-        .description
-            font-size: 15px
-    @media screen and (max-width: $break-sm)
-        .footer_description
-            width: 100%
-        .btn_s
-            margin: 10px auto 0px auto
+                margin: 0 auto 25px auto
+                img
+                    width: 200px
+                    height: 200px
+            .description
+                font-size: 15px
+        @media screen and (max-width: $break-sm)
+            .footer_description
+                width: 100%
+            .btn_s
+                margin: 10px auto 0px auto

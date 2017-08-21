@@ -1,4 +1,13 @@
-#fidelites, #locations, #settings
+.fidelites, .locations, .settings
+
+    .section_turquoise
+        padding: 0
+
+    .section_turquoise
+        height: 100px
+    .diagonale
+        height: $box-pad*2
+        width: 100%
     p
         line-height: 1.7
         font-size: 18px
@@ -26,15 +35,17 @@
             transform: scale(1.1)
             -webkit-transform: scale(1.1)
 
-    #header_my_account
-        #comp_buttons
+    .header_my_account
+        .comp_buttons
             display: flex
             flex-direction: row
             flex-wrap: wrap
             justify-content: center
+            padding: $box-pad 0
             @media screen and (max-width: $break-sm)
                 flex-direction: column
                 margin-top: $box-pad/2
+                padding: $box-pad/2 0
         .btn_mid
             margin: 0 $box-pad
             width: 25%
@@ -44,14 +55,14 @@
                 margin: 0
             .btn_w
                 background-color: transparent
-                border: solid 1px $turquoise
-                color: $turquoise
+                border: solid 1px $white
+                color: $white
                 @media screen and (max-width: $break-sm)
                     margin-bottom: $box-pad/2
                 &:hover
-                    border: solid 1px $turquoise
-                    background-color: $turquoise
-                    color: $white
+                    border: solid 1px $white
+                    background-color: $white
+                    color: $turquoise
                     a
         h3
             margin: $box-pad*2 0 $box-pad 0
