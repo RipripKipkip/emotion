@@ -162,6 +162,20 @@
                             // border-bottom: 40px solid $turquoise
                             z-index: 3
                             h1
+                                font-family: 'Montserrat', sans-serif
+                                margin-top: $box-pad/1.5
+                                font-size: $box-pad/1.5
+                                font-weight: bold
+                                @media screen and (max-width: $break-sm)
+                                    font-size: $box-pad/2+1px
+                                span
+                                    &:first-child
+                                        color: $turquoise
+                                        padding-right: 5px
+                                    &:last-child
+                                        color: $sapin
+                                        padding-left: 5px
+                            //h1
                                 margin-top: $box-pad/1.5
                                 font-size: $box-pad/1.5
                                 @media screen and (max-width: $break-sm)
