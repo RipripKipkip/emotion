@@ -783,22 +783,21 @@ table {
       color: #FFF; }
 
 .landings ul {
-  list-style-type: none;
-  margin: 0 !important;
-  padding: 0;
-  overflow: hidden;
-  width: 100%; }
-  .landings ul li {
-    float: left;
-    width: 48%; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  @media screen and (max-width: 567px) {
+    .landings ul {
+      justify-content: center; } }
+  @media screen and (max-width: 567px) {
+    .landings ul li .image {
+      width: 100%; } }
   .landings ul li a, .landings ul .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; }
-  .landings ul .dropdown {
-    display: inline-block; }
   .landings ul .dropdown-content {
     display: none;
     position: absolute;
