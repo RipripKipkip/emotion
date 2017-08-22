@@ -106,30 +106,56 @@
                             .container_details
                                 display: flex
                                 flex-direction: row
-                                justify-content: center
+                                justify-content: space-around
+                                // .details
+                                //     display: flex
+                                //     flex-direction: row
+                                //     align-items: center
+                                //     width: 50%
+                                //     //border-bottom: 1px solid rgba($white, 0.5)
+                                //     padding: 0 $box-pad
+                                //
+                                //     > div
+                                //         margin: 0 auto
                                 .details
+                                    padding: 0 $box-pad
                                     display: flex
                                     flex-direction: row
-                                    align-items: center
-                                    width: 50%
-                                    //border-bottom: 1px solid rgba($white, 0.5)
-                                    padding: 0 $box-pad
-
-                                    > div
-                                        margin: 0 auto
+                                    justify-content: space-around
                                     .ico
-                                        margin: 0 $box-pad/2
-                                        height: $box-pad/1.5
-                                        width: $box-pad/1.5
-                                        background-color: $black
-
-                                    .boite_vitess
-
-                                    .calendar
+                                        height: $box-pad+5px
+                                        width: $box-pad+5px
+                                        //background-color: $white
+                                    .timer_e
+                                        background-size: $box-pad+10 $box-pad+10
+                                        background-position: -3px -2px
+                                        background-repeat: no-repeat
+                                        margin-right: $box-pad/2
+                                    .timer_e
+                                        background-image: url(../images/icons/timer_e.svg)
+                                    .calendar_e
+                                        background-image: url(../images/icons/calendar_e.svg)
                                     .d_text
+                                        color: $black
                                         text-transform: uppercase
-                                        line-height: 1.3
+                                        line-height: 2
                                         text-align: left
+                                    // .ico
+                                    //     margin: 0 $box-pad/2
+                                    //     //height: $box-pad/1.5
+                                    //     ////background-color: $black
+                                    // //.gear_lever_e
+                                    //     background-image: url(../images/icons/gear_lever_e.svg)
+                                    //     background-size: $box-pad/1.5 $box-pad/1.5
+                                    //
+                                    //
+                                    // .boite_vitess
+                                    //
+                                    // .calendar
+                                    // .d_text
+                                    //     text-transform: uppercase
+                                    //     line-height: 1.3
+                                    //     text-align: left
                         .container_n_s_v
                             // border-left: 800px solid transparent
                             // /* border-right: 0px solid transparent; */
@@ -196,34 +222,35 @@
                                 background-color: $turquoise
                                 .details
                                     border-bottom: 1px solid rgba($white, 0.5)
-                                    padding: $box-pad/1.5 $box-pad
+                                    padding: $box-pad/2 $box-pad/1.5
                                     display: flex
                                     flex-direction: row
-                                    > div
-                                        margin: 0 auto
-                                    .ico, .border_line, .d_text
-                                        align-items: center
+                                    justify-content: space-around
                                     .ico
-                                        width: 40%
-                                        height: $box-pad/1.5
-                                        width: $box-pad/1.5
-                                        background-color: $white
-
-                                    .boite_vitess
-
-                                    .calendar
+                                        height: $box-pad+5px
+                                        width: $box-pad+5px
+                                        //background-color: $white
+                                    .gear_lever_e, .calendar_e, .timer_e
+                                        background-size: $box-pad+10 $box-pad+10
+                                        background-position: -3px -2px
+                                        background-repeat: no-repeat
+                                    .gear_lever_e
+                                        background-image: url(../images/icons/gear_lever_e.svg)
+                                    .calendar_e
+                                        background-image: url(../images/icons/calendar_e.svg)
 
                                     .border_line
-                                        width: 20%
+                                        width: 30%
                                         height: 1px
                                         background: $white
-                                        margin-top: $box-pad/4
+                                        margin-top: $box-pad/2
                                     .d_text
-                                        width: 40%
+                                        width: 20%
                                         color: $white
                                         text-transform: uppercase
-                                        line-height: 1.3
+                                        line-height: 1.7
                                         text-align: left
+                                        font-size: 20px
 
                         iframe
                             width: 100%

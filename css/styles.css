@@ -1399,23 +1399,28 @@ table {
           .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details {
             display: flex;
             flex-direction: row;
-            justify-content: center; }
+            justify-content: space-around; }
             .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details {
+              padding: 0 30px;
               display: flex;
               flex-direction: row;
-              align-items: center;
-              width: 50%;
-              padding: 0 30px; }
-              .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details > div {
-                margin: 0 auto; }
+              justify-content: space-around; }
               .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .ico {
-                margin: 0 15px;
-                height: 20px;
-                width: 20px;
-                background-color: #000; }
+                height: 35px;
+                width: 35px; }
+              .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .timer_e {
+                background-size: 40px 40px;
+                background-position: -3px -2px;
+                background-repeat: no-repeat;
+                margin-right: 15px; }
+              .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .timer_e {
+                background-image: url(../images/icons/timer_e.svg); }
+              .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .calendar_e {
+                background-image: url(../images/icons/calendar_e.svg); }
               .locations .table_loc table tbody .hard .one-third .container_d_h_a .container_details .details .d_text {
+                color: #000;
                 text-transform: uppercase;
-                line-height: 1.3;
+                line-height: 2;
                 text-align: left; }
         .locations .table_loc table tbody .hard .one-third .container_n_s_v {
           z-index: 3; }
@@ -1468,29 +1473,33 @@ table {
             background-color: #36b1ac; }
             .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details {
               border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-              padding: 20px 30px;
+              padding: 15px 20px;
               display: flex;
-              flex-direction: row; }
-              .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details > div {
-                margin: 0 auto; }
-              .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .ico, .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .border_line, .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
-                align-items: center; }
+              flex-direction: row;
+              justify-content: space-around; }
               .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .ico {
-                width: 40%;
-                height: 20px;
-                width: 20px;
-                background-color: #FFF; }
+                height: 35px;
+                width: 35px; }
+              .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .gear_lever_e, .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .calendar_e, .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .timer_e {
+                background-size: 40px 40px;
+                background-position: -3px -2px;
+                background-repeat: no-repeat; }
+              .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .gear_lever_e {
+                background-image: url(../images/icons/gear_lever_e.svg); }
+              .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .calendar_e {
+                background-image: url(../images/icons/calendar_e.svg); }
               .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .border_line {
-                width: 20%;
+                width: 30%;
                 height: 1px;
                 background: #FFF;
-                margin-top: 7.5px; }
+                margin-top: 15px; }
               .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
-                width: 40%;
+                width: 20%;
                 color: #FFF;
                 text-transform: uppercase;
-                line-height: 1.3;
-                text-align: left; }
+                line-height: 1.7;
+                text-align: left;
+                font-size: 20px; }
         .locations .table_loc table tbody .hard .one-third iframe {
           width: 100%; }
 
