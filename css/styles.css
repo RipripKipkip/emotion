@@ -1136,7 +1136,7 @@ table {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: #006F74;
   margin: 0 auto 25px auto; }
   .fidelites .gagner_points .footer_description .img_mes_points .number_text {
     font-family: 'Old Standard TT', serif;
@@ -1187,65 +1187,65 @@ table {
   .fidelites .gagner_points .btn_s {
     margin: 10px auto 0px auto; } }
 
-.fidelites .avantages_points .footer_description .img_mes_points {
+.fidelites .avantages_points .footer_description .img_mes_points, .fidelites .mes_points .footer_description .img_mes_points {
   width: 200px;
   height: 200px;
   border: 4px solid #000;
   margin: 0 auto 30px auto; }
-  .fidelites .avantages_points .footer_description .img_mes_points .number_text {
+  .fidelites .avantages_points .footer_description .img_mes_points .number_text, .fidelites .mes_points .footer_description .img_mes_points .number_text {
     color: #000;
     padding: 30px 15px; }
-    .fidelites .avantages_points .footer_description .img_mes_points .number_text h1 {
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text h1, .fidelites .mes_points .footer_description .img_mes_points .number_text h1 {
       font-family: 'Old Standard TT', serif;
       font-size: 60px;
       margin-bottom: 0;
       font-weight: 700; }
-    .fidelites .avantages_points .footer_description .img_mes_points .number_text .points {
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text .points, .fidelites .mes_points .footer_description .img_mes_points .number_text .points {
       font-family: 'Old Standard TT', serif;
       font-style: italic;
       font-size: 20px; }
-    .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom, .fidelites .mes_points .footer_description .img_mes_points .number_text .border_bottom {
       height: 2px;
       margin: 15px auto;
       width: 100%;
       background-color: #000; }
-    .fidelites .avantages_points .footer_description .img_mes_points .number_text .description {
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text .description, .fidelites .mes_points .footer_description .img_mes_points .number_text .description {
       font-style: normal; }
 
 @media screen and (max-width: 567px) {
-  .fidelites .avantages_points .wrapper {
+  .fidelites .avantages_points .wrapper, .fidelites .mes_points .wrapper {
     padding: 0; }
-  .fidelites .avantages_points .footer_description {
+  .fidelites .avantages_points .footer_description, .fidelites .mes_points .footer_description {
     width: 50%;
     margin: 15px 0; }
-    .fidelites .avantages_points .footer_description .img_mes_points {
+    .fidelites .avantages_points .footer_description .img_mes_points, .fidelites .mes_points .footer_description .img_mes_points {
       width: 100px;
       height: 90px;
       border: 2px solid #000;
       margin: 0 auto 0 auto; }
-      .fidelites .avantages_points .footer_description .img_mes_points .number_text {
+      .fidelites .avantages_points .footer_description .img_mes_points .number_text, .fidelites .mes_points .footer_description .img_mes_points .number_text {
         color: #000;
         padding: 15px 7.5px; }
-        .fidelites .avantages_points .footer_description .img_mes_points .number_text h1 {
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text h1, .fidelites .mes_points .footer_description .img_mes_points .number_text h1 {
           font-family: 'Old Standard TT', serif;
           font-size: 15px;
           margin-bottom: 0;
           font-weight: 700; }
-        .fidelites .avantages_points .footer_description .img_mes_points .number_text .points {
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text .points, .fidelites .mes_points .footer_description .img_mes_points .number_text .points {
           font-family: 'Old Standard TT', serif;
           font-style: italic;
           font-size: 15px;
           margin-bottom: 0; }
-        .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom {
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom, .fidelites .mes_points .footer_description .img_mes_points .number_text .border_bottom {
           height: 2px;
           margin: 7.5px auto;
           width: 100%;
           background-color: #000; }
-        .fidelites .avantages_points .footer_description .img_mes_points .number_text .description {
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text .description, .fidelites .mes_points .footer_description .img_mes_points .number_text .description {
           font-style: normal;
           font-size: 7.5px;
           margin-bottom: 0; }
-  .fidelites .avantages_points .btn_s {
+  .fidelites .avantages_points .btn_s, .fidelites .mes_points .btn_s {
     margin: 10px auto 0px auto; } }
 
 .fidelites .inviter_points .wrapper {
@@ -1258,14 +1258,8 @@ table {
 .fidelites .inviter_points .footer_description {
   margin-top: 60px;
   width: 40% !important; }
-  .fidelites .inviter_points .footer_description .img_mes_points {
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    background-color: #000;
-    margin: 0 auto 25px auto; }
-    .fidelites .inviter_points .footer_description .img_mes_points .number_text {
-      padding: 60px 45px; }
+  .fidelites .inviter_points .footer_description img {
+    width: 150px; }
   .fidelites .inviter_points .footer_description h1 {
     font-size: 20px;
     margin-bottom: 0;
@@ -1282,11 +1276,6 @@ table {
   .fidelites .inviter_points .footer_description {
     width: 100% !important;
     margin: 0 3px !important; }
-    .fidelites .inviter_points .footer_description .img_mes_points {
-      width: 100px;
-      height: 100px; }
-      .fidelites .inviter_points .footer_description .img_mes_points .number_text {
-        padding: 30px 20px; }
     .fidelites .inviter_points .footer_description h1 {
       font-size: 15px;
       margin-bottom: 0;
