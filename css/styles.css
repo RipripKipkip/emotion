@@ -984,6 +984,12 @@ table {
       @media screen and (max-width: 567px) {
         .cars .veh .veh_text .container_1 h1, .scooters .veh .veh_text .container_1 h1 {
           font-size: 16px; } }
+      .cars .veh .veh_text .container_1 h1 span:first-child, .scooters .veh .veh_text .container_1 h1 span:first-child {
+        color: #36b1ac;
+        padding-right: 5px; }
+      .cars .veh .veh_text .container_1 h1 span:last-child, .scooters .veh .veh_text .container_1 h1 span:last-child {
+        color: #006F74;
+        padding-left: 5px; }
     .cars .veh .veh_text .container_1 .container_stars, .scooters .veh .veh_text .container_1 .container_stars {
       margin: 20px auto;
       /****** Style Star Rating Widget *****/
