@@ -22,9 +22,15 @@
         text-align: center
         line-height: 25px
         margin-top: $box-pad
+        margin-right: $box-pad*1.8
+        @media screen and (max-width: $break-sm)
+            margin-right: 0
+        #terms-privacy
+            justify-content: center
 
     #rubriques
         text-align: center
+        justify-content: space-around
         h3
             cursor: pointer
             font-size: 20px
@@ -34,7 +40,6 @@
     #rubriques, #res_soc , #terms-privacy
         display: flex
         flex-direction: row
-        justify-content: center
 
     #rubriques, #terms-privacy
         @media screen and (max-width: $break-sm)
@@ -59,14 +64,14 @@
             @media screen and (max-width: $break-sm)
                 padding: 0
     #nouscont_faq_cont
-        padding-left: $box-pad*4
+        //padding-left: $box-pad*4
         ul
             li
                 cursor: pointer
                 &:first-child
                     &:hover
                         text-decoration: underline
-    #navigation, #share, #nouscont_faq_cont
+    //#navigation, #share, #nouscont_faq_cont
         width: 25%
         @media screen and (max-width: $break-sm)
             width: 100%

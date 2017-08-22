@@ -215,15 +215,18 @@
         padding-top: 0
         .wrapper
             align-items: flex-start
+            margin: 0
+            justify-content: space-around
+            padding: 0 $box-pad*3
             @media screen and (max-width: $break-sm)
-                padding: 25px 25px 25px 25px
+                padding: $box-pad
         h2
             width: 100%
             margin-bottom: 40px
         .footer_description
-            width: 25%
-            float: left
-            margin: 15px 30px
+            //width: 25%
+            //float: left
+            margin: $box-pad/2 $box-pad*1.5
             .img_section_7
                 width: 200px
                 height: 200px

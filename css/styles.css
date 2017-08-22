@@ -521,9 +521,16 @@ table {
     font-size: 15px;
     text-align: center;
     line-height: 25px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-right: 54px; }
+    @media screen and (max-width: 567px) {
+      #footer_index .text-footer {
+        margin-right: 0; } }
+    #footer_index .text-footer #terms-privacy {
+      justify-content: center; }
   #footer_index #rubriques {
-    text-align: center; }
+    text-align: center;
+    justify-content: space-around; }
     #footer_index #rubriques h3 {
       cursor: pointer;
       font-size: 20px;
@@ -533,8 +540,7 @@ table {
           padding-top: 30px; } }
   #footer_index #rubriques, #footer_index #res_soc, #footer_index #terms-privacy {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    flex-direction: row; }
   @media screen and (max-width: 567px) {
     #footer_index #rubriques, #footer_index #terms-privacy {
       flex-direction: column; } }
@@ -556,18 +562,10 @@ table {
       @media screen and (max-width: 567px) {
         #footer_index #share #res_soc {
           padding: 0; } }
-  #footer_index #nouscont_faq_cont {
-    padding-left: 120px; }
-    #footer_index #nouscont_faq_cont ul li {
-      cursor: pointer; }
-      #footer_index #nouscont_faq_cont ul li:first-child:hover {
-        text-decoration: underline; }
-  #footer_index #navigation, #footer_index #share, #footer_index #nouscont_faq_cont {
-    width: 25%; }
-    @media screen and (max-width: 567px) {
-      #footer_index #navigation, #footer_index #share, #footer_index #nouscont_faq_cont {
-        width: 100%;
-        padding: 0; } }
+  #footer_index #nouscont_faq_cont ul li {
+    cursor: pointer; }
+    #footer_index #nouscont_faq_cont ul li:first-child:hover {
+      text-decoration: underline; }
   #footer_index #terms-privacy .text-invert {
     padding: 5px; }
     #footer_index #terms-privacy .text-invert:hover {
@@ -825,17 +823,18 @@ table {
   flex-wrap: wrap;
   padding-top: 0; }
   .landings .rubriques_services .wrapper {
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin: 0;
+    justify-content: space-around;
+    padding: 0 90px; }
     @media screen and (max-width: 567px) {
       .landings .rubriques_services .wrapper {
-        padding: 25px 25px 25px 25px; } }
+        padding: 30px; } }
   .landings .rubriques_services h2 {
     width: 100%;
     margin-bottom: 40px; }
   .landings .rubriques_services .footer_description {
-    width: 25%;
-    float: left;
-    margin: 15px 30px; }
+    margin: 15px 45px; }
     .landings .rubriques_services .footer_description .img_section_7 {
       width: 200px;
       height: 200px;
