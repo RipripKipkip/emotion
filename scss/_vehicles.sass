@@ -3,6 +3,8 @@
         padding: 0
     .section_turquoise
         height: $box-pad*3
+        @media screen and (max-width: $break-sm)
+            height: $box-pad*4
     .diagonale
         background: linear-gradient(to right top, rgba($gray-light, 0.3) 50%, $turquoise 50%)
         height: $box-pad*2
@@ -16,7 +18,7 @@
             padding: $box-pad 0
             @media screen and (max-width: $break-sm)
                 flex-direction: column
-                margin-top: $box-pad/2
+                //margin-top: $box-pad/2
                 padding: $box-pad/2 0
         .btn_mid
             margin: 0 $box-pad
@@ -43,23 +45,31 @@
         justify-content: center
         align-items: center
         border-bottom: 1px solid $gray-light
+        @media screen and (max-width: $break-sm)
+            flex-direction: column
+            padding: $box-pad 0
         .car_img, .scoot_img
             flex: 2 auto
             width: 620px
+            @media screen and (max-width: $break-sm)
+                width: auto
             .images
                 height: 300px
                 @media screen and (max-width: $break-sm)
                     width: 100%
+                    height: auto
 
         .veh_text
             flex: 3 auto
+            @media screen and (max-width: $break-sm)
+                padding-top: $box-pad
             .container_1
                 h1
                     font-family: 'Montserrat', sans-serif
                     font-size: $box-pad/1.5
                     font-weight: bold
                     @media screen and (max-width: $break-sm)
-                        font-size: $box-pad/2+1px
+                        font-size: $box-pad/1.5
                     span
                         &:first-child
                             color: $turquoise
