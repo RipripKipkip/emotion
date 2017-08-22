@@ -552,11 +552,9 @@ table {
         text-decoration: underline; }
   #footer_index #share {
     padding: 0 60px; }
-    #footer_index #share .footericon:first-child {
-      width: 35px; }
     #footer_index #share .footericon {
       margin: 15px 30px;
-      width: 30px; }
+      width: 45px; }
     #footer_index #share #res_soc {
       padding: 0 0 45px 0; }
       @media screen and (max-width: 567px) {
