@@ -167,7 +167,8 @@
                                 font-size: $box-pad/1.5
                                 font-weight: bold
                                 @media screen and (max-width: $break-sm)
-                                    font-size: $box-pad/2+1px
+                                    font-size: $box-pad/1.5
+
                                 span
                                     &:first-child
                                         color: $turquoise
@@ -223,8 +224,7 @@
 
 
                             .images
-                                @media screen and (max-width: $break-sm)
-                                    width: 100%
+                                width: 100%
                         .container_d_d
                             position: relative
                             //top: -$box-pad*3
@@ -240,6 +240,8 @@
                                     display: flex
                                     flex-direction: row
                                     justify-content: space-around
+                                    @media screen and (max-width: $break-sm)
+                                        padding: $box-pad/2 0
                                     .ico
                                         height: $box-pad+5px
                                         width: $box-pad+5px
@@ -259,12 +261,14 @@
                                         background: $white
                                         margin-top: $box-pad/2
                                     .d_text
-                                        width: 20%
+                                        width: 25%
                                         color: $white
                                         text-transform: uppercase
                                         line-height: 1.7
                                         text-align: left
                                         font-size: 20px
+                                        @media screen and (max-width: $break-sm)
+                                            width: 35%
 
                         iframe
                             width: 100%
