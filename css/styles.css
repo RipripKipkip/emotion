@@ -172,7 +172,7 @@ table {
 .opacityy_animate {
   opacity: 0; }
 
-#nav {
+.navi {
   background: #36b1ac;
   width: 100%;
   position: fixed;
@@ -183,41 +183,39 @@ table {
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
-  #nav .header {
+  .navi .header {
     text-align: left;
     height: 80px;
     line-height: 80px;
     position: relative; }
-    #nav .header .logo {
+    .navi .header .logo {
       display: inline-block;
       width: 180px;
-      height: 30px;
+      height: 50px;
       line-height: 64px;
       font-weight: 800;
-      background-image: url(/images/logo_w.svg);
-      background-size: 180px 30px;
-      margin: 24px; }
-      @media screen and (max-width: 567px) {
-        #nav .header .logo {
-          margin: 25px 21px; } }
-    #nav .header .top-nav {
+      background-image: url(/images/LOGO-EMOTION-defonse-01.svg);
+      background-size: 180px 50px;
+      background-repeat: no-repeat;
+      margin: 15px 15px 15px 0; }
+    .navi .header .top-nav {
       position: absolute;
       right: 15px;
       display: inline-block;
       vertical-align: middle; }
       @media screen and (max-width: 567px) {
-        #nav .header .top-nav {
+        .navi .header .top-nav {
           display: none; } }
-      #nav .header .top-nav li {
+      .navi .header .top-nav li {
         display: inline-block;
         text-decoration: none;
         padding-left: 5px; }
-        #nav .header .top-nav li:last-child {
+        .navi .header .top-nav li:last-child {
           padding-left: 20px; }
-        #nav .header .top-nav li a {
+        .navi .header .top-nav li a {
           text-decoration: none;
           font-weight: 300; }
-        #nav .header .top-nav li .btn-border {
+        .navi .header .top-nav li .btn-border {
           text-align: center;
           display: inline-block;
           cursor: pointer;
@@ -228,7 +226,7 @@ table {
           margin: 10px 0;
           line-height: 40px;
           font-size: 18px; }
-          #nav .header .top-nav li .btn-border:before {
+          .navi .header .top-nav li .btn-border:before {
             content: "";
             position: absolute;
             width: 0;
@@ -238,10 +236,10 @@ table {
             bottom: 0;
             transition: all .3s;
             opacity: 0.7; }
-          #nav .header .top-nav li .btn-border:hover:before {
+          .navi .header .top-nav li .btn-border:hover:before {
             width: 100%;
             left: 0; }
-        #nav .header .top-nav li .btn-log {
+        .navi .header .top-nav li .btn-log {
           display: inline-block;
           cursor: pointer;
           letter-spacing: 1px;
@@ -257,7 +255,7 @@ table {
           padding: 0px 15px;
           font-weight: 500;
           font-size: 18px; }
-          #nav .header .top-nav li .btn-log:hover {
+          .navi .header .top-nav li .btn-log:hover {
             background-color: #FFF;
             border: solid 1px #FFF;
             color: #36b1ac !important; }
