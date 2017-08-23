@@ -1511,11 +1511,13 @@ table {
         .locations .table_loc table tbody .hard .one-third .container_d_d {
           position: relative;
           z-index: 1; }
-          .locations .table_loc table tbody .hard .one-third .container_d_d .diagonale {
-            background: linear-gradient(to right bottom, transparent 50%, #36b1ac 50%);
-            height: 60px; }
+          .locations .table_loc table tbody .hard .one-third .container_d_d .wave {
+            -ms-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
           .locations .table_loc table tbody .hard .one-third .container_d_d .container_details {
-            background-color: #36b1ac; }
+            background-color: #36b1ac;
+            margin-top: -1px; }
             .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details {
               border-bottom: 1px solid rgba(255, 255, 255, 0.5);
               padding: 15px 20px;
@@ -1545,9 +1547,9 @@ table {
                 width: 25%;
                 color: #FFF;
                 text-transform: uppercase;
-                line-height: 1.7;
+                line-height: 1.9;
                 text-align: left;
-                font-size: 20px; }
+                font-size: 18px; }
                 @media screen and (max-width: 567px) {
                   .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
                     width: 35%; } }

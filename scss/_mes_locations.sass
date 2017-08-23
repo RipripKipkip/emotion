@@ -238,11 +238,17 @@
                             position: relative
                             //top: -$box-pad*3
                             z-index: 1
-                            .diagonale
+                            .wave
+                                -ms-transform: rotate(180deg)
+                                -webkit-transform: rotate(180deg)
+                                transform: rotate(180deg)
+                                //@include rotate(180deg)
+                            //.diagonale
                                 background: linear-gradient(to right bottom, transparent 50%, $turquoise 50%)
                                 height: $box-pad*2
                             .container_details
                                 background-color: $turquoise
+                                margin-top: -1px
                                 .details
                                     border-bottom: 1px solid rgba($white, 0.5)
                                     padding: $box-pad/2 $box-pad/1.5
@@ -273,9 +279,9 @@
                                         width: 25%
                                         color: $white
                                         text-transform: uppercase
-                                        line-height: 1.7
+                                        line-height: 1.9
                                         text-align: left
-                                        font-size: 20px
+                                        font-size: 18px
                                         @media screen and (max-width: $break-sm)
                                             width: 35%
 
