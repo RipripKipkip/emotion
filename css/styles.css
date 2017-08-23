@@ -1041,6 +1041,23 @@ table {
         .cars .veh .veh_text .container_2 .price_time:nth-child(2), .scooters .veh .veh_text .container_2 .price_time:nth-child(2) {
           border-right: 1px solid #e0e0e0;
           border-left: 1px solid #e0e0e0; }
+    .cars .veh .veh_text .container_3 .btn_mid, .scooters .veh .veh_text .container_3 .btn_mid {
+      width: 100%;
+      padding-top: 30px; }
+      .cars .veh .veh_text .container_3 .btn_mid .btn_w, .scooters .veh .veh_text .container_3 .btn_mid .btn_w {
+        height: 35px;
+        font-size: 15px;
+        padding: 0px 15px;
+        background-color: #36b1ac;
+        border: solid 1px #36b1ac;
+        color: #FFF; }
+        @media screen and (max-width: 567px) {
+          .cars .veh .veh_text .container_3 .btn_mid .btn_w, .scooters .veh .veh_text .container_3 .btn_mid .btn_w {
+            margin-bottom: 15px; } }
+        .cars .veh .veh_text .container_3 .btn_mid .btn_w:hover, .scooters .veh .veh_text .container_3 .btn_mid .btn_w:hover {
+          border: solid 1px #36b1ac;
+          background-color: transparent;
+          color: #36b1ac; }
 
 .fidelites .section_turquoise, .locations .section_turquoise, .settings .section_turquoise {
   padding: 0; }
