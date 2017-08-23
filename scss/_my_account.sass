@@ -5,6 +5,8 @@
 
     .section_turquoise
         height: 100px
+        @media screen and (max-width: $break-sm)
+            height: 185px
     .diagonale
         height: $box-pad*2
         width: 100%
@@ -44,7 +46,6 @@
             padding: $box-pad 0
             @media screen and (max-width: $break-sm)
                 flex-direction: column
-                margin-top: $box-pad/2
                 padding: $box-pad/2 0
         .btn_mid
             margin: 0 $box-pad

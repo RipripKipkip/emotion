@@ -1064,6 +1064,9 @@ table {
 
 .fidelites .section_turquoise, .locations .section_turquoise, .settings .section_turquoise {
   height: 100px; }
+  @media screen and (max-width: 567px) {
+    .fidelites .section_turquoise, .locations .section_turquoise, .settings .section_turquoise {
+      height: 185px; } }
 
 .fidelites .diagonale, .locations .diagonale, .settings .diagonale {
   height: 60px;
@@ -1112,7 +1115,6 @@ table {
   @media screen and (max-width: 567px) {
     .fidelites .header_my_account .comp_buttons, .locations .header_my_account .comp_buttons, .settings .header_my_account .comp_buttons {
       flex-direction: column;
-      margin-top: 15px;
       padding: 15px 0; } }
 
 .fidelites .header_my_account .btn_mid, .locations .header_my_account .btn_mid, .settings .header_my_account .btn_mid {
