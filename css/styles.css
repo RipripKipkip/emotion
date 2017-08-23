@@ -621,7 +621,6 @@ table {
       .log .main-content .form-group label, .sig .main-content .form-group label {
         display: block;
         width: 130px;
-        font-weight: bold;
         font-size: 1em;
         margin-bottom: 23px;
         padding-right: 20px;
