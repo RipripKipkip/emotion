@@ -1,9 +1,7 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:900");
-@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Montserrat:400,900");
-@import url("https://fonts.googleapis.com/css?family=Quicksand");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -491,17 +489,16 @@ table {
     margin: auto;
     padding: 10px 15px;
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 300;
     color: #FFF;
     border-radius: 50px;
     border: none;
-    letter-spacing: 0.7;
+    letter-spacing: 0.7px;
     -moz-transition: 0.6s;
     -o-transition: 0.6s;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-    padding: 10px 15px;
-    font-family: 'Quicksand', sans-serif !important; }
+    padding: 10px 15px; }
     @media screen and (max-width: 567px) {
       .btn_mid .btn_w {
         width: 75%;
@@ -993,9 +990,8 @@ table {
       .cars .veh .veh_text, .scooters .veh .veh_text {
         padding-top: 30px; } }
     .cars .veh .veh_text .container_1 h1, .scooters .veh .veh_text .container_1 h1 {
-      font-family: 'Montserrat', sans-serif;
       font-size: 20px;
-      font-weight: bold; }
+      font-weight: 800; }
       @media screen and (max-width: 567px) {
         .cars .veh .veh_text .container_1 h1, .scooters .veh .veh_text .container_1 h1 {
           font-size: 20px; } }
@@ -1136,8 +1132,7 @@ table {
   background: linear-gradient(to right top, #FFF 50%, #36b1ac 50%); }
 
 .fidelites .mes_points h3, .fidelites .gagner_points h3, .fidelites .avantages_points h3, .fidelites .inviter_points h3 {
-  margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif !important; }
+  margin-bottom: 30px; }
 
 .fidelites .gagner_points, .fidelites .avantages_points, .fidelites .inviter_points {
   display: flex;
@@ -1435,10 +1430,9 @@ table {
         .locations .table_loc table tbody .hard .one-third .container_n_s_v {
           z-index: 3; }
           .locations .table_loc table tbody .hard .one-third .container_n_s_v h1 {
-            font-family: 'Montserrat', sans-serif;
             margin-top: 20px;
             font-size: 20px;
-            font-weight: bold; }
+            font-weight: 800; }
             @media screen and (max-width: 567px) {
               .locations .table_loc table tbody .hard .one-third .container_n_s_v h1 {
                 font-size: 20px; } }
@@ -1943,7 +1937,8 @@ table {
   outline: 0; }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
   letter-spacing: initial;
   width: 100%; }
 
