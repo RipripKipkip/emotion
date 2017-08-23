@@ -925,6 +925,10 @@ table {
     .cars .section_turquoise, .scooters .section_turquoise {
       height: 120px; } }
 
+.cars .section_gray_light, .scooters .section_gray_light {
+  padding-top: 60px;
+  margin-top: -82px; }
+
 .cars .diagonale, .scooters .diagonale {
   background: linear-gradient(to right top, rgba(224, 224, 224, 0.3) 50%, #36b1ac 50%);
   height: 60px;
@@ -935,7 +939,7 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 0; }
+  padding: 40px 0; }
   @media screen and (max-width: 567px) {
     .cars .header_vehicules .comp_buttons, .scooters .header_vehicules .comp_buttons {
       flex-direction: column;
