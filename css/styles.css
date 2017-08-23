@@ -1537,8 +1537,38 @@ table {
                 @media screen and (max-width: 567px) {
                   .locations .table_loc table tbody .hard .one-third .container_d_d .container_details .details .d_text {
                     width: 35%; } }
-        .locations .table_loc table tbody .hard .one-third iframe {
+        .locations .table_loc table tbody .hard .one-third:last-child iframe {
           width: 100%; }
+        .locations .table_loc table tbody .hard .one-third:last-child .btn_mid {
+          margin: 30px auto;
+          width: 100%; }
+          .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            padding: 0;
+            background-color: #36b1ac;
+            border: solid 1px #36b1ac;
+            color: #FFF; }
+            @media screen and (max-width: 567px) {
+              .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w {
+                width: auto;
+                margin-bottom: 15px; } }
+            .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w:hover {
+              border: solid 1px #36b1ac;
+              background-color: #36b1ac;
+              color: #FFF; }
+            .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w .ico {
+              height: 35px;
+              width: 35px; }
+            .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w .png_e {
+              background-size: 40px 40px;
+              background-position: -3px -2px;
+              background-repeat: no-repeat;
+              margin: 5px 15px;
+              background-image: url(../images/icons/png_e.svg); }
+            .locations .table_loc table tbody .hard .one-third:last-child .btn_mid .btn_w a {
+              padding: 10px 15px 10px 0px; }
 
 .settings .diagonale {
   background: linear-gradient(to right top, #FFF 50%, #36b1ac 50%); }
