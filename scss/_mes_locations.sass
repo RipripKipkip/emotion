@@ -1,6 +1,15 @@
 .locations
     line-height: 0
 
+    .section_white
+        padding: $box-pad*3 $box-pad/2 $box-pad*2 $box-pad/2
+        @media screen and (max-width: $break-sm)
+            padding: $box-pad/2
+        &:last-child
+            padding: 0 $box-pad/2 $box-pad/2 $box-pad/2
+            @media screen and (max-width: $break-sm)
+                padding: $box-pad/2
+
     .diagonale
         background: linear-gradient(to right top, $white 50%, $turquoise 50%)
 

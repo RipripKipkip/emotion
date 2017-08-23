@@ -1324,6 +1324,16 @@ table {
 
 .locations {
   line-height: 0; }
+  .locations .section_white {
+    padding: 90px 15px 60px 15px; }
+    @media screen and (max-width: 567px) {
+      .locations .section_white {
+        padding: 15px; } }
+    .locations .section_white:last-child {
+      padding: 0 15px 15px 15px; }
+      @media screen and (max-width: 567px) {
+        .locations .section_white:last-child {
+          padding: 15px; } }
   .locations .diagonale {
     background: linear-gradient(to right top, #FFF 50%, #36b1ac 50%); }
   .locations .table_loc table {
