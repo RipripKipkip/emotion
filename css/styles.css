@@ -1,6 +1,7 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900");
 html, body, div, span, applet, object, iframe,
@@ -1266,6 +1267,199 @@ table {
                 .filters .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
                   margin-bottom: 15px; } }
               .filters .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w:hover {
+                background-color: #36b1ac;
+                color: #FFF; }
+
+.payment .diagonale {
+  background: linear-gradient(to right top, #FFF 50%, #36b1ac 50%); }
+
+.payment section {
+  padding: 0; }
+
+.payment .formulaires {
+  padding: 90px 15px 60px 15px; }
+  @media screen and (max-width: 567px) {
+    .payment .formulaires {
+      padding: 45px 0;
+      width: auto; } }
+  .payment .formulaires .formulaire {
+    width: 90%;
+    padding: 0 15px 15px 15px;
+    background-color: #FFF; }
+    @media screen and (max-width: 567px) {
+      .payment .formulaires .formulaire {
+        width: 100%; } }
+    .payment .formulaires .formulaire .main-content-1 {
+      padding: 0 20px 20px 20px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px; }
+      @media screen and (max-width: 567px) {
+        .payment .formulaires .formulaire .main-content-1 {
+          flex-direction: column; } }
+      .payment .formulaires .formulaire .main-content-1 .resa_details {
+        flex: 1;
+        padding: 45px 30px;
+        border-right: 1px solid #e0e0e0; }
+        @media screen and (max-width: 567px) {
+          .payment .formulaires .formulaire .main-content-1 .resa_details {
+            margin: 20px 0;
+            border: none; } }
+        .payment .formulaires .formulaire .main-content-1 .resa_details .rubriques {
+          margin-bottom: 45px; }
+          .payment .formulaires .formulaire .main-content-1 .resa_details .rubriques h5, .payment .formulaires .formulaire .main-content-1 .resa_details .rubriques p {
+            text-align: left; }
+          .payment .formulaires .formulaire .main-content-1 .resa_details .rubriques h5 {
+            font-weight: 700;
+            font-size: 17px;
+            margin-bottom: 15px; }
+          .payment .formulaires .formulaire .main-content-1 .resa_details .rubriques p {
+            margin-bottom: 5px; }
+      .payment .formulaires .formulaire .main-content-1 .resa_payment {
+        flex: 3;
+        padding: 45px; }
+        @media screen and (max-width: 567px) {
+          .payment .formulaires .formulaire .main-content-1 .resa_payment {
+            padding: 20px 0 !important; } }
+        .payment .formulaires .formulaire .main-content-1 .resa_payment .form-group1 {
+          flex-direction: row !important; }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .form-group1 div {
+            flex-direction: row; }
+        .payment .formulaires .formulaire .main-content-1 .resa_payment .veh {
+          padding: 30px 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          border-top: 1px solid #e0e0e0; }
+          @media screen and (max-width: 567px) {
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh {
+              flex-direction: column;
+              padding: 20px; } }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .car_img .images, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .scoot_img .images {
+            height: 200px; }
+            @media screen and (max-width: 567px) {
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .car_img .images, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .scoot_img .images {
+                width: 100%;
+                height: auto; } }
+          @media screen and (max-width: 567px) {
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text {
+              padding-top: 30px; } }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 h1 {
+            font-size: 20px;
+            font-weight: 800; }
+            @media screen and (max-width: 567px) {
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 h1 {
+                font-size: 20px; } }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 h1 span:first-child {
+              color: #36b1ac;
+              padding-right: 5px; }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 h1 span:last-child {
+              color: #006F74;
+              padding-left: 5px; }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars {
+            margin: 20px auto;
+            /****** Style Star Rating Widget *****/
+            /***** CSS Magic to Highlight Stars on Hover *****/ }
+            @media screen and (max-width: 567px) {
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars {
+                margin: 30px auto 20px auto; } }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating {
+              border: none;
+              width: 50%;
+              width: 150px;
+              margin: 0 auto; }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating input {
+                display: none; }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating label:before {
+                margin: 5px;
+                font-size: 1.25em;
+                font-family: FontAwesome;
+                display: inline-block;
+                content: "\f005"; }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating .half:before {
+                content: "\f089";
+                position: absolute; }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating label {
+                color: #ddd;
+                float: right; }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating:not(:checked) > label:hover ~ label {
+              color: #FFD700; }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating > input:checked + label:hover, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating > label:hover ~ input:checked ~ label, .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_1 .container_stars .rating > input:checked ~ label:hover ~ label {
+              color: #FFED85; }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_2 .price_time {
+              padding: 15px 30px; }
+              @media screen and (max-width: 567px) {
+                .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_2 .price_time {
+                  padding: 10px 20px; } }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_2 .price_time:nth-child(2) {
+                border-right: 1px solid #e0e0e0;
+                border-left: 1px solid #e0e0e0; }
+          .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_3 .btn_mid {
+            width: 100%;
+            padding-top: 30px; }
+            .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_3 .btn_mid .btn_w {
+              height: 35px;
+              font-size: 15px;
+              padding: 0px 15px;
+              background-color: #36b1ac;
+              border: solid 1px #36b1ac;
+              color: #FFF; }
+              @media screen and (max-width: 567px) {
+                .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_3 .btn_mid .btn_w {
+                  margin-bottom: 15px; } }
+              .payment .formulaires .formulaire .main-content-1 .resa_payment .veh .veh_text .container_3 .btn_mid .btn_w:hover {
+                border: solid 1px #36b1ac;
+                background-color: transparent;
+                color: #36b1ac; }
+      .payment .formulaires .formulaire .main-content-1 .main-content {
+        background-color: rgba(224, 224, 224, 0.3); }
+        @media screen and (max-width: 567px) {
+          .payment .formulaires .formulaire .main-content-1 .main-content {
+            padding: 20px;
+            margin: 20px 0; } }
+        .payment .formulaires .formulaire .main-content-1 .main-content h4 {
+          font-size: 20px;
+          color: #36b1ac;
+          margin-bottom: 45px; }
+          @media screen and (max-width: 567px) {
+            .payment .formulaires .formulaire .main-content-1 .main-content h4 {
+              margin: 20px 0 30px 0; } }
+        .payment .formulaires .formulaire .main-content-1 .main-content .form-group {
+          display: flex;
+          flex-direction: column; }
+          .payment .formulaires .formulaire .main-content-1 .main-content .form-group label {
+            font-size: 1em;
+            margin-bottom: 23px;
+            text-align: left; }
+          .payment .formulaires .formulaire .main-content-1 .main-content .form-group .input-control {
+            background-color: #FFF;
+            margin-bottom: 20px;
+            border: none;
+            padding: 15px;
+            font-size: 18px; }
+            .payment .formulaires .formulaire .main-content-1 .main-content .form-group .input-control:hover {
+              background: rgba(0, 0, 0, 0.05); }
+            @media screen and (max-width: 567px) {
+              .payment .formulaires .formulaire .main-content-1 .main-content .form-group .input-control {
+                margin-top: 2px; } }
+          .payment .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid {
+            width: 100%; }
+            .payment .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+              height: 35px;
+              font-size: 15px;
+              padding: 0px 15px;
+              border: solid 1px #36b1ac;
+              background: transparent;
+              color: #36b1ac; }
+              @media screen and (max-width: 567px) {
+                .payment .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+                  margin-bottom: 15px; } }
+              .payment .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w:hover {
                 background-color: #36b1ac;
                 color: #FFF; }
 
