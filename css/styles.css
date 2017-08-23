@@ -1172,22 +1172,22 @@ table {
     margin: 15px 30px; }
 
 .fidelites .gagner_points .footer_description .img_mes_points {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 100px;
   background-color: #006F74;
   margin: 0 auto 25px auto; }
   .fidelites .gagner_points .footer_description .img_mes_points .number_text {
-    font-family: 'Old Standard TT', serif;
     color: #FFF;
-    padding: 60px 45px; }
+    padding-top: 25px; }
     .fidelites .gagner_points .footer_description .img_mes_points .number_text h1 {
-      font-size: 60px;
+      font-family: 'emofiont', sans-serif;
+      font-size: 90px;
       margin-bottom: 0;
-      font-weight: 700; }
+      font-weight: 700;
+      line-height: 0.9; }
     .fidelites .gagner_points .footer_description .img_mes_points .number_text .points {
-      font-style: italic;
-      font-size: 20px; }
+      line-height: 0.9; }
 
 .fidelites .gagner_points .footer_description .description {
   color: #808080; }
@@ -1204,15 +1204,11 @@ table {
       margin: 0 auto 15px auto; }
       .fidelites .gagner_points .footer_description .img_mes_points .number_text {
         color: #FFF;
-        padding: 30px 7.5px; }
+        padding-top: 22px; }
         .fidelites .gagner_points .footer_description .img_mes_points .number_text h1 {
-          font-family: 'Old Standard TT', serif;
-          font-size: 15px;
-          margin-bottom: 0;
-          font-weight: 700; }
+          font-size: 45px;
+          margin-bottom: 0; }
         .fidelites .gagner_points .footer_description .img_mes_points .number_text .points {
-          font-family: 'Old Standard TT', serif;
-          font-style: italic;
           font-size: 15px;
           margin-bottom: 0; }
     .fidelites .gagner_points .footer_description .description {
@@ -1229,27 +1225,31 @@ table {
 .fidelites .avantages_points .footer_description .img_mes_points, .fidelites .mes_points .footer_description .img_mes_points {
   width: 200px;
   height: 200px;
-  border: 4px solid #000;
+  border: 4px solid #006F74;
+  border-radius: 90px 0;
   margin: 0 auto 30px auto; }
   .fidelites .avantages_points .footer_description .img_mes_points .number_text, .fidelites .mes_points .footer_description .img_mes_points .number_text {
-    color: #000;
+    color: #006F74;
     padding: 30px 15px; }
     .fidelites .avantages_points .footer_description .img_mes_points .number_text h1, .fidelites .mes_points .footer_description .img_mes_points .number_text h1 {
-      font-family: 'Old Standard TT', serif;
+      font-family: 'emofiont', sans-serif;
       font-size: 60px;
       margin-bottom: 0;
-      font-weight: 700; }
+      font-weight: 700;
+      line-height: 0.8; }
     .fidelites .avantages_points .footer_description .img_mes_points .number_text .points, .fidelites .mes_points .footer_description .img_mes_points .number_text .points {
-      font-family: 'Old Standard TT', serif;
-      font-style: italic;
-      font-size: 20px; }
-    .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom, .fidelites .mes_points .footer_description .img_mes_points .number_text .border_bottom {
-      height: 2px;
-      margin: 15px auto;
-      width: 100%;
-      background-color: #000; }
+      font-size: 20px;
+      margin: 0; }
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text .ico, .fidelites .mes_points .footer_description .img_mes_points .number_text .ico {
+      height: 57px;
+      margin-top: -15px; }
+    .fidelites .avantages_points .footer_description .img_mes_points .number_text .curve_line, .fidelites .mes_points .footer_description .img_mes_points .number_text .curve_line {
+      background-repeat: no-repeat;
+      background-image: url(../images/curve_line.svg); }
     .fidelites .avantages_points .footer_description .img_mes_points .number_text .description, .fidelites .mes_points .footer_description .img_mes_points .number_text .description {
-      font-style: normal; }
+      font-style: normal;
+      margin-top: -15px;
+      margin-bottom: 0; }
 
 @media screen and (max-width: 567px) {
   .fidelites .avantages_points .wrapper, .fidelites .mes_points .wrapper {
@@ -1259,30 +1259,30 @@ table {
     margin: 15px 0; }
     .fidelites .avantages_points .footer_description .img_mes_points, .fidelites .mes_points .footer_description .img_mes_points {
       width: 100px;
-      height: 90px;
-      border: 2px solid #000;
-      margin: 0 auto 0 auto; }
+      height: 100px;
+      border: 2px solid #006F74;
+      margin: 0 auto 0 auto;
+      border-radius: 45px 0; }
       .fidelites .avantages_points .footer_description .img_mes_points .number_text, .fidelites .mes_points .footer_description .img_mes_points .number_text {
-        color: #000;
+        color: #006F74;
         padding: 15px 7.5px; }
         .fidelites .avantages_points .footer_description .img_mes_points .number_text h1, .fidelites .mes_points .footer_description .img_mes_points .number_text h1 {
-          font-family: 'Old Standard TT', serif;
-          font-size: 15px;
-          margin-bottom: 0;
-          font-weight: 700; }
+          font-family: 'emofiont', sans-serif;
+          font-size: 30px;
+          margin-bottom: 0; }
         .fidelites .avantages_points .footer_description .img_mes_points .number_text .points, .fidelites .mes_points .footer_description .img_mes_points .number_text .points {
-          font-family: 'Old Standard TT', serif;
-          font-style: italic;
           font-size: 15px;
           margin-bottom: 0; }
-        .fidelites .avantages_points .footer_description .img_mes_points .number_text .border_bottom, .fidelites .mes_points .footer_description .img_mes_points .number_text .border_bottom {
-          height: 2px;
-          margin: 7.5px auto;
-          width: 100%;
-          background-color: #000; }
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text .ico, .fidelites .mes_points .footer_description .img_mes_points .number_text .ico {
+          height: 30px;
+          margin-top: -6px; }
+        .fidelites .avantages_points .footer_description .img_mes_points .number_text .curve_line, .fidelites .mes_points .footer_description .img_mes_points .number_text .curve_line {
+          background-repeat: no-repeat;
+          background-image: url(../images/curve_line.svg); }
         .fidelites .avantages_points .footer_description .img_mes_points .number_text .description, .fidelites .mes_points .footer_description .img_mes_points .number_text .description {
           font-style: normal;
-          font-size: 7.5px;
+          margin-top: -10px;
+          font-size: 10px;
           margin-bottom: 0; }
   .fidelites .avantages_points .btn_s, .fidelites .mes_points .btn_s {
     margin: 10px auto 0px auto; } }
@@ -1996,6 +1996,10 @@ table {
           flex-direction: row; }
           .settings .formulaires .formulaire .main-content-1 .form_coord .group_label_input > div {
             flex: 1 auto; }
+
+@font-face {
+  font-family: 'emofiont';
+  src: url("../fonts/emofiont/emofiont-webfont.eot") format("eot"), url("../fonts/emofiont/emofiont-webfont.otf") format("truetype"), url("../fonts/emofiont/emofiont-webfont.woff") format("woff"), url("../fonts/emofiont/emofiont-webfont.svg") format("svg"); }
 
 * {
   outline: 0; }
