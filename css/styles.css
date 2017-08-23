@@ -1115,7 +1115,7 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 0; }
+  padding: 40px 0; }
   @media screen and (max-width: 567px) {
     .fidelites .header_my_account .comp_buttons, .locations .header_my_account .comp_buttons, .settings .header_my_account .comp_buttons {
       flex-direction: column;
@@ -1590,39 +1590,39 @@ table {
 .settings section {
   padding: 0; }
 
-.settings .formulaire {
-  padding: 0 15px 90px 15px; }
+.settings .formulaires {
+  padding: 90px 15px 60px 15px; }
   @media screen and (max-width: 567px) {
-    .settings .formulaire {
+    .settings .formulaires {
       width: 100%;
       padding: 45px 0; } }
-  .settings .formulaire .formulaire {
+  .settings .formulaires .formulaire {
     width: 90%;
     padding: 0 15px 15px 15px;
     background-color: #FFF; }
     @media screen and (max-width: 567px) {
-      .settings .formulaire .formulaire {
+      .settings .formulaires .formulaire {
         width: 100%; } }
-    .settings .formulaire .formulaire .main-content-1 {
+    .settings .formulaires .formulaire .main-content-1 {
       padding: 0 20px 20px 20px;
       /* form specific formatting */ }
-      .settings .formulaire .formulaire .main-content-1 .avatar {
+      .settings .formulaires .formulaire .main-content-1 .avatar {
         background-color: #FFF !important;
         display: flex;
         flex-direction: row;
         align-items: center; }
-        .settings .formulaire .formulaire .main-content-1 .avatar .container {
+        .settings .formulaires .formulaire .main-content-1 .avatar .container {
           width: 70%;
           margin: 0 auto 20px auto; }
           @media screen and (max-width: 567px) {
-            .settings .formulaire .formulaire .main-content-1 .avatar .container {
+            .settings .formulaires .formulaire .main-content-1 .avatar .container {
               width: 100%; } }
-        .settings .formulaire .formulaire .main-content-1 .avatar .containers {
+        .settings .formulaires .formulaire .main-content-1 .avatar .containers {
           height: 200px;
           position: relative;
           max-width: 250px;
           margin: auto; }
-          .settings .formulaire .formulaire .main-content-1 .avatar .containers .imageWrapper {
+          .settings .formulaires .formulaire .main-content-1 .avatar .containers .imageWrapper {
             border: 1px solid #36b1ac;
             width: 70%;
             padding-bottom: 70%;
@@ -1632,7 +1632,7 @@ table {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); }
-            .settings .formulaire .formulaire .main-content-1 .avatar .containers .imageWrapper img {
+            .settings .formulaires .formulaire .main-content-1 .avatar .containers .imageWrapper img {
               height: 105%;
               width: initial;
               max-height: 100%;
@@ -1641,7 +1641,7 @@ table {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
-        .settings .formulaire .formulaire .main-content-1 .avatar .file-upload {
+        .settings .formulaires .formulaire .main-content-1 .avatar .file-upload {
           position: relative;
           overflow: hidden;
           margin: 10px;
@@ -1659,12 +1659,12 @@ table {
           -o-transition: 0.6s;
           -webkit-transition: 0.6s;
           transition: 0.6s; }
-          .settings .formulaire .formulaire .main-content-1 .avatar .file-upload:hover {
+          .settings .formulaires .formulaire .main-content-1 .avatar .file-upload:hover {
             background: #36b1ac;
             color: #FFF;
             transform: scale(1.1);
             -webkit-transform: scale(1.1); }
-          .settings .formulaire .formulaire .main-content-1 .avatar .file-upload input.file-input {
+          .settings .formulaires .formulaire .main-content-1 .avatar .file-upload input.file-input {
             position: absolute;
             top: 0;
             right: 0;
@@ -1675,42 +1675,41 @@ table {
             opacity: 0;
             filter: alpha(opacity=0);
             height: 100%; }
-      .settings .formulaire .formulaire .main-content-1 .main-content {
+      .settings .formulaires .formulaire .main-content-1 .main-content {
         flex: 1 auto;
         padding: 45px 30px;
         background-color: rgba(224, 224, 224, 0.3);
         margin: 20px; }
         @media screen and (max-width: 567px) {
-          .settings .formulaire .formulaire .main-content-1 .main-content {
+          .settings .formulaires .formulaire .main-content-1 .main-content {
             padding: 20px 8px; } }
-        .settings .formulaire .formulaire .main-content-1 .main-content h4 {
+        .settings .formulaires .formulaire .main-content-1 .main-content h4 {
           font-size: 20px;
           color: #36b1ac;
           margin-bottom: 30px; }
-        .settings .formulaire .formulaire .main-content-1 .main-content .form-group {
+        .settings .formulaires .formulaire .main-content-1 .main-content .form-group {
           display: flex;
           flex-direction: row;
           align-items: center; }
           @media screen and (max-width: 567px) {
-            .settings .formulaire .formulaire .main-content-1 .main-content .form-group {
+            .settings .formulaires .formulaire .main-content-1 .main-content .form-group {
               flex-direction: column; } }
-          .settings .formulaire .formulaire .main-content-1 .main-content .form-group label {
+          .settings .formulaires .formulaire .main-content-1 .main-content .form-group label {
             display: block;
             width: 130px;
-            font-weight: bold;
             font-size: 1em;
             margin-bottom: 23px;
             padding-right: 20px;
             text-align: right; }
-          .settings .formulaire .formulaire .main-content-1 .main-content .form-group .right-inline {
+          .settings .formulaires .formulaire .main-content-1 .main-content .form-group .right-inline {
             text-align: right;
             width: auto; }
             @media screen and (max-width: 567px) {
-              .settings .formulaire .formulaire .main-content-1 .main-content .form-group .right-inline {
+              .settings .formulaires .formulaire .main-content-1 .main-content .form-group .right-inline {
                 text-align: left;
                 padding-right: 0;
                 padding-left: 0; } }
-          .settings .formulaire .formulaire .main-content-1 .main-content .form-group .input-control, .settings .formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+          .settings .formulaires .formulaire .main-content-1 .main-content .form-group .input-control, .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control {
             background-color: #FFF;
             flex: 4 auto;
             display: block;
@@ -1719,17 +1718,17 @@ table {
             padding: 20px;
             border: none;
             font-size: 20px; }
-            .settings .formulaire .formulaire .main-content-1 .main-content .form-group .input-control:hover, .settings .formulaire .formulaire .main-content-1 .main-content .form-group .select-control:hover {
+            .settings .formulaires .formulaire .main-content-1 .main-content .form-group .input-control:hover, .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control:hover {
               background: rgba(0, 0, 0, 0.05); }
             @media screen and (max-width: 567px) {
-              .settings .formulaire .formulaire .main-content-1 .main-content .form-group .input-control, .settings .formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+              .settings .formulaires .formulaire .main-content-1 .main-content .form-group .input-control, .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control {
                 margin-top: 2px; } }
-          .settings .formulaire .formulaire .main-content-1 .main-content .form-group .select-control {
+          .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control {
             padding: 20px;
             height: 63px; }
-          .settings .formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid {
+          .settings .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid {
             width: 100%; }
-            .settings .formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+            .settings .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
               height: 35px;
               font-size: 15px;
               padding: 0px 15px;
@@ -1737,21 +1736,21 @@ table {
               background: transparent;
               color: #36b1ac; }
               @media screen and (max-width: 567px) {
-                .settings .formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
+                .settings .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w {
                   margin-bottom: 15px; } }
-              .settings .formulaire .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w:hover {
+              .settings .formulaires .formulaire .main-content-1 .main-content .form-group .btn_mid .btn_w:hover {
                 background-color: #36b1ac;
                 color: #FFF; }
-      .settings .formulaire .formulaire .main-content-1 .form_email_mdp {
+      .settings .formulaires .formulaire .main-content-1 .form_email_mdp {
         display: flex;
         flex-direction: row; }
         @media screen and (max-width: 567px) {
-          .settings .formulaire .formulaire .main-content-1 .form_email_mdp {
+          .settings .formulaires .formulaire .main-content-1 .form_email_mdp {
             flex-direction: column; } }
-      .settings .formulaire .formulaire .main-content-1 .form_coord {
+      .settings .formulaires .formulaire .main-content-1 .form_coord {
         display: flex;
         flex-direction: column; }
-        .settings .formulaire .formulaire .main-content-1 .form_coord .civi {
+        .settings .formulaires .formulaire .main-content-1 .form_coord .civi {
           width: 50%;
           display: flex;
           flex-direction: row;
@@ -1846,41 +1845,41 @@ table {
       -webkit-transform-transform: scale3d(1, 1, 1); } }
 
 @-ms-keyframes cardEnter {
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 0%, .settings .formulaire .formulaire .main-content-1 .form_coord .civi 20%, .settings .formulaire .formulaire .main-content-1 .form_coord .civi 40%, .settings .formulaire .formulaire .main-content-1 .form_coord .civi 60%, .settings .formulaire .formulaire .main-content-1 .form_coord .civi 80%, .settings .formulaire .formulaire .main-content-1 .form_coord .civi 100% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 0%, .settings .formulaires .formulaire .main-content-1 .form_coord .civi 20%, .settings .formulaires .formulaire .main-content-1 .form_coord .civi 40%, .settings .formulaires .formulaire .main-content-1 .form_coord .civi 60%, .settings .formulaires .formulaire .main-content-1 .form_coord .civi 80%, .settings .formulaires .formulaire .main-content-1 .form_coord .civi 100% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 0% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 0% {
     opacity: 0;
     -moz-transform: scale3d(0.3, 0.3, 0.3);
     -o-transform: scale3d(0.3, 0.3, 0.3);
     -ms-transform: scale3d(0.3, 0.3, 0.3);
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
       -webkit-transform-transform: scale3d(0.3, 0.3, 0.3); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 20% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 20% {
     -moz-transform: scale3d(1.1, 1.1, 1.1);
     -o-transform: scale3d(1.1, 1.1, 1.1);
     -ms-transform: scale3d(1.1, 1.1, 1.1);
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
       -webkit-transform-transform: scale3d(1.1, 1.1, 1.1); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 40% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 40% {
     -moz-transform: scale3d(0.9, 0.9, 0.9);
     -o-transform: scale3d(0.9, 0.9, 0.9);
     -ms-transform: scale3d(0.9, 0.9, 0.9);
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
       -webkit-transform-transform: scale3d(0.9, 0.9, 0.9); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 60% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 60% {
     opacity: 1;
     -moz-transform: scale3d(1.03, 1.03, 1.03);
     -o-transform: scale3d(1.03, 1.03, 1.03);
     -ms-transform: scale3d(1.03, 1.03, 1.03);
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
       -webkit-transform-transform: scale3d(1.03, 1.03, 1.03); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 80% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 80% {
     -moz-transform: scale3d(0.97, 0.97, 0.97);
     -o-transform: scale3d(0.97, 0.97, 0.97);
     -ms-transform: scale3d(0.97, 0.97, 0.97);
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
       -webkit-transform-transform: scale3d(0.97, 0.97, 0.97); }
-  .settings .formulaire .formulaire .main-content-1 .form_coord .civi 100% {
+  .settings .formulaires .formulaire .main-content-1 .form_coord .civi 100% {
     opacity: 1;
     -moz-transform: scale3d(1, 1, 1);
     -o-transform: scale3d(1, 1, 1);
@@ -1930,34 +1929,34 @@ table {
     -ms-transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1);
       -webkit-transform-transform: scale3d(1, 1, 1); } }
-          .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio {
+          .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio {
             display: inline-block;
             padding-right: 20px;
             font-size: 18px;
             line-height: 49px;
             cursor: pointer;
             text-align: left; }
-            .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio:hover .inner {
+            .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio:hover .inner {
               -moz-transform: scale(0.5);
               -o-transform: scale(0.5);
               -ms-transform: scale(0.5);
               -webkit-transform: scale(0.5);
                 -webkit-transform-transform: scale(0.5);
               opacity: .5; }
-            .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio input {
+            .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio input {
               height: 1px;
               width: 1px;
               opacity: 0; }
-              .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio input:checked + .outer .inner {
+              .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio input:checked + .outer .inner {
                 -moz-transform: scale(1);
                 -o-transform: scale(1);
                 -ms-transform: scale(1);
                 -webkit-transform: scale(1);
                   -webkit-transform-transform: scale(1);
                 opacity: 1; }
-              .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio input:checked + .outer {
+              .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio input:checked + .outer {
                 border: 3px solid #36b1ac; }
-              .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio input:focus + .outer .inner {
+              .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio input:focus + .outer .inner {
                 -moz-transform: scale(1);
                 -o-transform: scale(1);
                 -ms-transform: scale(1);
@@ -1965,7 +1964,7 @@ table {
                   -webkit-transform-transform: scale(1);
                 opacity: 1;
                 background-color: #2a8a86; }
-            .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio .outer {
+            .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio .outer {
               height: 20px;
               width: 20px;
               display: block;
@@ -1974,7 +1973,7 @@ table {
               border: 3px solid #e0e0e0;
               border-radius: 50%;
               background-color: transparent; }
-            .settings .formulaire .formulaire .main-content-1 .form_coord .civi .radio .inner {
+            .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio .inner {
               -moz-transition: all 0.25s ease-in-out;
               -o-transition: all 0.25s ease-in-out;
               -webkit-transition: all 0.25s ease-in-out;
@@ -1991,10 +1990,10 @@ table {
               border-radius: 50%;
               background-color: #36b1ac;
               opacity: 0; }
-        .settings .formulaire .formulaire .main-content-1 .form_coord .group_label_input {
+        .settings .formulaires .formulaire .main-content-1 .form_coord .group_label_input {
           display: flex;
           flex-direction: row; }
-          .settings .formulaire .formulaire .main-content-1 .form_coord .group_label_input > div {
+          .settings .formulaires .formulaire .main-content-1 .form_coord .group_label_input > div {
             flex: 1 auto; }
 
 * {
