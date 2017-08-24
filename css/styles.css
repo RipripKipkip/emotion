@@ -1096,7 +1096,7 @@ table {
   padding: 90px 15px 60px 15px; }
   @media screen and (max-width: 567px) {
     .filters .formulaires {
-      padding: 45px 0;
+      padding: 30px 0 0 0;
       width: auto; } }
   .filters .formulaires .formulaire {
     width: 90%;
@@ -1104,14 +1104,16 @@ table {
     background-color: #FFF; }
     @media screen and (max-width: 567px) {
       .filters .formulaires .formulaire {
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
     .filters .formulaires .formulaire .main-content-1 {
       padding: 0 20px 20px 20px;
       display: flex;
       flex-direction: row; }
       @media screen and (max-width: 567px) {
         .filters .formulaires .formulaire .main-content-1 {
-          flex-direction: column; } }
+          flex-direction: column;
+          padding: 0; } }
       .filters .formulaires .formulaire .main-content-1 .form-filters {
         flex: 1;
         padding: 45px 30px; }
