@@ -72,31 +72,90 @@
 								<article class="main-content resa_details">
 									<h4>Les détails de la réservation</h4>
 
-									<div class="rubriques">
-										<h5>Pickup</h5>
-										<p>
-											7 Rue Adress, 78800 Ville, Pays
-										</p>
-										<p>
-											26/02/2017 / 10:00 AM
-										</p>
+									<div class="container_n_s_v">
+										<h1>
+											<span>2017 </span>
+											<span>
+												FERRARI FERRARI
+											</span>
+										</h1>
+										<div class="container_stars">
+											<fieldset class="rating">
+												<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+												<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+												<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+												<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+												<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+												<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+												<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+												<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+												<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+												<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+											</fieldset>
+										</div>
+										<img src="images/42i10i63.png" alt="BLIBLABLU" class="images">
 									</div>
+									<!-- <div class="container_d_d">
+										<img src="images/wave.svg" alt="BLIBLABLU" class="wave">
+										<div class="container_details">
+											<div class="details">
+												<div class="ico gear_lever_e"></div>
+												<div class="border_line"></div>
+												<div class="d_text">Automatic</div>
+											</div>
+											<div class="details">
+												<div class="ico calendar_e"></div>
+												<div class="border_line"></div>
+												<div class="d_text">18 jours</div>
+											</div>
+										</div>
+									</div> -->
 
-									<div class="rubriques">
-										<h5>Return</h5>
-										<p>
-											47T Rue Adress, 78800 Ville, Pays
-										</p>
-										<p>
-											15/03/2017 / 9:00 AM
-										</p>
-									</div>
+									<img src="images/wave.svg" alt="BLIBLABLU" class="wave">
+									<div class="container_rubriques">
 
-									<div class="rubriques">
-										<h5>Temps de locations</h5>
-										<p>
-											18 jours
-										</p>
+										<div class="rubriques">
+
+											<div class="ico depart"></div>
+
+											<div class="rubrique">
+												<h5>Pickup</h5>
+												<p>
+													7 Rue Adress, 78800 Ville, Pays
+												</p>
+												<p>
+													26/02/2017 / 10:00 AM
+												</p>
+											</div>
+										</div>
+
+										<div class="rubriques">
+
+											<div class="ico arrivee"></div>
+
+											<div class="rubrique">
+												<h5>Return</h5>
+												<p>
+													47T Rue Adress, 78800 Ville, Pays
+												</p>
+												<p>
+													15/03/2017 / 9:00 AM
+												</p>
+											</div>
+
+										</div>
+
+										<div class="rubriques">
+
+											<div class="ico timer_e"></div>
+
+											<div class="rubrique">
+												<h5>Temps de locations</h5>
+												<p>
+													18 jours
+												</p>
+											</div>
+										</div>
 									</div>
 
 
@@ -106,43 +165,42 @@
 
 									<h4>Détails sur le conducteur</h4>
 
-									<div class="form-group form-group1">
-										<div>
-											<label>Prénom* :</label>
-											<input type="text" value="" class="input-control" />
-										</div>
+									<div class="form-group">
+										<label>Prénom* :</label>
+										<input type="text" value="" class="input-control" />
 
-										<div>
-											<label class="right-inline">Nom* :</label>
-											<input type="text" value="" class="input-control" />
-										</div>
-
+										<label class="right-inline">Nom* :</label>
+										<input type="text" value="" class="input-control" />
 									</div>
 
 									<div class="form-group">
-										<label>Adresse* :</label>
+										<label>N° de permis* :</label>
 										<input value="" class="input-control" />
 									</div>
 
-									<h4>Détails de carte</h4>
+									<h4 class="h4_margin-top">Détails de carte</h4>
 
-									<div class="form-group form-group1">
+									<div class="form-group">
+										<label>Carte de crédit* :</label>
+										<input type="text" value="" class="input-control" />
+									</div>
 
-										<div class="form-group">
-											<label>Adresse* :</label>
-											<input value="" class="input-control" />
-										</div>
+									<div class="form-group">
+										<label>Code CVV* :</label>
+										<input type="text" value="" class="input-control" />
 
-										<div>
-											<label>Prénom* :</label>
-											<input type="text" value="" class="input-control" />
-										</div>
+										<!-- <label class="right-inline">Pays* :</label>
+										<input type="text" value="" class="input-control" /> -->
+										<label>Expiration* :</label>
+										<select class="select-control">
+											<option></option>
+											<option value="US">United States</option>
+										</select>
+									</div>
 
-										<div>
-											<label class="right-inline">Nom* :</label>
-											<input type="text" value="" class="input-control" />
-										</div>
 
+									<div class="form-group">
+										<div class="btn_mid"><button class="btn_w"> <a href="">Payer</a> </button></div>
 									</div>
 
 

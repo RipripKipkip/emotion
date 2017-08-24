@@ -13,7 +13,7 @@
         padding: $box-pad*3 $box-pad/2 $box-pad*2 $box-pad/2
         //background-color: $turquoise
         @media screen and (max-width: $break-sm)
-            padding: $box-pad*1.5 0
+            padding: $box-pad*1.5 0 0 0
             width: auto
         h3
             //color: $white
@@ -24,7 +24,8 @@
             padding: 0 $box-pad/2 $box-pad/2 $box-pad/2
             background-color: $white
             @media screen and (max-width: $break-sm)
-                width: 100%
+                width: auto
+                padding: 0
             .main-content-1
                 padding: 0 $box-pad/1.5 $box-pad/1.5 $box-pad/1.5
                 display: flex
@@ -32,187 +33,251 @@
                 margin-top: 20px
                 @media screen and (max-width: $break-sm)
                     flex-direction: column
+                    padding: 0
                 .resa_details
                     flex: 1
-                    padding: $box-pad*1.5 $box-pad
+                    padding-top: $box-pad*1.5
                     border-right: 1px solid $gray-light
                     @media screen and (max-width: $break-sm)
                         margin: $box-pad/1.5 0
+                        padding-top: 35px
                         border: none
-                    .rubriques
-                        margin-bottom: $box-pad*1.5
-                        h5, p
-                            text-align: left
-                        h5
-                            font-weight: 700
-                            font-size: 17px
-                            margin-bottom: $box-pad/2
-                        p
-                            margin-bottom: 5px
+                    .container_n_s_v
+                        // border-left: 800px solid transparent
+                        // /* border-right: 0px solid transparent; */
+                        // border-bottom: 40px solid $turquoise
+                        z-index: 3
+                        h1
+                            //font-family: 'Montserrat', sans-serif
+                            margin-top: $box-pad/1.5
+                            font-size: $box-pad/1.5
+                            font-weight: 800
+                            @media screen and (max-width: $break-sm)
+                                font-size: $box-pad/1.5
+
+                            span
+                                &:first-child
+                                    color: $turquoise
+                                    padding-right: 5px
+                                &:last-child
+                                    color: $sapin
+                                    padding-left: 5px
+                        //h1
+                            margin-top: $box-pad/1.5
+                            font-size: $box-pad/1.5
+                            @media screen and (max-width: $break-sm)
+                                font-size: $box-pad/2+1px
+                        .container_stars
+                            margin: $box-pad/1.5 auto $box-pad/1.5 auto
+                            @media screen and (max-width: $break-sm)
+                                margin: $box-pad auto $box-pad/1.5 auto
+                            @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css)
+
+                            /****** Style Star Rating Widget *****/
+                            .rating
+                                border: none
+                                width: 50%
+                                width: 150px
+                                margin: 0 auto
+                                input
+                                    display: none
+                                label:before
+                                    margin: 5px
+                                    font-size: 1.25em
+                                    font-family: FontAwesome
+                                    display: inline-block
+                                    content: "\f005"
+                                .half:before
+                                    content: "\f089"
+                                    position: absolute
+                                label
+                                    color: #ddd
+                                    float: right
+
+                            /***** CSS Magic to Highlight Stars on Hover *****/
+
+                            .rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label
+                                color: #FFD700
+
+                            .rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label
+                                color: #FFED85
+                        .images
+                            width: 100%
+                    .container_d_d
+                        position: relative
+                        //top: -$box-pad*3
+                        z-index: 1
+                        .wave
+                            -ms-transform: rotate(180deg)
+                            -webkit-transform: rotate(180deg)
+                            transform: rotate(180deg)
+                            //@include rotate(180deg)
+                        //.diagonale
+                            background: linear-gradient(to right bottom, transparent 50%, $turquoise 50%)
+                            height: $box-pad*2
+                        .container_details
+                            background-color: $turquoise
+                            margin-top: -3px
+                            .details
+                                border-bottom: 1px solid rgba($white, 0.5)
+                                padding: $box-pad/2 $box-pad/1.5
+                                display: flex
+                                flex-direction: row
+                                justify-content: space-around
+                                @media screen and (max-width: $break-sm)
+                                    padding: $box-pad/2 0
+                                .ico
+                                    height: $box-pad+5px
+                                    width: $box-pad+5px
+                                    //background-color: $white
+                                .gear_lever_e, .calendar_e, .timer_e
+                                    background-size: $box-pad+10 $box-pad+10
+                                    background-position: -3px -2px
+                                    background-repeat: no-repeat
+                                .gear_lever_e
+                                    background-image: url(../images/icons/gear_lever_e.svg)
+                                .calendar_e
+                                    background-image: url(../images/icons/calendar_e.svg)
+
+                                .border_line
+                                    width: 30%
+                                    height: 1px
+                                    background: $white
+                                    margin-top: $box-pad/2
+                                .d_text
+                                    width: 25%
+                                    color: $white
+                                    text-transform: uppercase
+                                    line-height: 1.9
+                                    text-align: left
+                                    font-size: 18px
+                                    @media screen and (max-width: $break-sm)
+                                        width: 35%
+                    .wave
+                        -ms-transform: rotate(180deg)
+                        -webkit-transform: rotate(180deg)
+                        transform: rotate(180deg)
+                    .container_rubriques
+                        margin-top: -3px
+                        padding: $box-pad
+                        background-color: $turquoise
+                        color: white
+                        @media screen and (max-width: $break-sm)
+                            padding: $box-pad
+                        .ico
+                            height: $box-pad+5px
+                            width: $box-pad+5px
+                            //@media screen and (max-width: $break-sm)
+                                display: none
+                        .arrivee, .timer_e, .depart
+                            background-size: $box-pad+10 $box-pad+10
+                            background-position: -3px -2px
+                            background-repeat: no-repeat
+                            -webkit-filter: grayscale(100%) brightness(6) brightness(1)
+                            filter: grayscale(100%) brightness(6) brightness(1)
+                        .depart
+                            background-image: url(../images/icons/depart.svg)
+                        .arrivee
+                            background-image: url(../images/icons/arrivee.svg)
+                        .timer_e
+                            background-image: url(../images/icons/timer_e.svg)
+                        .rubriques
+                            margin-bottom: $box-pad*1.5
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+
+                            &:last-child
+                                margin-bottom: 0
+                            .rubrique
+                                margin-left: $box-pad
+                                @media screen and (max-width: $break-sm)
+                                    margin-left: $box-pad/1.5
+                                h5, p
+                                    text-align: left
+                                h5
+                                    font-weight: 700
+                                    font-size: 17px
+                                    margin-bottom: $box-pad/2
+                                p
+                                    margin-bottom: 5px
 
                 .resa_payment
                     flex: 3
                     padding: $box-pad*1.5
                     @media screen and (max-width: $break-sm)
-                        padding: $box-pad/1.5 0 !important
-                    .form-group1
-                        flex-direction: row !important
-                        div
-                            flex-direction: row
-
-                    .veh
-                        padding: $box-pad $box-pad/2
+                        padding: 35px
+                    .form-group
                         display: flex
-                        //width: 100%
                         flex-direction: row
-                        justify-content: space-around
                         align-items: center
-                        border-top: 1px solid $gray-light
                         @media screen and (max-width: $break-sm)
                             flex-direction: column
-                            padding: $box-pad/1.5
-                        .car_img, .scoot_img
-                            // flex: 2 auto
-                            // width: 620px
-                            // @media screen and (max-width: $break-sm)
-                            //     width: auto
-                            .images
-                                height: 200px
-                                @media screen and (max-width: $break-sm)
-                                    width: 100%
-                                    height: auto
-
-                        .veh_text
-                            //flex: 3 auto
+                            align-items: inherit
+                        label
+                            display: block
+                            width: 130px
+                            font-size: 1em
+                            margin-bottom: $box-pad/1.5+3px
+                            padding-right: $box-pad/1.5
+                            text-align: right
                             @media screen and (max-width: $break-sm)
-                                padding-top: $box-pad
-                            .container_1
-                                h1
-                                    //font-family: 'Montserrat', sans-serif
-                                    font-size: $box-pad/1.5
-                                    font-weight: 800
-                                    @media screen and (max-width: $break-sm)
-                                        font-size: $box-pad/1.5
-                                    span
-                                        &:first-child
-                                            color: $turquoise
-                                            padding-right: 5px
-                                        &:last-child
-                                            color: $sapin
-                                            padding-left: 5px
-                                .container_stars
-                                    margin: $box-pad/1.5 auto
-                                    @media screen and (max-width: $break-sm)
-                                        margin: $box-pad auto $box-pad/1.5 auto
-                                    @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css)
+                                text-align: left
+                                width: auto
+                                padding: 0
+                        .right-inline
+                            text-align: right
+                            width: auto
+                            @media screen and (max-width: $break-sm)
+                                text-align: left
+                                padding-right: 0
+                                padding-left: 0
+                        .input-control, .select-control
+                            background-color: $white
+                            flex: 4 auto
+                            display: block
+                            margin-bottom: $box-pad/1.5
+                            margin-right: $box-pad/1.5
+                            padding: $box-pad/1.5
+                            border: none
+                            font-size: $box-pad/1.5
+                            &:hover
+                                background: rgba($black, 0.05s)
+                            @media screen and (max-width: $break-sm)
+                                margin-top: 2px
+                                margin-right: 0
+                        .select-control
+                            padding: $box-pad/1.5
+                            height: 63px
 
-                                    /****** Style Star Rating Widget *****/
-                                    .rating
-                                        border: none
-                                        width: 50%
-                                        width: 150px
-                                        margin: 0 auto
-
-                                        input
-                                            display: none
-                                        label:before
-                                            margin: 5px
-                                            font-size: 1.25em
-                                            font-family: FontAwesome
-                                            display: inline-block
-                                            content: "\f005"
-                                        .half:before
-                                            content: "\f089"
-                                            position: absolute
-                                        label
-                                            color: #ddd
-                                            float: right
-
-                                    /***** CSS Magic to Highlight Stars on Hover *****/
-
-                                    .rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label
-                                        color: #FFD700
-
-                                    .rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label
-                                        color: #FFED85
-                            .container_2
-                                display: flex
-                                flex-direction: row
-                                justify-content: center
-                                .price_time
-                                    padding: $box-pad/2 $box-pad
-                                    @media screen and (max-width: $break-sm)
-                                        padding: 10px $box-pad/1.5
-                                    &:nth-child(2)
-                                        border-right: 1px solid $gray-light
-                                        border-left: 1px solid $gray-light
-                                    .price
-                                    .time
-                            .container_3
-                                .btn_mid
-                                    width: 100%
-                                    padding-top: $box-pad
-                                    .btn_w
-                                        height: $box-pad+5px
-                                        font-size: $box-pad/2
-                                        padding: 0px $box-pad/2
-                                        background-color: $turquoise
-                                        border: solid 1px $turquoise
-                                        color: $white
-                                        @media screen and (max-width: $break-sm)
-                                            margin-bottom: $box-pad/2
-                                        &:hover
-                                            border: solid 1px $turquoise
-                                            background-color: transparent
-                                            color: $turquoise
+                        .btn_mid
+                            width: 100%
+                            .btn_w
+                                margin-top: $box-pad
+                                height: 50px
+                                font-size: $box-pad/1.5
+                                padding: 0px $box-pad/2
+                                border: solid 1px $turquoise
+                                background: $turquoise
+                                color: $white
+                                @media screen and (max-width: $break-sm)
+                                    margin-bottom: $box-pad/2
+                                &:hover
+                                    background-color: transparent
+                                    color: $turquoise
 
 
-                            //.stars
-                                height: 40px
                 .main-content
                     background-color: rgba($gray-light, 0.3)
                     @media screen and (max-width: $break-sm)
-                        padding: 20px
                         margin: $box-pad/1.5 0
                         // form specific formatting
                     h4
                         font-size: $box-pad/1.5
                         color: $turquoise
                         margin-bottom: $box-pad+15px
+                    .h4_margin-top
+                        margin-top: $box-pad*2
+
                         @media screen and (max-width: $break-sm)
                             margin: $box-pad/1.5 0 $box-pad 0
-                    .form-group
-                        display: flex
-                        flex-direction: column
-                        label
-                            font-size: 1em
-                            margin-bottom: $box-pad/1.5+3px
-                            text-align: left
-                        .input-control
-                            background-color: $white
-                            margin-bottom: $box-pad/1.5
-                            border: none
-                            padding: $box-pad/2
-                            font-size: 18px
-                            &:hover
-                                background: rgba($black, 0.05s)
-                            @media screen and (max-width: $break-sm)
-                                margin-top: 2px
-
-                        .btn_mid
-                            //margin: $box-pad/2 auto $box-pad auto
-                            width: 100%
-                            // &:last-child
-                            //     margin-bottom: 0
-                            .btn_w
-                                height: $box-pad+5px
-                                font-size: $box-pad/2
-                                padding: 0px $box-pad/2
-                                border: solid 1px $turquoise
-                                background: transparent
-                                color: $turquoise
-                                @media screen and (max-width: $break-sm)
-                                    margin-bottom: $box-pad/2
-                                &:hover
-                                    background-color: $turquoise
-                                    color: $white
