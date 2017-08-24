@@ -1,96 +1,85 @@
-.cont_formulaire
-    padding: $box-pad*3 $box-pad/2
-    background-color: $turquoise
-    @media screen and (max-width: $break-sm)
-        width: 100%
-        padding: $box-pad*1.5 0
-    h3
-        color: $white
-    .container
-        width: 80%
-        max-width: 1200px
-        margin: 0 auto
-
-    .container *
-        box-sizing: border-box
-
-    .flex-outer,
-    .flex-inner
-        list-style-type: none
-        padding: 0
-
-    .flex-outer
-        max-width: 800px
-        margin: 0 auto
-
-    .flex-outer li,
-    .flex-inner
-        display: flex
-        flex-wrap: wrap
-        align-items: center
-
-    .flex-inner
-        padding: 0 8px
-        justify-content: space-between
-
-    .flex-outer > li:not(:last-child)
-        margin-bottom: $box-pad/1.5
-
-    // .flex-outer li label,
-    // .flex-outer li p
-    //   padding: 8px
-    //   font-weight: 300
-    //   letter-spacing: .09em
-    //   color: $white
-      //text-transform: uppercase
-
-    .flex-outer > li > label,
-    .flex-outer li p
-        flex: 1 0 120px
-        max-width: 220px
-
-    .flex-outer > li > label + *,
-    .flex-inner
-        flex: 1 0 70%
-        /*220px*/
-
-    .flex-outer li p
-        margin: 0
-
-    .flex-outer li input:not([type='checkbox']),
-    .flex-outer li textarea
-        padding: $box-pad/1.5 $box-pad/2
-        border: none
-        font-size: $box-pad/1.5
-        width: 100%
-        &:hover
-            background: rgba($white, 0.7)
-
-    // .flex-outer li button
-    //   margin-left: auto
-    //   padding: 8px 16px
-    //   border: none
-    //   background: #333
-    //   color: #f2f2f2
-    //   text-transform: uppercase
-    //   letter-spacing: .09em
-    //   border-radius: 2px
-
-    .flex-inner li
-      width: 100px
-
-    .btn_mid
-        width: 100%
-        .btn_w
-            border: solid 1px $white
+.about_us
+    .formulaire
+        padding: $box-pad*3 $box-pad/2
+        background-color: $turquoise
+        @media screen and (max-width: $break-sm)
+            width: auto
+            padding: $box-pad*1.5 0
+        .main-content
+            //flex: 1 auto
+            //padding: $box-pad*1.5 $box-pad
+            color: $white
             background-color: transparent
-            width: $box-pad*7
+            width: 50%
+            //margin: $box-pad/1.5
             @media screen and (max-width: $break-sm)
-                margin: 0 auto
-            &:hover
-                background-color: $white
-                border: solid 1px $white
-                color: $turquoise
+                margin: $box-pad 0 0 0
+                // form specific formatting
+            h4
+                font-size: $box-pad/1.5
+                margin-bottom: $box-pad
 
-.services
-    height: 600px
+            .form-group
+                display: flex
+                flex-direction: row
+                align-items: center
+                @media screen and (max-width: $break-sm)
+                    flex-direction: column
+                    align-items: initial
+                label
+                    display: block
+                    width: 130px
+                    font-size: 1em
+                    margin-bottom: $box-pad/1.5+3px
+                    padding-right: $box-pad/1.5
+                    text-align: right
+                    @media screen and (max-width: $break-sm)
+                        text-align: left
+                        width: auto
+                        padding: 0
+                .right-inline
+                    text-align: right
+                    width: auto
+                    @media screen and (max-width: $break-sm)
+                        text-align: left
+                        padding-right: 0
+                        padding-left: 0
+                .input-control, .select-control, textarea
+                    background-color: $white
+                    flex: 4 auto
+                    display: block
+                    margin-bottom: $box-pad/1.5
+                    margin-right: 0
+                    padding: $box-pad/1.5
+                    border: none
+                    font-size: $box-pad/1.5
+                    &:hover
+                        background: rgba($white, 0.7)
+                    @media screen and (max-width: $break-sm)
+                        margin-top: 2px
+                        margin-right: 0
+                .select-control
+                    padding: $box-pad/1.5
+                    height: 63px
+
+                .btn_mid
+                    //margin: $box-pad/2 auto $box-pad auto
+                    width: 100%
+                    // &:last-child
+                    //     margin-bottom: 0
+                    .btn_w
+                        height: $box-pad+5px
+                        font-size: $box-pad/2
+                        padding: 0px $box-pad/2
+                        border: solid 1px $white
+                        background: transparent
+                        color: $white
+                        @media screen and (max-width: $break-sm)
+                            margin-bottom: $box-pad/2
+                        &:hover
+                            background-color: $white
+                            color: $turquoise
+
+
+    .services
+        
