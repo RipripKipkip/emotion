@@ -2293,9 +2293,13 @@ table {
     background-color: #FFF; }
     @media screen and (max-width: 567px) {
       .settings .formulaires .formulaire {
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
     .settings .formulaires .formulaire .main-content-1 {
       padding: 0 20px 20px 20px; }
+      @media screen and (max-width: 567px) {
+        .settings .formulaires .formulaire .main-content-1 {
+          padding: 0; } }
       .settings .formulaires .formulaire .main-content-1 .avatar {
         background-color: #FFF !important;
         display: flex;
@@ -2372,7 +2376,7 @@ table {
         margin: 20px; }
         @media screen and (max-width: 567px) {
           .settings .formulaires .formulaire .main-content-1 .main-content {
-            padding: 20px 8px; } }
+            margin: 30px 0 0 0; } }
         .settings .formulaires .formulaire .main-content-1 .main-content h4 {
           font-size: 20px;
           color: #36b1ac;
@@ -2383,7 +2387,8 @@ table {
           align-items: center; }
           @media screen and (max-width: 567px) {
             .settings .formulaires .formulaire .main-content-1 .main-content .form-group {
-              flex-direction: column; } }
+              flex-direction: column;
+              align-items: initial; } }
           .settings .formulaires .formulaire .main-content-1 .main-content .form-group label {
             display: block;
             width: 130px;
@@ -2391,6 +2396,11 @@ table {
             margin-bottom: 23px;
             padding-right: 20px;
             text-align: right; }
+            @media screen and (max-width: 567px) {
+              .settings .formulaires .formulaire .main-content-1 .main-content .form-group label {
+                text-align: left;
+                width: auto;
+                padding: 0; } }
           .settings .formulaires .formulaire .main-content-1 .main-content .form-group .right-inline {
             text-align: right;
             width: auto; }
@@ -2412,7 +2422,8 @@ table {
               background: rgba(0, 0, 0, 0.05); }
             @media screen and (max-width: 567px) {
               .settings .formulaires .formulaire .main-content-1 .main-content .form-group .input-control, .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control {
-                margin-top: 2px; } }
+                margin-top: 2px;
+                margin-right: 0; } }
           .settings .formulaires .formulaire .main-content-1 .main-content .form-group .select-control {
             padding: 20px;
             height: 63px; }
@@ -2440,6 +2451,10 @@ table {
       .settings .formulaires .formulaire .main-content-1 .form_coord {
         display: flex;
         flex-direction: column; }
+        @media screen and (max-width: 567px) {
+          .settings .formulaires .formulaire .main-content-1 .form_coord .civi {
+            flex-direction: column;
+            width: auto; } }
         .settings .formulaires .formulaire .main-content-1 .form_coord .civi .radio {
           padding-right: 20px; }
         .settings .formulaires .formulaire .main-content-1 .form_coord .group_label_input {
