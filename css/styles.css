@@ -1639,6 +1639,8 @@ table {
         .about_us .services .container_text_vid .text_e, .about_us .services .container_text_vid .video_e {
           width: auto;
           padding: 30px 30px 0 30px; } }
+    .about_us .services .container_text_vid .text_e {
+      text-align: left; }
 
 .about_us .rubriques_services {
   display: flex;
