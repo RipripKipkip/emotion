@@ -154,6 +154,10 @@
                 @media screen and (max-width: $break-sm)
                     width: 100px
                     height: 100px
+            &:hover
+                @include transition(0.6s)
+                transform: scale(1.1)
+                -webkit-transform: scale(1.1)
                 //img
                     width: 200px
                     height: 200px
@@ -187,6 +191,7 @@
                 margin: 0 auto
             .description
                 font-size: 15px
+                line-height: 1.5
         //@media screen and (max-width: $break-sm)
             .footer_description
                 width: 100%

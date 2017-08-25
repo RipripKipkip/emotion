@@ -246,6 +246,10 @@
                     height: 200px
             .description
                 font-size: 15px
+            &:hover
+                @include transition(0.6s)
+                transform: scale(1.1)
+                -webkit-transform: scale(1.1)
         @media screen and (max-width: $break-sm)
             .footer_description
                 width: 100%
