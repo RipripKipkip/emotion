@@ -1539,14 +1539,16 @@ table {
   @media screen and (max-width: 567px) {
     .about_us .formulaire {
       width: auto;
-      padding: 45px 0; } }
+      padding: 15px 0; } }
   .about_us .formulaire .main-content {
     color: #FFF;
     background-color: transparent;
     width: 50%; }
     @media screen and (max-width: 567px) {
       .about_us .formulaire .main-content {
-        margin: 30px 0 0 0; } }
+        margin: 30px 0 0 0;
+        width: 85%;
+        padding: 30px; } }
     .about_us .formulaire .main-content h4 {
       font-size: 20px;
       margin-bottom: 30px; }
@@ -1613,7 +1615,105 @@ table {
             color: #36b1ac; }
 
 .about_us .services {
-  height: 600px; }
+  padding: 0; }
+  .about_us .services .image {
+    width: 80%; }
+    @media screen and (max-width: 567px) {
+      .about_us .services .image {
+        width: 100%; } }
+  .about_us .services .container_text_vid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; }
+    @media screen and (max-width: 567px) {
+      .about_us .services .container_text_vid {
+        flex-direction: column;
+        width: 100%;
+        margin: 0; } }
+    .about_us .services .container_text_vid .text_e, .about_us .services .container_text_vid .video_e {
+      width: 50%;
+      padding: 30px; }
+      @media screen and (max-width: 567px) {
+        .about_us .services .container_text_vid .text_e, .about_us .services .container_text_vid .video_e {
+          width: auto;
+          padding: 30px 30px 0 30px; } }
+
+.about_us .rubriques_services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto; }
+  @media screen and (max-width: 567px) {
+    .about_us .rubriques_services {
+      width: 100%;
+      margin: 0; } }
+  .about_us .rubriques_services h3 {
+    width: 100%;
+    line-height: 33px; }
+    @media screen and (max-width: 567px) {
+      .about_us .rubriques_services h3 {
+        margin: 15px 0 !important; } }
+  .about_us .rubriques_services .border_bottom {
+    height: 1px;
+    margin: 0 auto 60px auto;
+    width: 30%;
+    background-color: #000; }
+    @media screen and (max-width: 567px) {
+      .about_us .rubriques_services .border_bottom {
+        width: 50%;
+        margin: 0 auto 30px; } }
+  .about_us .rubriques_services .wrapper {
+    align-items: flex-start;
+    margin: 0; }
+  .about_us .rubriques_services h2 {
+    width: 100%;
+    margin-bottom: 40px; }
+  .about_us .rubriques_services .footer_description {
+    width: 25%;
+    margin: 15px 45px; }
+    @media screen and (max-width: 567px) {
+      .about_us .rubriques_services .footer_description {
+        width: 40%;
+        margin: 0;
+        padding: 15px 15px 0 15px; } }
+    .about_us .rubriques_services .footer_description .img_section_7, .about_us .rubriques_services .footer_description img {
+      width: 200px;
+      height: 200px; }
+      @media screen and (max-width: 567px) {
+        .about_us .rubriques_services .footer_description .img_section_7, .about_us .rubriques_services .footer_description img {
+          width: 100px;
+          height: 100px; } }
+  .about_us .rubriques_services .footer_description2 {
+    width: 15%;
+    margin: 15px 45px; }
+    @media screen and (max-width: 567px) {
+      .about_us .rubriques_services .footer_description2 {
+        width: 40%;
+        margin: 0;
+        padding: 15px 15px 0 15px; } }
+    .about_us .rubriques_services .footer_description2 .img_section_7 {
+      width: 150px;
+      height: 150px; }
+      @media screen and (max-width: 567px) {
+        .about_us .rubriques_services .footer_description2 .img_section_7 {
+          width: 100px;
+          height: 100px; } }
+      .about_us .rubriques_services .footer_description2 .img_section_7 img {
+        width: 130px;
+        height: 130px; }
+        @media screen and (max-width: 567px) {
+          .about_us .rubriques_services .footer_description2 .img_section_7 img {
+            width: 100px;
+            height: 100px; } }
+    .about_us .rubriques_services .footer_description2 h3 {
+      margin-bottom: 15px; }
+  .about_us .rubriques_services .footer_description .img_section_7, .about_us .rubriques_services .footer_description2 .img_section_7 {
+    margin: 0 auto; }
+  .about_us .rubriques_services .footer_description .description, .about_us .rubriques_services .footer_description2 .description {
+    font-size: 15px; }
 
 .cars .section_turquoise, .cars .section_gray_light, .cars section, .scooters .section_turquoise, .scooters .section_gray_light, .scooters section {
   padding: 0; }
