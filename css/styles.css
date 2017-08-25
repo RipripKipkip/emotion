@@ -1719,19 +1719,22 @@ table {
   padding: 0; }
 
 .cars .section_turquoise, .scooters .section_turquoise {
-  height: 90px; }
+  height: 100px; }
   @media screen and (max-width: 567px) {
     .cars .section_turquoise, .scooters .section_turquoise {
       height: 120px; } }
 
 .cars .section_gray_light, .scooters .section_gray_light {
   padding-top: 60px;
-  margin-top: -82px; }
+  margin-top: -72px; }
 
 .cars .diagonale, .scooters .diagonale {
   background: linear-gradient(to right top, rgba(224, 224, 224, 0.3) 50%, #36b1ac 50%);
   height: 60px;
   width: 100%; }
+
+.cars .wave, .scooters .wave {
+  margin-top: -1px; }
 
 .cars .header_vehicules .comp_buttons, .scooters .header_vehicules .comp_buttons {
   display: flex;
@@ -1950,6 +1953,9 @@ table {
     .fidelites .header_my_account .text_entete, .locations .header_my_account .text_entete, .settings .header_my_account .text_entete {
       width: 100%;
       margin: 0; } }
+
+.fidelites .wave, .locations .wave, .settings .wave {
+  margin-top: -1px; }
 
 .fidelites .diagonale {
   background: linear-gradient(to right top, #FFF 50%, #36b1ac 50%); }
