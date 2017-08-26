@@ -411,13 +411,15 @@ table {
           border: solid 2px #FFF;
           color: #36b1ac; } }
 
+.about_us, .cars, .fidelites, .locations, .settings, .filters, .payment {
+  padding-top: 65px; }
+
 .main {
-  position: absolute;
   z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
-  top: 80px;
+  padding-top: 15px;
   text-align: center; }
   .main .section_gray_light {
     padding: 90px 15px;
