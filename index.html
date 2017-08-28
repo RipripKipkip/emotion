@@ -14,27 +14,30 @@
 		<title>eMotion - Le site de Location écologique de Voiture et Scooter</title>
 
 		<link rel="stylesheet" href="css/styles.css">
-		<!-- MATERIAL DESIGN BY GOOGLE -- end -->
 
-		<!-- <script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+
 		<script type="text/javascript" src="js/scroll.js"></script>
-
-		<script type="text/javascript" src="js/choose.js"></script>
-		<script type="text/javascript" src="js/animation.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/dynamics.min.js"></script>
-		<script src="js/main.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/accordion.js"></script> -->
-
 		<script type="text/javascript" src="js/nav_menu.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+
+		<!-- <script src="js/classie.js"></script> -->
+		<!-- <script src="js/dynamics.min.js"></script> -->
+		<!-- <script src="js/main.js"></script> -->
+
+		<script type="text/javascript" src="js/app.js"></script>
+
+		<!-- <script src="js/modernizr.custom.js"></script> -->
+
 
 	</head>
+
 	<body>
-		<div class="navi">
+
+		<div id="nav">
 				<header class="header container">
 					<div class="logo"></div>
+					<!-- Menu on tablets and larger screens -->
 					<nav class="top-nav">
 						<ul>
 							<li><a href="index.html" class="btn-border">Accueil</a></li>
@@ -48,7 +51,7 @@
 		</div>
 
 		<div id="container-menu">
-				<div id="toto" id="navToggle" onClick="appendClass()">
+				<div id="toto" class="navToggle" onClick="appendClass()">
 					<div class="icon"></div>
 				</div>
 				<div id="back-menu">
@@ -57,6 +60,7 @@
 							<li><a href="index.html" class="btn-border">Accueil</a></li>
 							<li><a href="about_us.html" class="btn-border">Présentation</a></li>
 							<li><a href="cars.html" class="btn-border">Véhicules</a></li>
+							<li><a href="mes_locations.html" class="btn-border">Mon compte</a></li>
 							<li><a href="log.html" class="btn-log">Connexion</a></li>
 						</ul>
 					</div>
@@ -102,7 +106,7 @@
 						<div class="voit_scoot">
 							<h3>Le véhicule que vous souhaitez :</h3>
 							<ul>
-								<li class="dropdown" class="voitures">
+								<li class="dropdown voitures bounceInLeft_animate animated">
 								<a href="javascript:void(0)" class="dropbtn"><img src="images/voiture-accueil.png" alt="BLIBLABLU" class="image">
 								<div class="overlay">
 									<!-- <div class="text">Voitures</div> -->
@@ -113,7 +117,7 @@
 										<a href="#">Link 3</a>
 									</div>
 								</li>
-								<li class="dropdown" class="scooters">
+								<li class="dropdown scooters bounceInRight_animate animated">
 								<a href="javascript:void(0)" class="dropbtn"><img src="images/scooter-accueil.png" alt="BLIBLABLU" class="image">
 								<div class="overlay">
 									<!-- <div class="text">Scooters</div> -->
@@ -126,13 +130,13 @@
 								</li>
 							</ul>
 						</div>
-						<div class="btn_mid"><button class="btn_w"> <a href="filters.html">Réserver</a> </button></div>
+						<div class="btn_mid bounceIn_animate animated"><button class="btn_w"> <a href="filters.html">Réserver</a> </button></div>
 						<!-- <button type="submit">Submit</button> -->
 					</div>
 				</section>
 
 				<section class="rubriques_services section_4">
-					<div class="wrapper">
+					<div class="wrapper fadeInUp_animate animated">
 						<div class="footer_description ">
 							<a href="about_us.html">
 								<div class="img_section_7"><img src="images/icons/arg_satis.svg" alt="Icon Measure Your Campaigns"></div>

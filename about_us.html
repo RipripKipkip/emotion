@@ -17,14 +17,29 @@
 
 		<link rel="stylesheet" href="css/styles.css">
 
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/nav_menu.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+
+		<!-- <script src="js/classie.js"></script> -->
+		<!-- <script src="js/dynamics.min.js"></script> -->
+		<!-- <script src="js/main.js"></script> -->
+
+		<script type="text/javascript" src="js/app.js"></script>
+
+		<!-- <script src="js/modernizr.custom.js"></script> -->
+
 
 	</head>
 
 	<body>
 
-		<div class="navi">
+		<div id="nav">
 				<header class="header container">
 					<div class="logo"></div>
+					<!-- Menu on tablets and larger screens -->
 					<nav class="top-nav">
 						<ul>
 							<li><a href="index.html" class="btn-border">Accueil</a></li>
@@ -37,19 +52,22 @@
 				</header>
 		</div>
 
-		<!-- <div id="container-menu">
-				<div id="toto" id="navToggle" onClick="appendClass()">
+		<div id="container-menu">
+				<div id="toto" class="navToggle" onClick="appendClass()">
 					<div class="icon"></div>
 				</div>
 				<div id="back-menu">
 					<div id="menu">
 						<ul>
-							<li><a href="#formulaire" class=" js-scrollTo">Présentation</a></li>
-							<li class="btn-log">Connexion</li>
-							</ul>
+							<li><a href="index.html" class="btn-border">Accueil</a></li>
+							<li><a href="about_us.html" class="btn-border">Présentation</a></li>
+							<li><a href="cars.html" class="btn-border">Véhicules</a></li>
+							<li><a href="mes_locations.html" class="btn-border">Mon compte</a></li>
+							<li><a href="log.html" class="btn-log">Connexion</a></li>
+						</ul>
 					</div>
 				</div>
-		</div> -->
+		</div>
 
 
 		<a name="top"></a>
@@ -87,19 +105,19 @@
 					<h3>Nos services</h3>
 					<div class="border_bottom"></div>
 					<div class="wrapper">
-						<div class="footer_description ">
+						<div class="footer_description bounceInLeft_animate animated">
 							<div class="img_section_7"><img src="images/icons/arg_satis.svg" alt="Icon Measure Your Campaigns"></div>
 							<h3 class="">Des clients satisfaits</h3>
 							<p class="description">Nous avons la souplesse d'une startup et pouvons répondre à vos questions sur l'électrique.
 							Notre objectif est que vous soyez satisfait et que vous parliez de nous autour de vous. Un sondage réalisé début 2017 auprès de nos clients met en avant un taux de satisfaction de 98,4%</p>
 						</div>
-						<div class="footer_description ">
+						<div class="footer_description fadeInUp_animate animated">
 							<div class="img_section_7"><img src="images/icons/arg_eco.svg" alt="Icon Follow Your Competition"></div>
 							<h3 class="">Une planète préservée</h3>
 							<p class="description">Pour débuter cette aventure, nous avons choisi des véhicules conçus électriques (qui n’existent pas en version thermique) car ils sont plus différenciants et plus aptes à offrir une expérience de conduite nouvelle et surprenante.
 							Ainsi, vous pourrez prendre le volant de la Tesla Model S, de la BMW i8, ...</p>
 						</div>
-						<div class="footer_description">
+						<div class="footer_description bounceInRight_animate animated">
 							<div class="img_section_7"><img src="images/icons/arg_couv.svg" alt="Icon Scout For New Talent"></div>
 							<h3 class="">Une couverture nationale</h3>
 							<p class="description">Accedebant a cuius salute velut filo pendere statum orbis terrarum fictis vocibus exclamabant.
@@ -112,7 +130,7 @@
 
 					<h3>Notre équipe</h3>
 					<div class="border_bottom"></div>
-					<div class="wrapper">
+					<div class="wrapper bounceIn_animate animated">
 						<div class="footer_description2 ">
 							<div class="img_section_7"><img src="images/profil_01.png" alt="Icon Measure Your Campaigns"></div>
 							<h3 class="">Jean-Mich Commercial</h3>
