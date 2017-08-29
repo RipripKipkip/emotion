@@ -188,6 +188,7 @@ table {
   opacity: 0; }
 
 .opacityy {
+  opacity: 0;
   animation-name: opacityy;
   -webkit-animation-name: opacityy; }
 
