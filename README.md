@@ -1,8 +1,6 @@
 Landing eMotion with Html (Flexbox), SASS and JS
 =============================
 
-Watch on GitHub Star on GitHub Tweet
-
 ## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
