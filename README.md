@@ -1,9 +1,7 @@
 Landing eMotion with Html (Flexbox), SASS and JS
 =============================
 
-BluBlaBli.
-
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+Watch on GitHub Star on GitHub Tweet
 
 ## System Preparation
 
